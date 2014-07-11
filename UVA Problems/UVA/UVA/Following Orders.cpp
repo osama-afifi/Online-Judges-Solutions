@@ -1,0 +1,113 @@
+//#include <iostream>
+//#include <stdio.h>
+//#include <cstring>
+//#include <algorithm>
+//#include <string>
+//#include <sstream>
+//#include <vector>
+//#include <map>
+//
+//using namespace std;
+//
+//char C[25];
+//int in[25];
+//bool vis[25];
+//int indx;
+//bool G[25][25];
+//bool found;
+//string reso[500];
+//int m;
+//
+//void dfs(int node , int depth , string res)
+//{
+//	if(depth<indx-1)
+//	{
+//		for(int i=0;i<indx;i++)
+//			if(i!=node && G[node][i])
+//				in[i]--;
+//
+//		for(int i=0;i<indx;i++)
+//			if(!vis[i] && in[i]==0 )
+//			{
+//				vis[i]=true;
+//				dfs(i,depth+1,res+(char)C[i]);
+//				vis[i]=false;
+//			}
+//			for(int i=0;i<indx;i++)
+//				if(i!=node && G[node][i])
+//					in[i]++;
+//	}
+//	else
+//	{
+//		reso[m++]=res;
+//		found=true;
+//	}
+//}
+//
+//int main()
+//{
+//	freopen("input.in","r",stdin);
+//	
+//	string text,text1,text2;
+//	bool first=true;
+//	while(getline(cin,text))
+//	{
+//		m=0;
+//		if(!first)putchar('\n');
+//		first=false;
+//		found=false;
+//
+//		map<char,int> M;
+//
+//		memset(G,0,sizeof G);
+//		memset(in,0,sizeof in);
+//		memset(vis,0,sizeof vis);
+//
+//		stringstream ss;
+//		ss<<text;
+//		char ch;
+//		indx=0;
+//
+//		while(ss>>ch)
+//		{
+//			if(M.find(ch)==M.end())
+//				M[ch]=indx++;
+//			C[M[ch]]=ch;
+//		}
+//
+//		getline(cin,text);
+//		ss.clear();
+//		ss<<text;
+//		char ch1,ch2;
+//		while(ss>>ch1>>ch2)
+//		{
+//			G[M[ch1]][M[ch2]]=1;
+//			in[M[ch2]]++;
+//		}
+//
+//		for(int i = 0 ; i < indx ; i++)
+//			if(in[i]==0)
+//			{
+//				vis[i]=1;
+//				string x;
+//				x.append(1,C[i]);
+//				dfs(i,0,x);
+//				vis[i]=0;
+//			}
+//
+//			if(!found)
+//				puts("NO");
+//			else
+//			{
+//			sort(reso,reso+m);
+//			for(int i = 0 ; i < m ; i++)
+//				cout<<reso[i];
+//			}
+//
+//
+//	}
+//
+//
+//
+//	return 0;
+//}

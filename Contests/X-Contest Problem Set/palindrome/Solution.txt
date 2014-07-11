@@ -1,0 +1,31 @@
+#include <iostream> 
+#include <vector> 
+
+using namespace std; 
+
+
+class NumericalSequence { 
+public: 
+   int makePalindrome( vector <int> sequence ) { // caret here 
+      int a=0, b=(int)sequence.size()-1; 
+      int ret = 0; 
+       
+      while ( a < b ) { 
+         if ( sequence[a] < sequence[b] ) { 
+            sequence[a+1] += sequence[a]; 
+            ++a; ++ret; 
+         } 
+         else if ( sequence[a] > sequence[b] ) { 
+            sequence[b-1] += sequence[b]; 
+            --b; ++ret; 
+         } 
+         else { 
+            ++a, --b; 
+         } 
+      } 
+      return ret; 
+   } 
+
+    
+  
+}; 

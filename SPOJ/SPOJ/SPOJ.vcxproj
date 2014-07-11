@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{DD47CA8F-E7C7-49F9-8914-8BFEC6D967B6}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>SPOJ</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="106 Miles to Chicago.cpp" />
+    <ClCompile Include="4 values whose sum is 0.cpp" />
+    <ClCompile Include="A Needle in the Haystack.cpp" />
+    <ClCompile Include="ABCDEF.cpp" />
+    <ClCompile Include="ACMAKER.cpp" />
+    <ClCompile Include="Aggressive cows.cpp" />
+    <ClCompile Include="Angels and Devils.cpp" />
+    <ClCompile Include="Bitmap.cpp" />
+    <ClCompile Include="Brackets.cpp" />
+    <ClCompile Include="Bytelandian Blingors Network.cpp" />
+    <ClCompile Include="Bytelandian gold coins.cpp" />
+    <ClCompile Include="Can you answer these queries I.cpp" />
+    <ClCompile Include="Can you answer these queries III.cpp" />
+    <ClCompile Include="Can you answer these queries V.cpp" />
+    <ClCompile Include="Card Trick.cpp" />
+    <ClCompile Include="Chop Ahoy! Revisited!.cpp" />
+    <ClCompile Include="Cobbled streets.cpp" />
+    <ClCompile Include="Coconut.cpp" />
+    <ClCompile Include="Count on Cantor.cpp" />
+    <ClCompile Include="D-query.cpp" />
+    <ClCompile Include="Digger Octaves.cpp" />
+    <ClCompile Include="Distinct Increasing Subsequences.cpp" />
+    <ClCompile Include="Distinct Subsequences.cpp" />
+    <ClCompile Include="Distinct Substrings.cpp" />
+    <ClCompile Include="DNA Laboratory.cpp" />
+    <ClCompile Include="Dungeon of Death.cpp" />
+    <ClCompile Include="Factorial.cpp" />
+    <ClCompile Include="Find String Roots.cpp" />
+    <ClCompile Include="Find the Clones.cpp" />
+    <ClCompile Include="Fishmonger.cpp" />
+    <ClCompile Include="Glass Beads.cpp" />
+    <ClCompile Include="He is offside!.cpp" />
+    <ClCompile Include="Horrible Queries.cpp" />
+    <ClCompile Include="Increasing Subsequences.cpp" />
+    <ClCompile Include="Java vs C++.cpp" />
+    <ClCompile Include="K-Query.cpp" />
+    <ClCompile Include="Key Task.cpp" />
+    <ClCompile Include="Largest Rectangle in a Histogram.cpp" />
+    <ClCompile Include="Laser Phones.cpp" />
+    <ClCompile Include="Last Digit.cpp" />
+    <ClCompile Include="Life, the Universe, and Everything.cpp" />
+    <ClCompile Include="Light Switching.cpp" />
+    <ClCompile Include="Longest Common Substring.cpp" />
+    <ClCompile Include="Longest path in a tree.cpp" />
+    <ClCompile Include="Lowest Common Ancestor(Sparse Table).cpp" />
+    <ClCompile Include="Lowest Common Ancestor.cpp" />
+    <ClCompile Include="Maximum Sum.cpp" />
+    <ClCompile Include="Medium Factorization.cpp" />
+    <ClCompile Include="Minimum Rotations.cpp" />
+    <ClCompile Include="Muddy Fields.cpp" />
+    <ClCompile Include="Multiples of 3.cpp" />
+    <ClCompile Include="Nonnegative Partial Sums.cpp" />
+    <ClCompile Include="Number of common divisors.cpp" />
+    <ClCompile Include="Palindromes.cpp" />
+    <ClCompile Include="Parity.cpp" />
+    <ClCompile Include="Period.cpp" />
+    <ClCompile Include="Philosophers Stone.cpp" />
+    <ClCompile Include="Potholers.cpp" />
+    <ClCompile Include="Prime Generator.cpp" />
+    <ClCompile Include="Query on Tree 2.cpp" />
+    <ClCompile Include="Query on Tree.cpp" />
+    <ClCompile Include="Rectangles.cpp" />
+    <ClCompile Include="Remember the A La Mode!.cpp" />
+    <ClCompile Include="Remove The String.cpp" />
+    <ClCompile Include="Rent your airplane and make money.cpp" />
+    <ClCompile Include="Road Network.cpp" />
+    <ClCompile Include="Scuba diver.cpp" />
+    <ClCompile Include="Selfish Cities.cpp" />
+    <ClCompile Include="Sorting Bank Accounts.cpp" />
+    <ClCompile Include="Square Free.cpp" />
+    <ClCompile Include="Stable Marriage Problem.cpp" />
+    <ClCompile Include="String problem.cpp" />
+    <ClCompile Include="Subset Sums.cpp" />
+    <ClCompile Include="The Cats and the Mouse.cpp" />
+    <ClCompile Include="The Full Name.cpp" />
+    <ClCompile Include="The Next Palindrome.cpp" />
+    <ClCompile Include="The Shortest Path.cpp" />
+    <ClCompile Include="Total Flow.cpp" />
+    <ClCompile Include="Tourist.cpp" />
+    <ClCompile Include="Tower of Babylon.cpp" />
+    <ClCompile Include="Trip.cpp" />
+    <ClCompile Include="Up Subsequence.cpp" />
+    <ClCompile Include="Yodaness Level.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="input.in" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

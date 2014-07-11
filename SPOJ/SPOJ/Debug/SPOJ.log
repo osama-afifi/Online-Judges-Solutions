@@ -1,0 +1,103 @@
+﻿Build started 7/4/2014 6:54:50 PM.
+     1>Project "D:\Osama\Programming\SPOJ\SPOJ\SPOJ.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt ACMAKER.cpp
+         ACMAKER.cpp
+     1>d:\osama\programming\spoj\spoj\acmaker.cpp(36): warning C4018: '<' : signed/unsigned mismatch
+     1>d:\osama\programming\spoj\spoj\acmaker.cpp(42): warning C4244: '=' : conversion from 'LL' to 'int', possible loss of data
+     1>d:\osama\programming\spoj\spoj\acmaker.cpp(49): warning C4018: '<' : signed/unsigned mismatch
+     1>d:\osama\programming\spoj\spoj\acmaker.cpp(55): warning C4018: '<' : signed/unsigned mismatch
+     1>d:\osama\programming\spoj\spoj\acmaker.cpp(68): warning C4996: 'freopen': This function or variable may be unsafe. Consider using freopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(233) : see declaration of 'freopen'
+     1>d:\osama\programming\spoj\spoj\acmaker.cpp(92): warning C4018: '<' : signed/unsigned mismatch
+     1>d:\osama\programming\spoj\spoj\acmaker.cpp(108): warning C4018: '<' : signed/unsigned mismatch
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Osama\Programming\SPOJ\Debug\SPOJ.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\Osama\Programming\SPOJ\Debug\SPOJ.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Osama\Programming\SPOJ\Debug\SPOJ.lib" /MACHINE:X86 "Debug\106 Miles to Chicago.obj"
+         "Debug\4 values whose sum is 0.obj"
+         "Debug\A Needle in the Haystack.obj"
+         Debug\ABCDEF.obj
+         Debug\ACMAKER.obj
+         "Debug\Aggressive cows.obj"
+         "Debug\Angels and Devils.obj"
+         Debug\Bitmap.obj
+         Debug\Brackets.obj
+         "Debug\Bytelandian Blingors Network.obj"
+         "Debug\Bytelandian gold coins.obj"
+         "Debug\Can you answer these queries I.obj"
+         "Debug\Can you answer these queries III.obj"
+         "Debug\Can you answer these queries V.obj"
+         "Debug\Card Trick.obj"
+         "Debug\Chop Ahoy! Revisited!.obj"
+         "Debug\Cobbled streets.obj"
+         Debug\Coconut.obj
+         "Debug\Count on Cantor.obj"
+         "Debug\D-query.obj"
+         "Debug\Digger Octaves.obj"
+         "Debug\Distinct Increasing Subsequences.obj"
+         "Debug\Distinct Subsequences.obj"
+         "Debug\Distinct Substrings.obj"
+         "Debug\DNA Laboratory.obj"
+         "Debug\Dungeon of Death.obj"
+         Debug\Factorial.obj
+         "Debug\Find String Roots.obj"
+         "Debug\Find the Clones.obj"
+         Debug\Fishmonger.obj
+         "Debug\Glass Beads.obj"
+         "Debug\He is offside!.obj"
+         "Debug\Horrible Queries.obj"
+         "Debug\Increasing Subsequences.obj"
+         "Debug\Java vs C++.obj"
+         "Debug\K-Query.obj"
+         "Debug\Key Task.obj"
+         "Debug\Largest Rectangle in a Histogram.obj"
+         "Debug\Laser Phones.obj"
+         "Debug\Last Digit.obj"
+         "Debug\Life, the Universe, and Everything.obj"
+         "Debug\Light Switching.obj"
+         "Debug\Longest Common Substring.obj"
+         "Debug\Longest path in a tree.obj"
+         "Debug\Lowest Common Ancestor(Sparse Table).obj"
+         "Debug\Lowest Common Ancestor.obj"
+         "Debug\Maximum Sum.obj"
+         "Debug\Medium Factorization.obj"
+         "Debug\Minimum Rotations.obj"
+         "Debug\Muddy Fields.obj"
+         "Debug\Multiples of 3.obj"
+         "Debug\Nonnegative Partial Sums.obj"
+         "Debug\Number of common divisors.obj"
+         Debug\Palindromes.obj
+         Debug\Parity.obj
+         Debug\Period.obj
+         "Debug\Philosophers Stone.obj"
+         Debug\Potholers.obj
+         "Debug\Prime Generator.obj"
+         "Debug\Query on Tree 2.obj"
+         "Debug\Query on Tree.obj"
+         Debug\Rectangles.obj
+         "Debug\Remember the A La Mode!.obj"
+         "Debug\Remove The String.obj"
+         "Debug\Rent your airplane and make money.obj"
+         "Debug\Road Network.obj"
+         "Debug\Scuba diver.obj"
+         "Debug\Selfish Cities.obj"
+         "Debug\Sorting Bank Accounts.obj"
+         "Debug\Square Free.obj"
+         "Debug\Stable Marriage Problem.obj"
+         "Debug\String problem.obj"
+         "Debug\Subset Sums.obj"
+         "Debug\The Cats and the Mouse.obj"
+         "Debug\The Full Name.obj"
+         "Debug\The Next Palindrome.obj"
+         "Debug\The Shortest Path.obj"
+         "Debug\Total Flow.obj"
+         Debug\Tourist.obj
+         "Debug\Tower of Babylon.obj"
+         Debug\Trip.obj
+         "Debug\Up Subsequence.obj"
+         "Debug\Yodaness Level.obj"
+         SPOJ.vcxproj -> D:\Osama\Programming\SPOJ\Debug\SPOJ.exe
+     1>Done Building Project "D:\Osama\Programming\SPOJ\SPOJ\SPOJ.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.96

@@ -1,0 +1,65 @@
+@model IEnumerable<CodeFirst.Models.Employee>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table>
+    <tr>
+        <th></th>
+        <th>
+            EmployeeName
+        </th>
+        <th>
+            EmployeeEmail
+        </th>
+        <th>
+            Admin
+        </th>
+        <th>
+            Mobile
+        </th>
+        <th>
+            LastLogin
+        </th>
+        <th>
+            Sheet
+        </th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.EmployeeId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.EmployeeId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.EmployeeId })
+        </td>
+        <td>
+			@item.EmployeeName
+        </td>
+        <td>
+			@item.EmployeeEmail
+        </td>
+        <td>
+			@item.Admin
+        </td>
+        <td>
+			@item.Mobile
+        </td>
+        <td>
+			@String.Format("{0:g}", item.LastLogin)
+        </td>
+        <td>
+			@(item.Sheet == null ? "None" : item.Sheet.Count.ToString())
+        </td>
+    </tr>
+}
+
+</table>
+
+

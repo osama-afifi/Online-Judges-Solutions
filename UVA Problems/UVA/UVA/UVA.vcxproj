@@ -1,0 +1,309 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1614004B-7645-4D30-9046-BE16678F14B8}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>UVA</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="input.in" />
+    <None Include="output.out" />
+    <None Include="The  1 2  ...  n = k problem.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="05-2 Rendezvous.cpp" />
+    <ClCompile Include="10199 - Tourist Guide.cpp" />
+    <ClCompile Include="A Multiplication Game.cpp" />
+    <ClCompile Include="A Plug for UNIX.cpp" />
+    <ClCompile Include="Add All.cpp" />
+    <ClCompile Include="Ahoy, Pirates!.cpp" />
+    <ClCompile Include="Airline Comparison.cpp" />
+    <ClCompile Include="Airports.cpp" />
+    <ClCompile Include="Alaska.cpp" />
+    <ClCompile Include="All Roads Lead Where.cpp" />
+    <ClCompile Include="Almost Prime Numbers.cpp" />
+    <ClCompile Include="Always Late.cpp" />
+    <ClCompile Include="Anagrammatic Primes.cpp" />
+    <ClCompile Include="Anti Brute Force Lock.cpp" />
+    <ClCompile Include="Antimonotonicity.cpp" />
+    <ClCompile Include="Ants.cpp" />
+    <ClCompile Include="Arbitrage.cpp" />
+    <ClCompile Include="Arctic Network.cpp" />
+    <ClCompile Include="Arranging Heaps.cpp" />
+    <ClCompile Include="Asterix and Obelix.cpp" />
+    <ClCompile Include="Audiophobia.cpp" />
+    <ClCompile Include="Avoiding Your Boss.cpp" />
+    <ClCompile Include="Best Compression Ever.cpp" />
+    <ClCompile Include="Bicoloring.cpp" />
+    <ClCompile Include="Bigger is Better.cpp" />
+    <ClCompile Include="Binary Search Tree.cpp" />
+    <ClCompile Include="Binomial Showdown.cpp" />
+    <ClCompile Include="Binomial Theorem.cpp" />
+    <ClCompile Include="Black and white painting.cpp" />
+    <ClCompile Include="Block Voting.cpp" />
+    <ClCompile Include="Boxes.cpp" />
+    <ClCompile Include="Bubbles and Buckets.cpp" />
+    <ClCompile Include="Bus Driver Problem.cpp" />
+    <ClCompile Include="Camel Trading.cpp" />
+    <ClCompile Include="Cards.cpp" />
+    <ClCompile Include="Choose and Divide.cpp" />
+    <ClCompile Include="Claw Decomposition.cpp" />
+    <ClCompile Include="Coin Change.cpp" />
+    <ClCompile Include="Collecting Beepers.cpp" />
+    <ClCompile Include="Come and Go.cpp" />
+    <ClCompile Include="Commandos.cpp" />
+    <ClCompile Include="Compound Words.cpp" />
+    <ClCompile Include="Compromise.cpp" />
+    <ClCompile Include="Connect the Campus.cpp" />
+    <ClCompile Include="Continents.cpp" />
+    <ClCompile Include="Contour Painting.cpp" />
+    <ClCompile Include="Copying Books.cpp" />
+    <ClCompile Include="Creating Palindrome.cpp" />
+    <ClCompile Include="Critical Links.cpp" />
+    <ClCompile Include="Cutting Sticks.cpp" />
+    <ClCompile Include="Data Flow.cpp" />
+    <ClCompile Include="Dijkstra, Dijkstra.cpp" />
+    <ClCompile Include="Distinct Substring.cpp" />
+    <ClCompile Include="Dividing Coins.cpp" />
+    <ClCompile Include="Diving for Gold.cpp" />
+    <ClCompile Include="Divisor Game.cpp" />
+    <ClCompile Include="DNA Sequencing.cpp" />
+    <ClCompile Include="Do Your Own Homework.cpp" />
+    <ClCompile Include="Dollars.cpp" />
+    <ClCompile Include="Dominator.cpp" />
+    <ClCompile Include="Dominos.cpp" />
+    <ClCompile Include="Driving Range.cpp" />
+    <ClCompile Include="Dying Tree.cpp" />
+    <ClCompile Include="Dynamic Frog.cpp" />
+    <ClCompile Include="e-coins.cpp" />
+    <ClCompile Include="Enchanted Forest.cpp" />
+    <ClCompile Include="Etruscan Warriors Never Play Chess.cpp" />
+    <ClCompile Include="Euler Circuit.cpp" />
+    <ClCompile Include="Excuses, Excuses!.cpp" />
+    <ClCompile Include="Expensive subway.cpp" />
+    <ClCompile Include="Extend to Palindrome.cpp" />
+    <ClCompile Include="Factors and Multiples.cpp" />
+    <ClCompile Include="Fast Food.cpp" />
+    <ClCompile Include="Fill.cpp" />
+    <ClCompile Include="Find The Multiple.cpp" />
+    <ClCompile Include="Fire Station.cpp" />
+    <ClCompile Include="Firetruck.cpp" />
+    <ClCompile Include="Flea circus.cpp" />
+    <ClCompile Include="Flight Planner.cpp" />
+    <ClCompile Include="Following Orders.cpp" />
+    <ClCompile Include="Forests.cpp" />
+    <ClCompile Include="Freckles.cpp" />
+    <ClCompile Include="Frequent Substrings.cpp" />
+    <ClCompile Include="Frequent Values.cpp" />
+    <ClCompile Include="Friends.cpp" />
+    <ClCompile Include="Frogger.cpp" />
+    <ClCompile Include="Frosh Week.cpp" />
+    <ClCompile Include="Game of Sum.cpp" />
+    <ClCompile Include="GATTACA.cpp" />
+    <ClCompile Include="Getting in Line.cpp" />
+    <ClCompile Include="Goldbach and Euler.cpp" />
+    <ClCompile Include="Gone Fishing.cpp" />
+    <ClCompile Include="Graph Coloring.cpp" />
+    <ClCompile Include="Greatest K-Palindrome Substring.cpp" />
+    <ClCompile Include="Gun Fight.cpp" />
+    <ClCompile Include="Happy 12.cpp" />
+    <ClCompile Include="Heavy Cargo.cpp" />
+    <ClCompile Include="Heavy Cycle Edges.cpp" />
+    <ClCompile Include="Highways.cpp" />
+    <ClCompile Include="Hippity Hopscotch.cpp" />
+    <ClCompile Include="History Grading.cpp" />
+    <ClCompile Include="Homework Checker.cpp" />
+    <ClCompile Include="How do you add.cpp" />
+    <ClCompile Include="How Many Dependencies.cpp" />
+    <ClCompile Include="How Many Pieces of Land.cpp" />
+    <ClCompile Include="I Love Strings!!.cpp" />
+    <ClCompile Include="Identifying Concurrent Events.cpp" />
+    <ClCompile Include="Ignoring Digits.cpp" />
+    <ClCompile Include="Ingenuous Cubrency.cpp" />
+    <ClCompile Include="Intellectual Property.cpp" />
+    <ClCompile Include="Internet Bandwidth.cpp" />
+    <ClCompile Include="Interstar Transport.cpp" />
+    <ClCompile Include="Invitation Cards.cpp" />
+    <ClCompile Include="Is It A Tree.cpp" />
+    <ClCompile Include="Jimmy%27s Balls.cpp" />
+    <ClCompile Include="Jugs.cpp" />
+    <ClCompile Include="Jumping Champion.cpp" />
+    <ClCompile Include="K-th Number.cpp" />
+    <ClCompile Include="Knight Tour.cpp" />
+    <ClCompile Include="Largest Block.cpp" />
+    <ClCompile Include="Largest Prime Divisor.cpp" />
+    <ClCompile Include="Largest Submatrix.cpp" />
+    <ClCompile Include="LCM Cardinality.cpp" />
+    <ClCompile Include="LCM.cpp" />
+    <ClCompile Include="Let Me Count The Ways.cpp" />
+    <ClCompile Include="Life Forms.cpp" />
+    <ClCompile Include="Longest Common Subsequence.cpp" />
+    <ClCompile Include="Longest Match.cpp" />
+    <ClCompile Include="Longest Paths.cpp" />
+    <ClCompile Include="Lovely Hint.cpp" />
+    <ClCompile Include="Luggage.cpp" />
+    <ClCompile Include="Make Palindrome.cpp" />
+    <ClCompile Include="March of the Penguins.cpp" />
+    <ClCompile Include="Maximum Sum (II).cpp" />
+    <ClCompile Include="Maximum sum on a torus.cpp" />
+    <ClCompile Include="Maze Traversal.cpp" />
+    <ClCompile Include="Meeting Prof. Miguel...cpp" />
+    <ClCompile Include="Memory Overflow.cpp" />
+    <ClCompile Include="Minimum Transport Cost.cpp" />
+    <ClCompile Include="Moliu Number Generator.cpp" />
+    <ClCompile Include="MPI Maelstrom.cpp" />
+    <ClCompile Include="Murcia%27s Skyline.cpp" />
+    <ClCompile Include="Nature.cpp" />
+    <ClCompile Include="Non-Stop Travel.cpp" />
+    <ClCompile Include="Numbering Paths.cpp" />
+    <ClCompile Include="Nuts and Bolts.cpp" />
+    <ClCompile Include="Optimal Array Multiplication Sequence.cpp" />
+    <ClCompile Include="Ordering.cpp" />
+    <ClCompile Include="Page Hopping.cpp" />
+    <ClCompile Include="Palindrome Again.cpp" />
+    <ClCompile Include="Palindromic Subsequence.cpp" />
+    <ClCompile Include="Guess Numbers.cpp" />
+    <ClCompile Include="Password Search.cpp" />
+    <ClCompile Include="Passwords.cpp" />
+    <ClCompile Include="Permutation.cpp" />
+    <ClCompile Include="Power Transmission.cpp" />
+    <ClCompile Include="PowerStrings.cpp" />
+    <ClCompile Include="Pyramid.cpp" />
+    <ClCompile Include="Ransom Note.cpp" />
+    <ClCompile Include="Re-connecting Computer Sites.cpp" />
+    <ClCompile Include="Remoteland.cpp" />
+    <ClCompile Include="Reverse Prime.cpp" />
+    <ClCompile Include="Sabotage.cpp" />
+    <ClCompile Include="Safe Salutations.cpp" />
+    <ClCompile Include="Scarecrow.cpp" />
+    <ClCompile Include="Scheduling Lectures.cpp" />
+    <ClCompile Include="Sending email.cpp" />
+    <ClCompile Include="Shoemaker%27s Problem.cpp" />
+    <ClCompile Include="Shopaholic.cpp" />
+    <ClCompile Include="Simplifying Fractions.cpp" />
+    <ClCompile Include="Simply Emirp.cpp" />
+    <ClCompile Include="Square Sums.cpp" />
+    <ClCompile Include="Squares.cpp" />
+    <ClCompile Include="Sticks.cpp" />
+    <ClCompile Include="Strategic Defense Initiative.cpp" />
+    <ClCompile Include="String Distance and Transform Process.cpp" />
+    <ClCompile Include="String to Palindrome.cpp" />
+    <ClCompile Include="Strings.cpp" />
+    <ClCompile Include="Sum of Consecutive Prime Numbers.cpp" />
+    <ClCompile Include="Sum of Different Primes.cpp" />
+    <ClCompile Include="SuperSale.cpp" />
+    <ClCompile Include="Switch The Lights.cpp" />
+    <ClCompile Include="Take the Land.cpp" />
+    <ClCompile Include="Teams.cpp" />
+    <ClCompile Include="Testing the CATCHER.cpp" />
+    <ClCompile Include="The Bug Sensor Problem.cpp" />
+    <ClCompile Include="The jackpot.cpp" />
+    <ClCompile Include="The Necklace.cpp" />
+    <ClCompile Include="The Orc Attack.cpp" />
+    <ClCompile Include="The Super Powers.cpp" />
+    <ClCompile Include="The Suspects.cpp" />
+    <ClCompile Include="The Tourist Guide.cpp" />
+    <ClCompile Include="The Treasure Hunt.cpp" />
+    <ClCompile Include="The Twin Towers.cpp" />
+    <ClCompile Include="Three-square.cpp" />
+    <ClCompile Include="Thunder Mountain.cpp" />
+    <ClCompile Include="To Carry or not to Carry.cpp" />
+    <ClCompile Include="Tower of Babylon.cpp" />
+    <ClCompile Include="Tower of Cubes.cpp" />
+    <ClCompile Include="Traffic Flow.cpp" />
+    <ClCompile Include="Trainsorting.cpp" />
+    <ClCompile Include="Transportation system.cpp" />
+    <ClCompile Include="Travel in Desert.cpp" />
+    <ClCompile Include="Tree Summing.cpp" />
+    <ClCompile Include="Trouble of 13-Dots.cpp" />
+    <ClCompile Include="Twin Primes.cpp" />
+    <ClCompile Include="Ubiquitous Religions.cpp" />
+    <ClCompile Include="Ultra-QuickSort.cpp" />
+    <ClCompile Include="Unidirectional TSP.cpp" />
+    <ClCompile Include="Vacation.cpp" />
+    <ClCompile Include="Vertex.cpp" />
+    <ClCompile Include="Virtual Friends.cpp" />
+    <ClCompile Include="Virus.cpp" />
+    <ClCompile Include="We Ship Cheap.cpp" />
+    <ClCompile Include="What Goes Up.cpp" />
+    <ClCompile Include="Word Index.cpp" />
+    <ClCompile Include="Word Length and Frequency.cpp" />
+    <ClCompile Include="Word Transformation.cpp" />
+    <ClCompile Include="Work Reduction.cpp" />
+    <ClCompile Include="Wormholes.cpp" />
+    <ClCompile Include="XYZZY.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,235 @@
+﻿Build started 7/7/2014 12:19:04 PM.
+     1>Project "D:\Osama\Programming\UVA Problems\UVA\UVA\UVA.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt Pyramid.cpp
+         Pyramid.cpp
+     1>d:\osama\programming\uva problems\uva\uva\pyramid.cpp(156): warning C4996: 'freopen': This function or variable may be unsafe. Consider using freopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(233) : see declaration of 'freopen'
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Osama\Programming\UVA Problems\UVA\Debug\UVA.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\Osama\Programming\UVA Problems\UVA\Debug\UVA.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Osama\Programming\UVA Problems\UVA\Debug\UVA.lib" /MACHINE:X86 "Debug\05-2 Rendezvous.obj"
+         "Debug\10199 - Tourist Guide.obj"
+         "Debug\A Multiplication Game.obj"
+         "Debug\A Plug for UNIX.obj"
+         "Debug\Add All.obj"
+         "Debug\Ahoy, Pirates!.obj"
+         "Debug\Airline Comparison.obj"
+         Debug\Airports.obj
+         Debug\Alaska.obj
+         "Debug\All Roads Lead Where.obj"
+         "Debug\Almost Prime Numbers.obj"
+         "Debug\Always Late.obj"
+         "Debug\Anagrammatic Primes.obj"
+         "Debug\Anti Brute Force Lock.obj"
+         Debug\Antimonotonicity.obj
+         Debug\Ants.obj
+         Debug\Arbitrage.obj
+         "Debug\Arctic Network.obj"
+         "Debug\Arranging Heaps.obj"
+         "Debug\Asterix and Obelix.obj"
+         Debug\Audiophobia.obj
+         "Debug\Avoiding Your Boss.obj"
+         "Debug\Best Compression Ever.obj"
+         Debug\Bicoloring.obj
+         "Debug\Bigger is Better.obj"
+         "Debug\Binary Search Tree.obj"
+         "Debug\Binomial Showdown.obj"
+         "Debug\Binomial Theorem.obj"
+         "Debug\Black and white painting.obj"
+         "Debug\Block Voting.obj"
+         Debug\Boxes.obj
+         "Debug\Bubbles and Buckets.obj"
+         "Debug\Bus Driver Problem.obj"
+         "Debug\Camel Trading.obj"
+         Debug\Cards.obj
+         "Debug\Choose and Divide.obj"
+         "Debug\Claw Decomposition.obj"
+         "Debug\Coin Change.obj"
+         "Debug\Collecting Beepers.obj"
+         "Debug\Come and Go.obj"
+         Debug\Commandos.obj
+         "Debug\Compound Words.obj"
+         Debug\Compromise.obj
+         "Debug\Connect the Campus.obj"
+         Debug\Continents.obj
+         "Debug\Contour Painting.obj"
+         "Debug\Copying Books.obj"
+         "Debug\Creating Palindrome.obj"
+         "Debug\Critical Links.obj"
+         "Debug\Cutting Sticks.obj"
+         "Debug\Data Flow.obj"
+         "Debug\Dijkstra, Dijkstra.obj"
+         "Debug\Distinct Substring.obj"
+         "Debug\Dividing Coins.obj"
+         "Debug\Diving for Gold.obj"
+         "Debug\Divisor Game.obj"
+         "Debug\DNA Sequencing.obj"
+         "Debug\Do Your Own Homework.obj"
+         Debug\Dollars.obj
+         Debug\Dominator.obj
+         Debug\Dominos.obj
+         "Debug\Driving Range.obj"
+         "Debug\Dying Tree.obj"
+         "Debug\Dynamic Frog.obj"
+         "Debug\e-coins.obj"
+         "Debug\Enchanted Forest.obj"
+         "Debug\Etruscan Warriors Never Play Chess.obj"
+         "Debug\Euler Circuit.obj"
+         "Debug\Excuses, Excuses!.obj"
+         "Debug\Expensive subway.obj"
+         "Debug\Extend to Palindrome.obj"
+         "Debug\Factors and Multiples.obj"
+         "Debug\Fast Food.obj"
+         Debug\Fill.obj
+         "Debug\Find The Multiple.obj"
+         "Debug\Fire Station.obj"
+         Debug\Firetruck.obj
+         "Debug\Flea circus.obj"
+         "Debug\Flight Planner.obj"
+         "Debug\Following Orders.obj"
+         Debug\Forests.obj
+         Debug\Freckles.obj
+         "Debug\Frequent Substrings.obj"
+         "Debug\Frequent Values.obj"
+         Debug\Friends.obj
+         Debug\Frogger.obj
+         "Debug\Frosh Week.obj"
+         "Debug\Game of Sum.obj"
+         Debug\GATTACA.obj
+         "Debug\Getting in Line.obj"
+         "Debug\Goldbach and Euler.obj"
+         "Debug\Gone Fishing.obj"
+         "Debug\Graph Coloring.obj"
+         "Debug\Greatest K-Palindrome Substring.obj"
+         "Debug\Gun Fight.obj"
+         "Debug\Happy 12.obj"
+         "Debug\Heavy Cargo.obj"
+         "Debug\Heavy Cycle Edges.obj"
+         Debug\Highways.obj
+         "Debug\Hippity Hopscotch.obj"
+         "Debug\History Grading.obj"
+         "Debug\Homework Checker.obj"
+         "Debug\How do you add.obj"
+         "Debug\How Many Dependencies.obj"
+         "Debug\How Many Pieces of Land.obj"
+         "Debug\I Love Strings!!.obj"
+         "Debug\Identifying Concurrent Events.obj"
+         "Debug\Ignoring Digits.obj"
+         "Debug\Ingenuous Cubrency.obj"
+         "Debug\Intellectual Property.obj"
+         "Debug\Internet Bandwidth.obj"
+         "Debug\Interstar Transport.obj"
+         "Debug\Invitation Cards.obj"
+         "Debug\Is It A Tree.obj"
+         "Debug\Jimmy's Balls.obj"
+         Debug\Jugs.obj
+         "Debug\Jumping Champion.obj"
+         "Debug\K-th Number.obj"
+         "Debug\Knight Tour.obj"
+         "Debug\Largest Block.obj"
+         "Debug\Largest Prime Divisor.obj"
+         "Debug\Largest Submatrix.obj"
+         "Debug\LCM Cardinality.obj"
+         Debug\LCM.obj
+         "Debug\Let Me Count The Ways.obj"
+         "Debug\Life Forms.obj"
+         "Debug\Longest Common Subsequence.obj"
+         "Debug\Longest Match.obj"
+         "Debug\Longest Paths.obj"
+         "Debug\Lovely Hint.obj"
+         Debug\Luggage.obj
+         "Debug\Make Palindrome.obj"
+         "Debug\March of the Penguins.obj"
+         "Debug\Maximum Sum (II).obj"
+         "Debug\Maximum sum on a torus.obj"
+         "Debug\Maze Traversal.obj"
+         "Debug\Meeting Prof. Miguel...obj"
+         "Debug\Memory Overflow.obj"
+         "Debug\Minimum Transport Cost.obj"
+         "Debug\Moliu Number Generator.obj"
+         "Debug\MPI Maelstrom.obj"
+         "Debug\Murcia's Skyline.obj"
+         Debug\Nature.obj
+         "Debug\Non-Stop Travel.obj"
+         "Debug\Numbering Paths.obj"
+         "Debug\Nuts and Bolts.obj"
+         "Debug\Optimal Array Multiplication Sequence.obj"
+         Debug\Ordering.obj
+         "Debug\Page Hopping.obj"
+         "Debug\Palindrome Again.obj"
+         "Debug\Palindromic Subsequence.obj"
+         "Debug\Guess Numbers.obj"
+         "Debug\Password Search.obj"
+         Debug\Passwords.obj
+         Debug\Permutation.obj
+         "Debug\Power Transmission.obj"
+         Debug\PowerStrings.obj
+         Debug\Pyramid.obj
+         "Debug\Ransom Note.obj"
+         "Debug\Re-connecting Computer Sites.obj"
+         Debug\Remoteland.obj
+         "Debug\Reverse Prime.obj"
+         Debug\Sabotage.obj
+         "Debug\Safe Salutations.obj"
+         Debug\Scarecrow.obj
+         "Debug\Scheduling Lectures.obj"
+         "Debug\Sending email.obj"
+         "Debug\Shoemaker's Problem.obj"
+         Debug\Shopaholic.obj
+         "Debug\Simplifying Fractions.obj"
+         "Debug\Simply Emirp.obj"
+         "Debug\Square Sums.obj"
+         Debug\Squares.obj
+         Debug\Sticks.obj
+         "Debug\Strategic Defense Initiative.obj"
+         "Debug\String Distance and Transform Process.obj"
+         "Debug\String to Palindrome.obj"
+         Debug\Strings.obj
+         "Debug\Sum of Consecutive Prime Numbers.obj"
+         "Debug\Sum of Different Primes.obj"
+         Debug\SuperSale.obj
+         "Debug\Switch The Lights.obj"
+         "Debug\Take the Land.obj"
+         Debug\Teams.obj
+         "Debug\Testing the CATCHER.obj"
+         "Debug\The Bug Sensor Problem.obj"
+         "Debug\The jackpot.obj"
+         "Debug\The Necklace.obj"
+         "Debug\The Orc Attack.obj"
+         "Debug\The Super Powers.obj"
+         "Debug\The Suspects.obj"
+         "Debug\The Tourist Guide.obj"
+         "Debug\The Treasure Hunt.obj"
+         "Debug\The Twin Towers.obj"
+         "Debug\Three-square.obj"
+         "Debug\Thunder Mountain.obj"
+         "Debug\To Carry or not to Carry.obj"
+         "Debug\Tower of Babylon.obj"
+         "Debug\Tower of Cubes.obj"
+         "Debug\Traffic Flow.obj"
+         Debug\Trainsorting.obj
+         "Debug\Transportation system.obj"
+         "Debug\Travel in Desert.obj"
+         "Debug\Tree Summing.obj"
+         "Debug\Trouble of 13-Dots.obj"
+         "Debug\Twin Primes.obj"
+         "Debug\Ubiquitous Religions.obj"
+         "Debug\Ultra-QuickSort.obj"
+         "Debug\Unidirectional TSP.obj"
+         Debug\Vacation.obj
+         Debug\Vertex.obj
+         "Debug\Virtual Friends.obj"
+         Debug\Virus.obj
+         "Debug\We Ship Cheap.obj"
+         "Debug\What Goes Up.obj"
+         "Debug\Word Index.obj"
+         "Debug\Word Length and Frequency.obj"
+         "Debug\Word Transformation.obj"
+         "Debug\Work Reduction.obj"
+         Debug\Wormholes.obj
+         Debug\XYZZY.obj
+         UVA.vcxproj -> D:\Osama\Programming\UVA Problems\UVA\Debug\UVA.exe
+     1>Done Building Project "D:\Osama\Programming\UVA Problems\UVA\UVA\UVA.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.87

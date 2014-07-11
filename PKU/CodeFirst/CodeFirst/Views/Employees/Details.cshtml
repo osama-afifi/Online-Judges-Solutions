@@ -1,0 +1,35 @@
+@model CodeFirst.Models.Employee
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Employee</legend>
+
+    <div class="display-label">EmployeeName</div>
+    <div class="display-field">@Model.EmployeeName</div>
+
+    <div class="display-label">EmployeeEmail</div>
+    <div class="display-field">@Model.EmployeeEmail</div>
+
+    <div class="display-label">Admin</div>
+    <div class="display-field">@Model.Admin</div>
+
+    <div class="display-label">Mobile</div>
+    <div class="display-field">@Model.Mobile</div>
+
+    <div class="display-label">LastLogin</div>
+    <div class="display-field">@String.Format("{0:g}", Model.LastLogin)</div>
+
+    <div class="display-label">Sheet</div>
+    <div class="display-field">@(Model.Sheet == null ? "None" : Model.Sheet.Count.ToString())</div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.EmployeeId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
+
+

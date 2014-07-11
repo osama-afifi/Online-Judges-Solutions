@@ -1,0 +1,23 @@
+@model CodeFirst.Models.Sheet
+
+@* This partial view defines form fields that will appear when creating and editing entities *@
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.StartDate)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.StartDate)
+    @Html.ValidationMessageFor(model => model.StartDate)
+</div>
+
+<div class="editor-label">
+    Employee
+</div>
+<div class="editor-field">
+    @Html.DropDownListFor(model => model.EmployeeId, ((IEnumerable<CodeFirst.Models.Employee>)ViewBag.PossibleEmployees).Select(option => new SelectListItem {
+        Text = Html.DisplayTextFor(_ => option).ToString(), 
+        Value = option.EmployeeId.ToString(),
+        Selected = (Model != null) && (option.EmployeeId == Model.EmployeeId)
+    }), "Choose...")
+    @Html.ValidationMessageFor(model => model.EmployeeId)
+</div>
