@@ -22,25 +22,38 @@
 //int l2;
 //string s1,s2;
 //int dp[1009][1009];
+//vector<int> V[300];
+//int const oo = 1<<25;
+//int bs(int j, char c )
+//{
+//	int b = 0;
+//	int e = V[c].size()-1;
+//	int res=-1;
+//	while(b<=e)
+//	{
+//		int mid = (b+e)/2;
+//		if(V[c][mid]>=j)
+//			e=mid-1,res=V[c][mid];
+//		else b=mid+1;
+//	}
+//	return res;
+//}
 //
 //int solve(int i , int j)
 //{
-//	if(i>= l1 || j >= l2) return 0;
+//	if(i==s1.length())
+//		return oo;
 //	if(dp[i][j]!=-1)return dp[i][j];
-//	int p1 = 1<<25 , p2 = 1<<25 , p3 = 1<<25;
-//
-//	if(s1[i] != s2[j])
-//	{
-//		p1 = solve(i+1, j+1)+1;
-//	}
-//	else
-//	{
-//	p2 = solve(i+1,j);
-//	p3 = solve(i,j+1);
-//	}
-//	return dp[i][j] = min(p1,min(p2,p3));
-//
+//	int ss1 = oo;
+//	int ss2 = oo;
+//	int q = bs(j,s1[i]);
+//	ss1 = solve(i+1,j);
+//	if(q!=-1)
+//		ss2 = solve(i+1, q+1)+1; 
+//	else ss2 = 1;
+//	return dp[i][j] = min(ss1, ss2);
 //}
+//
 //
 //int main()
 //{
@@ -50,11 +63,10 @@
 //		Set(dp,-1);
 //		l1 = s1.length();
 //		l2 = s2.length();
-//	//	if(l1>l2)
-//	//		swap(s1,s2);
+//		FOR(i,0,l2)
+//			V[s2[i]].push_back(i);
 //		int res = solve(0,0);
 //		printf("%d\n", res);
-//
 //	}
 //
 //	return 0;
