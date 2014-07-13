@@ -148,6 +148,7 @@
     <ClCompile Include="Square Free.cpp" />
     <ClCompile Include="Stable Marriage Problem.cpp" />
     <ClCompile Include="String problem.cpp" />
+    <ClCompile Include="String Shuffle.cpp" />
     <ClCompile Include="Subset Sums.cpp" />
     <ClCompile Include="The Cats and the Mouse.cpp" />
     <ClCompile Include="The Full Name.cpp" />

@@ -1,0 +1,74 @@
+﻿Build started 7/9/2014 1:37:59 AM.
+     1>Project "C:\Users\Osama\Documents\Visual Studio 2012\Projects\CodeForces\CodeForces\CodeForces.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt _A.cpp
+         _A.cpp
+     1>c:\users\osama\documents\visual studio 2012\projects\codeforces\codeforces\_a.cpp(39): warning C4996: 'freopen': This function or variable may be unsafe. Consider using freopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(233) : see declaration of 'freopen'
+     1>c:\users\osama\documents\visual studio 2012\projects\codeforces\codeforces\_a.cpp(47): warning C4244: 'argument' : conversion from 'LL' to 'int', possible loss of data
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Osama\Documents\Visual Studio 2012\Projects\CodeForces\Debug\CodeForces.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Osama\Documents\Visual Studio 2012\Projects\CodeForces\Debug\CodeForces.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Osama\Documents\Visual Studio 2012\Projects\CodeForces\Debug\CodeForces.lib" /MACHINE:X86 "Debug\A. Snow Footprints.obj"
+         "Debug\Another Problem on Strings.obj"
+         "Debug\Basketball Team.obj"
+         "Debug\Big Maximum Sum.obj"
+         Debug\Camels.obj
+         "Debug\Choosing Symbol Pairs.obj"
+         Debug\Cipher.obj
+         Debug\Cycles.obj
+         "Debug\Dima and Sequence.obj"
+         "Debug\Dima and Two Sequences.obj"
+         "Debug\Education Reform.obj"
+         "Debug\Flipping Game.obj"
+         Debug\Game.obj
+         "Debug\Games with Rectangle.obj"
+         "Debug\Good Substrings.obj"
+         "Debug\Greg and Array.obj"
+         "Debug\Hexadecimal's Numbers.obj"
+         "Debug\Hungry Sequence.obj"
+         "Debug\Inna and Sequence.obj"
+         "Debug\Knight Tournament.obj"
+         "Debug\Let's Go Rolling!.obj"
+         Debug\Line.obj
+         "Debug\Little Elephant and Interval.obj"
+         "Debug\Little Elephant and Magic Square.obj"
+         "Debug\Longest Regular Bracket Sequence.obj"
+         "Debug\Lucky Probability.obj"
+         "Debug\Lucky String.obj"
+         "Debug\Lucky Sum of Digits.obj"
+         "Debug\Lucky Tree.obj"
+         "Debug\Magic Five.obj"
+         "Debug\Maxim and Restaurant.obj"
+         Debug\Monitor.obj
+         "Debug\Nearly Lucky Number.obj"
+         Debug\Password.obj
+         Debug\Permutations.obj
+         "Debug\Petr-Hash.obj"
+         "Debug\Pocket Book.obj"
+         Debug\Points.obj
+         "Debug\Quantity of Strings.obj"
+         "Debug\Right Triangles.obj"
+         "Debug\Roma and Changing Signs.obj"
+         Debug\Rounds.obj
+         "Debug\Sereja and Algorithm.obj"
+         "Debug\Sereja and Coat Rack.obj"
+         "Debug\Sereja and Suffixes.obj"
+         "Debug\Sereja and the Arrangement of Numbers.obj"
+         "Debug\Sereja ans Anagrams.obj"
+         "Debug\String Transformation.obj"
+         Debug\Test.obj
+         "Debug\The World is a Theatre.obj"
+         "Debug\Tree-String Problem.obj"
+         Debug\Watermelon.obj
+         "Debug\Writing a Song.obj"
+         "Debug\Xenia and Hamming.obj"
+         Debug\_A.obj
+         Debug\_B.obj
+         Debug\_C.obj
+         Debug\_D.obj
+         Debug\_E.obj
+         CodeForces.vcxproj -> C:\Users\Osama\Documents\Visual Studio 2012\Projects\CodeForces\Debug\CodeForces.exe
+     1>Done Building Project "C:\Users\Osama\Documents\Visual Studio 2012\Projects\CodeForces\CodeForces\CodeForces.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.54

@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A5D652A1-7D43-4822-A823-D6F7264F7CF0}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>CodeForces</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="A. Snow Footprints.cpp" />
+    <ClCompile Include="Another Problem on Strings.cpp" />
+    <ClCompile Include="Basketball Team.cpp" />
+    <ClCompile Include="Big Maximum Sum.cpp" />
+    <ClCompile Include="Camels.cpp" />
+    <ClCompile Include="Choosing Symbol Pairs.cpp" />
+    <ClCompile Include="Cipher.cpp" />
+    <ClCompile Include="Cycles.cpp" />
+    <ClCompile Include="Dima and Sequence.cpp" />
+    <ClCompile Include="Dima and Two Sequences.cpp" />
+    <ClCompile Include="Education Reform.cpp" />
+    <ClCompile Include="Flipping Game.cpp" />
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="Games with Rectangle.cpp" />
+    <ClCompile Include="Good Substrings.cpp" />
+    <ClCompile Include="Greg and Array.cpp" />
+    <ClCompile Include="Hexadecimal%27s Numbers.cpp" />
+    <ClCompile Include="Hungry Sequence.cpp" />
+    <ClCompile Include="Inna and Sequence.cpp" />
+    <ClCompile Include="Knight Tournament.cpp" />
+    <ClCompile Include="Let%27s Go Rolling!.cpp" />
+    <ClCompile Include="Line.cpp" />
+    <ClCompile Include="Little Elephant and Interval.cpp" />
+    <ClCompile Include="Little Elephant and Magic Square.cpp" />
+    <ClCompile Include="Longest Regular Bracket Sequence.cpp" />
+    <ClCompile Include="Lucky Probability.cpp" />
+    <ClCompile Include="Lucky String.cpp" />
+    <ClCompile Include="Lucky Sum of Digits.cpp" />
+    <ClCompile Include="Lucky Tree.cpp" />
+    <ClCompile Include="Magic Five.cpp" />
+    <ClCompile Include="Maxim and Restaurant.cpp" />
+    <ClCompile Include="Monitor.cpp" />
+    <ClCompile Include="Nearly Lucky Number.cpp" />
+    <ClCompile Include="Password.cpp" />
+    <ClCompile Include="Permutations.cpp" />
+    <ClCompile Include="Petr-Hash.cpp" />
+    <ClCompile Include="Pocket Book.cpp" />
+    <ClCompile Include="Points.cpp" />
+    <ClCompile Include="Quantity of Strings.cpp" />
+    <ClCompile Include="Right Triangles.cpp" />
+    <ClCompile Include="Roma and Changing Signs.cpp" />
+    <ClCompile Include="Rounds.cpp" />
+    <ClCompile Include="Sereja and Algorithm.cpp" />
+    <ClCompile Include="Sereja and Coat Rack.cpp" />
+    <ClCompile Include="Sereja and Suffixes.cpp" />
+    <ClCompile Include="Sereja and the Arrangement of Numbers.cpp" />
+    <ClCompile Include="Sereja ans Anagrams.cpp" />
+    <ClCompile Include="String Transformation.cpp" />
+    <ClCompile Include="Test.cpp" />
+    <ClCompile Include="The World is a Theatre.cpp" />
+    <ClCompile Include="Tree-String Problem.cpp" />
+    <ClCompile Include="Watermelon.cpp" />
+    <ClCompile Include="Writing a Song.cpp" />
+    <ClCompile Include="Xenia and Hamming.cpp" />
+    <ClCompile Include="_A.cpp" />
+    <ClCompile Include="_B.cpp" />
+    <ClCompile Include="_C.cpp" />
+    <ClCompile Include="_D.cpp" />
+    <ClCompile Include="_E.cpp" />
+    <ClCompile Include="_template.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="B. Sail.cpp" />
+    <None Include="C. Parity Game.cpp" />
+    <None Include="input.in" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
