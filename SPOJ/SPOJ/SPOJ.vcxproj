@@ -83,6 +83,7 @@
     <ClCompile Include="ACMAKER.cpp" />
     <ClCompile Include="Aggressive cows.cpp" />
     <ClCompile Include="Angels and Devils.cpp" />
+    <ClCompile Include="Balancing the Stone.cpp" />
     <ClCompile Include="Bitmap.cpp" />
     <ClCompile Include="Brackets.cpp" />
     <ClCompile Include="Bytelandian Blingors Network.cpp" />
