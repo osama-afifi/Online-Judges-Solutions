@@ -19,20 +19,71 @@
 //using namespace std;
 //
 //
+//int dp[55][10007];
+//map<int ,int>M;
+//int MOD = 5000000;
+//int arr[10007];
+//int arr2[10007];
+//
+//
+//void update(int T[] ,  int i  , int v)
+//{
+//	while(i<=100000)
+//	{
+//		T[i]+=v;
+//		  if(T[i] >= MOD) T[i] -= MOD;
+//		  i+=(i & -i);
+//	}
+//}
+//
+//int read(int T[] , int i )
+//{
+//	int sum = 0;
+//	while(i>0)
+//	{
+//		sum +=T[i] , i-=(i& -i);
+//		if(sum >= MOD) sum -= MOD;
+//	}
+//	return sum;
+//}
+//
+//
 //int main()
 //{
 //	freopen("input.in","r",stdin);
-//	
-//	int arr[] = {1,4,4,5,6,7,7,7,7,8,8};
-//	int arr2[] = {9,4,4,5,6,7,7,7,7,8,8};
-//	int n = 11;
-//	sort(arr,arr+n);
-//	int m = unique(arr,arr + n) - arr;
 //
-//	FOR(i,0,11)
-//		printf("%d" , &arr[i]);
-//	puts("");
-//	
+//	int n,k;
+//	while(cin>>n>>k)
+//	{
+//		Set(dp,0);
+//		M.clear();
+//		FOR(i,0,n)
+//		{
+//			cin>>arr[i];
+//			arr2[i]=arr[i];
+//		}
+//		sort(arr2,arr2+n);
+//		int m = unique(arr2,arr2 + n) - arr2;
+//
+//		FOR(i,0,m)
+//			M[arr2[i]] = i;
+//
+//			FOR(i,0,n)
+//		{
+//			int num = M[arr2[i]];
+//			
+//			update(dp[1],num+1, 1);
+//			
+//			for(int j = k ; j >1 ; --j)
+//			{
+//				int x = read(dp[j-1],num);
+//				int y = read(dp[j-1],num-1);
+//				//if(x-y==0)
+//				update(dp[j],num+1, x) ;	
+//			}
+//		}
+//				printf("%d\n" , read(dp[k] , 100000));
+//	}
 //
 //	return 0;
 //}

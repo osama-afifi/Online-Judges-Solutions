@@ -138,6 +138,7 @@
     <ClCompile Include="Prime Generator.cpp" />
     <ClCompile Include="Query on Tree 2.cpp" />
     <ClCompile Include="Query on Tree.cpp" />
+    <ClCompile Include="Rectangles Perimeter.cpp" />
     <ClCompile Include="Rectangles.cpp" />
     <ClCompile Include="Remember the A La Mode!.cpp" />
     <ClCompile Include="Remove The String.cpp" />

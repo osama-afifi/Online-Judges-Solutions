@@ -32,6 +32,7 @@
 //		  i+=(i & -i);
 //	}
 //}
+//
 //int read(int T[] , int i )
 //{
 //	int sum = 0;
@@ -47,7 +48,7 @@
 //{
 //	freopen("input.in","r",stdin);
 //
-//scanf("%d %d" , &n , &k);
+//	scanf("%d %d" , &n , &k);
 //	
 //		FOR(i,0,n)
 //		{
@@ -62,5 +63,5 @@
 //	
 //	return 0;
 //}
-
-
+//
+//

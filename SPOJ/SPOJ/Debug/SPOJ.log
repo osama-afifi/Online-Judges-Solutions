@@ -1,18 +1,19 @@
-﻿Build started 7/12/2014 10:47:55 PM.
+﻿Build started 7/20/2014 8:43:17 PM.
      1>Project "D:\Osama\Programming\Online-Judges-Solutions\SPOJ\SPOJ\SPOJ.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt "String Shuffle.cpp"
-         String Shuffle.cpp
-     1>d:\osama\programming\online-judges-solutions\spoj\spoj\string shuffle.cpp(46): warning C4996: 'freopen': This function or variable may be unsafe. Consider using freopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt "Rectangles Perimeter.cpp"
+         Rectangles Perimeter.cpp
+     1>d:\osama\programming\online-judges-solutions\spoj\spoj\rectangles perimeter.cpp(47): warning C4996: 'freopen': This function or variable may be unsafe. Consider using freopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(233) : see declaration of 'freopen'
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Osama\Programming\Online-Judges-Solutions\SPOJ\Debug\SPOJ.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\Osama\Programming\Online-Judges-Solutions\SPOJ\Debug\SPOJ.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Osama\Programming\Online-Judges-Solutions\SPOJ\Debug\SPOJ.lib" /MACHINE:X86 "Debug\106 Miles to Chicago.obj"
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Osama\Programming\Online-Judges-Solutions\SPOJ\Debug\SPOJ.exe" /INCREMENTAL /NOLOGO pthreadVC2.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\Osama\Programming\Online-Judges-Solutions\SPOJ\Debug\SPOJ.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Osama\Programming\Online-Judges-Solutions\SPOJ\Debug\SPOJ.lib" /MACHINE:X86 "Debug\106 Miles to Chicago.obj"
          "Debug\4 values whose sum is 0.obj"
          "Debug\A Needle in the Haystack.obj"
          Debug\ABCDEF.obj
          Debug\ACMAKER.obj
          "Debug\Aggressive cows.obj"
          "Debug\Angels and Devils.obj"
+         "Debug\Balancing the Stone.obj"
          Debug\Bitmap.obj
          Debug\Brackets.obj
          "Debug\Bytelandian Blingors Network.obj"
@@ -67,6 +68,7 @@
          "Debug\Prime Generator.obj"
          "Debug\Query on Tree 2.obj"
          "Debug\Query on Tree.obj"
+         "Debug\Rectangles Perimeter.obj"
          Debug\Rectangles.obj
          "Debug\Remember the A La Mode!.obj"
          "Debug\Remove The String.obj"
@@ -95,4 +97,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:01.55
+Time Elapsed 00:00:03.41
