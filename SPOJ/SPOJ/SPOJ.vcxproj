@@ -159,6 +159,7 @@
     <ClCompile Include="Total Flow.cpp" />
     <ClCompile Include="Tourist.cpp" />
     <ClCompile Include="Tower of Babylon.cpp" />
+    <ClCompile Include="Trigraph.cpp" />
     <ClCompile Include="Trip.cpp" />
     <ClCompile Include="Up Subsequence.cpp" />
     <ClCompile Include="Yodaness Level.cpp" />
