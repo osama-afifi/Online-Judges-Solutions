@@ -107,6 +107,7 @@
     <ClCompile Include="Route Redundancy.cpp" />
     <ClCompile Include="Slim Span.cpp" />
     <ClCompile Include="The Doors.cpp" />
+    <ClCompile Include="The Double HeLiX.cpp" />
     <ClCompile Include="The King%27s Ups and Downs.cpp" />
     <ClCompile Include="The Next Permutation.cpp" />
     <ClCompile Include="The Rascal Triangle.cpp" />

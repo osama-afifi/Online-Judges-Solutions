@@ -135,6 +135,7 @@
     <ClCompile Include="Parity.cpp" />
     <ClCompile Include="Period.cpp" />
     <ClCompile Include="Philosophers Stone.cpp" />
+    <ClCompile Include="PiggyBank.cpp" />
     <ClCompile Include="Potholers.cpp" />
     <ClCompile Include="Prime Generator.cpp" />
     <ClCompile Include="Query on Tree 2.cpp" />

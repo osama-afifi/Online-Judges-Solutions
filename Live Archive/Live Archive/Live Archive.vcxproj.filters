@@ -123,6 +123,9 @@
     <ClCompile Include="Zeros and Ones.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="The Double HeLiX.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="input.in" />
