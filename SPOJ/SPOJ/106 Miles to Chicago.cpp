@@ -14,7 +14,7 @@
 //#define Set(a, s) memset(a, s, sizeof (a))
 //using namespace std;
 //
-//long double dp[107][107];
+//long double d[107][107];
 //double oo=1<<25;
 //int main()
 //{
@@ -28,20 +28,20 @@
 //
 //		FOR(i,0,n+1)
 //			FOR(j,0,n+1)
-//			dp[i][j]=0;
+//			d[i][j]=0;
 //
 //		int a,b,c;
 //		while(m--)
 //		{
 //			cin>>a>>b>>c;
-//			dp[a-1][b-1]=dp[b-1][a-1]=(long double)c/100.0;
+//			d[a-1][b-1]=d[b-1][a-1]=(long double)c/100.0;
 //		}
 //		FOR(k,0,n)
 //			FOR(i,0,n)
 //			FOR(j,0,n)
-//			dp[i][j]=max(dp[i][j],dp[i][k]*dp[k][j]);
+//			d[i][j]=max(d[i][j],d[i][k]*d[k][j]);
 //
-//		cout<< setprecision(6)<<fixed <<(long double) dp[0][n-1]*100.0<<" percent"<<endl;
+//		cout<< setprecision(6)<<fixed <<(long double) d[0][n-1]*100.0<<" percent"<<endl;
 //	}
 //		return 0;
 //	

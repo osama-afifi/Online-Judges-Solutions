@@ -23,14 +23,14 @@
 //int l2;
 //int l3;
 //string s1,s2,s3;
-//LL dp[65][65][65];
+//LL d[65][65][65];
 //
 //LL solve(int i, int j, int k)
 //{
 //	if(k==l3) return 1;
 //	if(i>l1 || j>l2 || k>l3) return 0;
-//	if(dp[i][j][k]!=-1) 
-//		return dp[i][j][k];
+//	if(d[i][j][k]!=-1) 
+//		return d[i][j][k];
 //	LL sum =0;
 //	FOR(l,i,l1)
 //		if(s1[l]==s3[k])
@@ -38,7 +38,7 @@
 //	FOR(l,j,l2)
 //		if(s2[l]==s3[k])
 //		sum += solve(i, l+1, k+1);
-//	return dp[i][j][k] = sum;
+//	return d[i][j][k] = sum;
 //}
 //
 //int main()
@@ -49,7 +49,7 @@
 //	while(t--)
 //	{
 //		cin>>s1>>s2>>s3;
-//		Set(dp,-1);
+//		Set(d,-1);
 //		l1 = s1.length();
 //		l2 = s2.length();
 //		l3 = s3.length();

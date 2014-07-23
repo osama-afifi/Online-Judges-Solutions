@@ -21,7 +21,7 @@
 //vector<string>V;
 //string abr;
 //int n;
-//int dp[200][200];
+//int d[200][200];
 //vector<int>P;
 //LL solve(int idx, int q , int match)
 //{
@@ -30,8 +30,8 @@
 //	if(idx==n || q == V[idx].size() || match==abr.size())
 //		return 0;
 //	int combi = P[idx]+q;
-//	if(dp[combi][match]!=-1)
-//		return dp[combi][match];
+//	if(d[combi][match]!=-1)
+//		return d[combi][match];
 //	LL sum = 0;
 //	FOR(i,q,V[idx].size())
 //			if(abr[match]==V[idx][i])
@@ -39,7 +39,7 @@
 //				sum += solve(idx,i+1, match+1);
 //				sum += solve(idx+1,0, match+1);
 //			}
-//	return dp[combi][match] = sum;
+//	return d[combi][match] = sum;
 //}
 //
 //void print(int idx, int q, int match, vector<pair< int,int> > P)
@@ -82,7 +82,7 @@
 //		while(getline(cin,temp))
 //		{
 //			if(temp=="LAST CASE")break;
-//			Set(dp,-1);
+//			Set(d,-1);
 //			V.clear();
 //			P.clear();
 //			stringstream ss;

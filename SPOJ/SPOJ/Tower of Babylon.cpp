@@ -22,17 +22,17 @@
 //
 //int n,t;
 //vector<cube>V;
-//int dp[155];
+//int d[155];
 //int solve(int index)
 //{
-//	if(dp[index]!=-1)
-//		return dp[index];
+//	if(d[index]!=-1)
+//		return d[index];
 //	int maxi=0;
 //	for(int i = 0 ; i<V.size() ; i++)
 //		if(i!=index && ( V[index].x>V[i].x && V[index].y>V[i].y ||  V[index].x>V[i].y && V[index].y>V[i].x ) )
 //			maxi=max(maxi,solve(i));
 //
-//	return dp[index]=maxi+V[index].z;
+//	return d[index]=maxi+V[index].z;
 //}
 //
 //
@@ -54,7 +54,7 @@
 //			V.push_back(cube(z,x,y));
 //
 //		}
-//		memset(dp,-1,sizeof dp);
+//		memset(d,-1,sizeof d);
 //		int res=0;
 //		for(int i = 0 ; i<V.size() ; i++)
 //		res=max(res,solve(i));

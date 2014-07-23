@@ -19,19 +19,19 @@
 //
 //string s;
 //int n;
-//int dp[103][300];
+//int d[103][300];
 //vector<string>V;
 //int solve(int idx , int c)
 //{
 //	if(idx==n)
 //		return 0;
-//	if(dp[idx][c]!=-1)
-//		return dp[idx][c];
+//	if(d[idx][c]!=-1)
+//		return d[idx][c];
 //	int s1 = 0 , s2 = 0;
 //	if(c<=s[idx])
 //		s1 = solve(idx+1, s[idx])+1;
 //	s2 = solve(idx+1, c);
-//	return dp[idx][c] = max(s1,s2);
+//	return d[idx][c] = max(s1,s2);
 //}
 //void print(int idx , char c , string x)
 //{
@@ -63,7 +63,7 @@
 //	{
 //		V.clear();
 //		cin>>s;
-//		Set(dp,-1);
+//		Set(d,-1);
 //		n = s.length();
 //		LL res = solve(0 , 0);
 //		//cout <<res <<endl;

@@ -19,15 +19,15 @@
 //
 //string s;
 //int n;
-//LL dp[30][250];
+//LL d[30][250];
 //LL solve(int idx , int psum)
 //{
 //	if(idx==n)
 //		return 1;
 //	if(idx == n)
 //		return 0;
-//	if(dp[idx][psum]!=-1)
-//		return dp[idx][psum];
+//	if(d[idx][psum]!=-1)
+//		return d[idx][psum];
 //	LL res = 0;
 //	int sum = 0;
 //	FOR(i,idx,n)
@@ -36,7 +36,7 @@
 //		if(sum>=psum)
 //		res+=solve(i+1 , sum);
 //	}
-//	return dp[idx][psum] = res;
+//	return d[idx][psum] = res;
 //}
 ////
 ////void print(int idx , int psum , int csum , string x)
@@ -60,7 +60,7 @@
 //	{
 //		if(s=="bye")
 //			break;
-//		Set(dp,-1);
+//		Set(d,-1);
 //		n = s.length();
 //		LL res = solve(0,0);	
 //		cout << k<<". " << res << endl;

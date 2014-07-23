@@ -20,7 +20,7 @@
 //
 //char s[MAX+5];
 //int last[30];
-//long long dp[MAX+5];
+//long long d[MAX+5];
 //
 //
 //int main()
@@ -34,17 +34,17 @@
 //		scanf("%s",&s);
 //		Set(last,-1);
 //
-//		dp[0]=1;
+//		d[0]=1;
 //		int L  = strlen(s);
 //		FOR(i,1,L+1)
 //		{
-//			dp[i] = dp[i-1]*2;
+//			d[i] = d[i-1]*2;
 //			if(last[s[i-1]-'A']!=-1)
-//				dp[i]-=dp[last[s[i-1]-'A']];
+//				d[i]-=d[last[s[i-1]-'A']];
 //			last[s[i-1]-'A']=i-1;
-//			dp[i] = (dp[i]+M)%M;
+//			d[i] = (d[i]+M)%M;
 //		}
-//		printf("%d\n",dp[L]);
+//		printf("%d\n",d[L]);
 //	}
 //
 //	return 0;

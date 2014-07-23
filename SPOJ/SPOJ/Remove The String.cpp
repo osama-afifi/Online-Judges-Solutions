@@ -27,7 +27,7 @@
 //int f[1009];
 //char txt[10009];
 //char pat[1009];
-//int dp[10009][1009];
+//int d[10009][1009];
 //
 //int partial(int i , char c)
 //{
@@ -70,11 +70,11 @@
 //		return 0;
 //	if(pat[j])
 //		return 1<<25;
-//	if(dp[i][j]!=-1)
-//		return dp[i][j];
+//	if(d[i][j]!=-1)
+//		return d[i][j];
 //	int s1 = solve(i+1 , j) +1;
 //	int s2 = solve(i+1 , partial(j , txt[i]));
-//	return dp[i][j] = min(s1,s2);
+//	return d[i][j] = min(s1,s2);
 //}
 //
 //int main()
@@ -84,7 +84,7 @@
 //	while(scanf("%s%s" , txt , pat)==2)
 //	{
 //		genFail();
-//		Set(dp,-1);
+//		Set(d,-1);
 //		int res = solve(0,0);
 //		printf("%d\n",res);
 //	}

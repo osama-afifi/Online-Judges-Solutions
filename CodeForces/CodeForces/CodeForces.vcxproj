@@ -87,6 +87,7 @@
     <ClCompile Include="Dima and Sequence.cpp" />
     <ClCompile Include="Dima and Two Sequences.cpp" />
     <ClCompile Include="Education Reform.cpp" />
+    <ClCompile Include="Fish.cpp" />
     <ClCompile Include="Flipping Game.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="Games with Rectangle.cpp" />
@@ -115,6 +116,7 @@
     <ClCompile Include="Pocket Book.cpp" />
     <ClCompile Include="Points.cpp" />
     <ClCompile Include="Quantity of Strings.cpp" />
+    <ClCompile Include="Random Tasks.cpp" />
     <ClCompile Include="Right Triangles.cpp" />
     <ClCompile Include="Roma and Changing Signs.cpp" />
     <ClCompile Include="Rounds.cpp" />

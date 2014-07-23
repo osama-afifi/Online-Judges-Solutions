@@ -16,7 +16,7 @@
 //using namespace std;
 //
 //const int MX = 709; 
-//bool FindPath(vector<vector<int> > &canMatch,vector<int> &left,vector<int> &right,vector<bool>& visited,int i)
+//bool Findath(vector<vector<int> > &canMatch,vector<int> &left,vector<int> &right,vector<bool>& visited,int i)
 //{
 //
 //	FOR(j,0,canMatch[i].size())
@@ -25,7 +25,7 @@
 //		if(visited[z])
 //			continue;
 //		visited[z]=1;
-//		if(right[z]==-1 || FindPath(canMatch,left,right,visited,right[z]))
+//		if(right[z]==-1 || Findath(canMatch,left,right,visited,right[z]))
 //		{
 //			left[i]=z;
 //			right[z]=i;
@@ -47,7 +47,7 @@
 //		vector<bool> visited(matchingtoSize);
 //		if(left[i]==-1)
 //		{
-//			if(FindPath(canMatch,left,right,visited,i))
+//			if(Findath(canMatch,left,right,visited,i))
 //				sol++;
 //		}
 //	}

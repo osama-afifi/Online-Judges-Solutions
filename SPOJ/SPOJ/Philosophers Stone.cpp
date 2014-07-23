@@ -14,15 +14,15 @@
 //{return i>=0 && i<=h && j>=0 && j<=w;}
 //
 //
-//int dp[105][105];
+//int d[105][105];
 //int solve(int x , int y)
 //{
 //
 //	if(!inRange(x,y))return -oo;
 //	if(x==h)return M[x][y];
-//	if(dp[x][y]!=-1)
-//		return dp[x][y];
-//	return dp[x][y]=max(solve(x+1,y)+M[x][y] , max(solve(x+1,y-1)+M[x][y],solve(x+1,y+1)+M[x][y]));
+//	if(d[x][y]!=-1)
+//		return d[x][y];
+//	return d[x][y]=max(solve(x+1,y)+M[x][y] , max(solve(x+1,y-1)+M[x][y],solve(x+1,y+1)+M[x][y]));
 //
 //}
 //
@@ -40,13 +40,13 @@
 //
 //		int maxi=0;
 //		int res=0;
-//		memset(dp,-1,sizeof dp);
+//		memset(d,-1,sizeof d);
 //		for(int i = 0 ; i<w;i++)
 //		{
 //			
-//			dp[0][i]=solve(0,i);
-//			if(dp[0][i]>maxi)
-//				maxi=dp[0][i];
+//			d[0][i]=solve(0,i);
+//			if(d[0][i]>maxi)
+//				maxi=d[0][i];
 //		}
 //
 //

@@ -22,15 +22,15 @@
 //
 //int n;
 //pair<int,int> arr[1009];
-//int dp[1009][1009];
+//int d[1009][1009];
 //
 //int solve(int idx, int prev)
 //{
 //	if(idx>=n)
 //		return 0;
 //
-//	if(prev!=-1 && dp[idx][prev]!=-1)
-//		return dp[idx][prev];
+//	if(prev!=-1 && d[idx][prev]!=-1)
+//		return d[idx][prev];
 //
 //	int side = arr[idx].first;
 //	int top = arr[idx].second;
@@ -38,7 +38,7 @@
 //	int s1 = solve(idx+1, side) + top + ((prev!=-1) ? abs(prev-side) : 0);
 //	int s2 = solve(idx+1, top) + side + ((prev!=-1) ? abs(prev-top) : 0);
 //
-//	return dp[idx][prev] = max(s1,s2);
+//	return d[idx][prev] = max(s1,s2);
 //
 //}
 //
@@ -49,7 +49,7 @@
 //
 //	while(cin>>n)
 //	{
-//		Set(dp,-1);
+//		Set(d,-1);
 //		FOR(i,0,n)
 //			cin>>arr[i].first>> arr[i].second;
 //		int res = solve(0,-1);

@@ -17,7 +17,7 @@
 //int O,N,n;
 //vector< pair< pair<int,int> ,int > >V;
 //
-//int dp[1009][30][80];
+//int d[1009][30][80];
 //
 //int solve(int index, int oo , int nn)
 //{
@@ -27,11 +27,11 @@
 //	if(nn>=N)nn=N;
 //	if(index==n)return 1<<30;
 //
-//	if(dp[index][oo][nn]!=-1)
-//		return dp[index][oo][nn];	
+//	if(d[index][oo][nn]!=-1)
+//		return d[index][oo][nn];	
 //int s1=solve(index+1,oo+V[index].first.first,nn+V[index].first.second)+V[index].second;
 //int s2=solve(index+1,oo,nn);
-//return dp[index][oo][nn]=min(s1,s2);
+//return d[index][oo][nn]=min(s1,s2);
 //
 //}
 //
@@ -42,7 +42,7 @@
 //	scanf("%d",&t);
 //	while(t--)
 //	{
-//		Set(dp,-1);
+//		Set(d,-1);
 //		V.clear();
 //		scanf("%d%d",&O,&N);
 //		scanf("%d",&n);

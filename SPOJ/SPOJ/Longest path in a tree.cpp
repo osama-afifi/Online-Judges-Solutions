@@ -21,7 +21,7 @@
 ////
 ////vector< vector<int> >V;
 ////
-////int dp[10009];
+////int d[10009];
 ////int freq[10009];
 ////bool vis[10009];
 ////
@@ -49,7 +49,7 @@
 ////	{
 ////		V.clear();
 ////		V.resize(n);
-////		Set(dp,-oo);
+////		Set(d,-oo);
 ////		Set(freq,0);
 ////		Set(vis,0);
 ////		int start=oo;
@@ -107,7 +107,7 @@
 //vector< vector<int> >V;
 //
 //bool vis[10009];
-////int dp[10009];
+////int d[10009];
 //int d[10009];
 //int freq[10009];
 //
@@ -132,7 +132,7 @@
 //		V.clear();
 //		V.resize(n);
 //		//FOR(i,0,n)
-//		//	dp[i]=0;
+//		//	d[i]=0;
 //		//Set(freq,0);
 //		int start=0;
 //		int maxi=-oo;

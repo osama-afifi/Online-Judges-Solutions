@@ -21,7 +21,7 @@
 //int l1;
 //int l2;
 //string s1,s2;
-//int dp[1009][1009];
+//int d[1009][1009];
 //vector<int> V[300];
 //int const oo = 1<<25;
 //int bs(int j, char c )
@@ -43,7 +43,7 @@
 //{
 //	if(i==s1.length())
 //		return oo;
-//	if(dp[i][j]!=-1)return dp[i][j];
+//	if(d[i][j]!=-1)return d[i][j];
 //	int ss1 = oo;
 //	int ss2 = oo;
 //	int q = bs(j,s1[i]);
@@ -51,7 +51,7 @@
 //	if(q!=-1)
 //		ss2 = solve(i+1, q+1)+1; 
 //	else ss2 = 1;
-//	return dp[i][j] = min(ss1, ss2);
+//	return d[i][j] = min(ss1, ss2);
 //}
 //
 //
@@ -60,7 +60,7 @@
 //	freopen("input.in","r",stdin);
 //	while(cin>>s1>>s2)
 //	{
-//		Set(dp,-1);
+//		Set(d,-1);
 //		l1 = s1.length();
 //		l2 = s2.length();
 //		FOR(i,0,l2)

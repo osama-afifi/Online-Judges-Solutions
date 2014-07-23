@@ -19,7 +19,7 @@
 //using namespace std;
 //
 //int n,k;
-//int dp[52][MAX];
+//int d[52][MAX];
 //int num;
 //int M =  5000000;
 //
@@ -53,13 +53,13 @@
 //		FOR(i,0,n)
 //		{
 //			scanf("%d",&num);
-//			update(dp[1],num+1, 1);
+//			update(d[1],num+1, 1);
 //			
 //			for(int j = k ; j >1 ; --j)
-//				update(dp[j],num+1,read(dp[j-1],num) ) ;	
+//				update(d[j],num+1,read(d[j-1],num) ) ;	
 //		}
 //
-//		printf("%d\n" , read(dp[k] , 100000));
+//		printf("%d\n" , read(d[k] , 100000));
 //	
 //	return 0;
 //}

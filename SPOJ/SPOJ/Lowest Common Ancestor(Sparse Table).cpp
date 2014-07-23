@@ -18,7 +18,7 @@
 //#define MAXN 1009 
 //using namespace std;
 //
-//int dp[MAXN][20]; // [n][logn]
+//int d[MAXN][20]; // [n][logn]
 //int L[MAXN];
 //int T[MAXN];
 //int n;
@@ -38,14 +38,14 @@
 //{
 //	dfs(root,0);
 //	T[root]=-1;
-//	Set(dp,-1);
+//	Set(d,-1);
 //	FOR(i,0,n)
-//		dp[i][0] = T[i];
+//		d[i][0] = T[i];
 //
 //	for(int  j = 1 ; 1<<j < n ; j++)
 //		FOR(i,0,n)
-//		if(dp[i][j-1]!=-1)
-//			dp[i][j]  = dp[dp[i][j-1]][j-1];
+//		if(d[i][j-1]!=-1)
+//			d[i][j]  = d[d[i][j-1]][j-1];
 //
 //}
 //
@@ -59,11 +59,11 @@
 //
 //	for(j = log ; j>=0 ; j--)
 //		if(L[x]- (1<<j) >=L[y])
-//			x = dp[x][j];
+//			x = d[x][j];
 //	if(x==y)return x;
 //	for(j = log ; j>=0 ; j--)
-//		if(dp[x][j]!=-1  && dp[y][j]!=-1  && dp[x][j]!=dp[y][j])
-//			x = dp[x][j] , y = dp[y][j];
+//		if(d[x][j]!=-1  && d[y][j]!=-1  && d[x][j]!=d[y][j])
+//			x = d[x][j] , y = d[y][j];
 //	return T[x];
 //}
 //

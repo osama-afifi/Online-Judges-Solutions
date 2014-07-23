@@ -26,7 +26,7 @@
 //
 //const int MAX = 16;
 //int n;
-//int dp[MAX][1<<MAX];
+//int d[MAX][1<<MAX];
 //int path[MAX][1<<MAX];
 //int G[MAX][MAX];
 //vector<string>s;
@@ -53,8 +53,8 @@
 //{
 //	if(mask == target)
 //		return 0;
-//	if(dp[node][mask]!=-1)
-//		return dp[node][mask];
+//	if(d[node][mask]!=-1)
+//		return d[node][mask];
 //
 //	int mini  = 1<<25;
 //	int indi = 0;
@@ -65,7 +65,7 @@
 //			if(sol<mini)
 //				mini = sol , indi = i;
 //		}
-//		return dp[node][mask] = mini;
+//		return d[node][mask] = mini;
 //}
 //
 //
@@ -96,7 +96,7 @@
 //	{
 //		s.clear();
 //		scanf("%d",&n);
-//		Set(dp,-1);
+//		Set(d,-1);
 //		string temp;
 //		FOR(i,0,n)
 //		{

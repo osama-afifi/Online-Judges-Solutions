@@ -19,7 +19,7 @@
 //
 //int n,t;
 //ord O[10009];
-//int dp[10009];
+//int d[10009];
 //
 //int bs(int start,int val)
 //{
@@ -41,11 +41,11 @@
 //int solve(int index)
 //{
 //	if(index>=n)return 0;
-//	if(dp[index]!=-1)
-//		return dp[index];
-//	dp[index]=0;
+//	if(d[index]!=-1)
+//		return d[index];
+//	d[index]=0;
 //
-//	return dp[index]=max(solve(index+1),solve(bs(index+1,O[index].b+O[index].d))+O[index].c);
+//	return d[index]=max(solve(index+1),solve(bs(index+1,O[index].b+O[index].d))+O[index].c);
 //
 //}
 //
@@ -56,7 +56,7 @@
 //	scanf("%d",&t);
 //	while(t--)
 //	{
-//		memset(dp,-1,sizeof dp);
+//		memset(d,-1,sizeof d);
 //		scanf("%d",&n);
 //		for(int i = 0 ; i<n ; i++)
 //			scanf("%d%d%d",&O[i].b,&O[i].d,&O[i].c);

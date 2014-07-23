@@ -6,18 +6,18 @@
 //using namespace std;
 //
 //string text1,text2;
-//int dp[1001][1001];
+//int d[1001][1001];
 //
 //int lcs(int n , int m)
 //{
 //	for(int i=n;i>=0;i--)
 //		for(int j=m;j>=0;j--)
 //			if(i==n || j==m)
-//				dp[i][j]=0;
+//				d[i][j]=0;
 //			else if(text1[i]==text2[j])
-//				dp[i][j]=max(dp[i][j],dp[i+1][j+1]+1);
-//			else dp[i][j]=max(dp[i+1][j],dp[i][j+1]);
-//			return dp[0][0];
+//				d[i][j]=max(d[i][j],d[i+1][j+1]+1);
+//			else d[i][j]=max(d[i+1][j],d[i][j+1]);
+//			return d[0][0];
 //}
 //
 //int print(int n, int m , int LCS)

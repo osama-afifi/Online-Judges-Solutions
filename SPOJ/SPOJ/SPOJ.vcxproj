@@ -109,6 +109,7 @@
     <ClCompile Include="Fishmonger.cpp" />
     <ClCompile Include="Glass Beads.cpp" />
     <ClCompile Include="He is offside!.cpp" />
+    <ClCompile Include="Help the Soldier.cpp" />
     <ClCompile Include="Horrible Queries.cpp" />
     <ClCompile Include="Increasing Subsequences.cpp" />
     <ClCompile Include="Java vs C++.cpp" />
@@ -152,6 +153,7 @@
     <ClCompile Include="String problem.cpp" />
     <ClCompile Include="String Shuffle.cpp" />
     <ClCompile Include="Subset Sums.cpp" />
+    <ClCompile Include="Sums in a Triangle.cpp" />
     <ClCompile Include="The Cats and the Mouse.cpp" />
     <ClCompile Include="The Full Name.cpp" />
     <ClCompile Include="The Next Palindrome.cpp" />

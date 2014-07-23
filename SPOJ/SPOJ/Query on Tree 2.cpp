@@ -22,7 +22,7 @@
 //vector<vector< pair<int,int > > > G; 
 //long long cost[MAX];
 //int in[MAX];
-//int dp[MAX][25]; // [n][logn]
+//int d[MAX][25]; // [n][logn]
 //int L[MAX];
 //int T[MAX];
 //
@@ -40,14 +40,14 @@
 //
 //void generate(int root)
 //{
-//	Set(dp,-1);
+//	Set(d,-1);
 //	dfs(root, 0 , 0);
 //	T[root]=-1;
-//	FOR(i,0,n)dp[i][0]=T[i];
+//	FOR(i,0,n)d[i][0]=T[i];
 //	for(int j =1  ; (1<<j)<n ; j++)
 //		FOR(i,0,n)
-//		if(dp[i][j-1]!=-1)
-//			dp[i][j] = dp[dp[i][j-1]][j-1];
+//		if(d[i][j-1]!=-1)
+//			d[i][j] = d[d[i][j-1]][j-1];
 //}
 //
 //int LCA(int x ,int y)
@@ -58,11 +58,11 @@
 //	--log;
 //	for(int i = log ; i>=0 ; i--)
 //		if(L[x]-(1<<i)>=L[y])
-//			x = dp[x][i];
+//			x = d[x][i];
 //	if(x==y)return x;
 //	for(int i = log ; i>=0 ; i--)
-//		if(dp[x][i]!=-1 && dp[x][i]!=dp[y][i])
-//			x = dp[x][i] , y = dp[y][i];
+//		if(d[x][i]!=-1 && d[x][i]!=d[y][i])
+//			x = d[x][i] , y = d[y][i];
 //	return T[x];
 //
 //
@@ -75,7 +75,7 @@
 //	log--;
 //	for(int j = log ; j>=0 ; j--)
 //		if((1<<j) <= k)
-//			x = dp[x][j]   , k -= (1<<j);
+//			x = d[x][j]   , k -= (1<<j);
 //	return x;
 //}
 //
@@ -99,7 +99,7 @@
 //	k--;
 //	for(i=log;i>=0;i--)
 //		if((1<<i) <= k) 
-//		p = dp[p][i] , 	k -= (1<<i);
+//		p = d[p][i] , 	k -= (1<<i);
 //	
 //	return p;
 //}

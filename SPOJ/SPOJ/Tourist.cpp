@@ -29,7 +29,7 @@
 //const int MAX = 101;
 //int w, h;
 //char a[MAX][MAX];
-//int dp[MAX][MAX][MAX];
+//int d[MAX][MAX][MAX];
 //
 //int f(int i1, int j1, int i2, int j2)
 //{
@@ -37,13 +37,13 @@
 //		return (a[i1][j1]=='#')? -oo : (a[i1][j1] == '*');
 //	if(i1>=h||j1>=w||i2>=h||j2>=w||a[i1][j1]=='#'||a[i2][j2]=='#')
 //		return -oo;
-//	if(dp[i1][j1][i2]!=-1)
-//		return dp[i1][j1][i2];
+//	if(d[i1][j1][i2]!=-1)
+//		return d[i1][j1][i2];
 //	int s1 = f(i1+1,j1,i2+1,j2);
 //	int s2 = f(i1+1,j1,i2,j2+1);
 //	int s3 = f(i1,j1+1,i2+1,j2);
 //	int s4 = f(i1,j1+1,i2,j2+1);
-//	return dp[i1][j1][i2] = max(s1,max(s2,max(s3,s4)))+(a[i1][j1]=='*') + (a[i2][j2]=='*' && (i1 != i2 || j1 != j2));
+//	return d[i1][j1][i2] = max(s1,max(s2,max(s3,s4)))+(a[i1][j1]=='*') + (a[i2][j2]=='*' && (i1 != i2 || j1 != j2));
 //}
 //int main()
 //{
@@ -56,7 +56,7 @@
 //		FOR(i,0,h)
 //			FOR(j,0,w)
 //			cin>>a[i][j];
-//		Set(dp,-1);
+//		Set(d,-1);
 //		cout << max(0, f(0,0,0,0)) << endl;
 //	}
 //}
