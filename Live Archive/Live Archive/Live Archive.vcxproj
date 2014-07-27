@@ -94,6 +94,7 @@
     <ClCompile Include="Identify the Number.cpp" />
     <ClCompile Include="Infinite monkey theorem.cpp" />
     <ClCompile Include="Interval Product.cpp" />
+    <ClCompile Include="Joy of the Cylinder Game.cpp" />
     <ClCompile Include="Log Books.cpp" />
     <ClCompile Include="Making Decisions.cpp" />
     <ClCompile Include="Minimal Backgammon.cpp" />

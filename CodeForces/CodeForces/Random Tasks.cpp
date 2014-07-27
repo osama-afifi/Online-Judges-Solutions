@@ -28,63 +28,35 @@
 //
 //
 //LL m;
-//int k;
 //LL C[65][65];
-//LL dp[65][65][2];
-//
-////LL solve(int idx , int one, bool b)
-////{
-////	if(one>k)return 0;
-////	if(idx==-1)
-////		return one==k;
-////
-////	if(dp[idx][one][b]!=-1)
-////		return dp[idx][one][b];
-////
-////	LL sum = 0;
-////	sum+= solve(idx-1, one, b | ( n & (1LL<<idx)) );
-////	if( b ||  n &(1LL<<idx) )
-////		sum+= solve(idx-1, one+1, b );
-////	return dp[idx][one][b] = sum;
-////}
-//
-//LL calc(int n, int i, int one, bool b){
-//	if (one < 0)
-//		return 0;
-//	if (i == -1)
-//		return !one;
-//	if (dp[i][one][b] == -1)
-//		return dp[i][one][b];
-//	LL sum=0;
-//	sum += calc(n, i - 1, one, b || ((1<<i)&n));
-//	if (b || ((1<<i)&n))
-//		sum += calc(n, i - 1, one - 1, b);
-//
-//	return dp[i][one][b] = sum;
-//}
 //
 //LL choose(int n , int k)
 //{
-//	if(n<=0)
-//		return 0;
-//	if(C[n][k]!=-1)
-//		return C[n][k];
+//	if(n<=0)return 0;
 //	if(k==1)return n;
+//	if(C[n][k]!=-1)	return C[n][k];
 //	return C[n][k] = choose(n-1,k) + choose(n-1,k-1);
 //}
-////	0000101001001
 //
-//LL solve(LL n)
+////	0000101001001
+//LL solve(LL n, int k)
 //{
-//	FOR
+//	LL sum=0;
+//	int ones=0;
+//	for(int i=63; i>=0; i--)
+//		if(k-ones>=0 && (n & (1LL<<i)))
+//			sum += choose(i,k-ones), ones++;
+//	return sum;
 //}
 //
+//int k;
+//
 //LL solve(LL n)
 //{
-//	Set(dp,-1);
-//	LL x = calc(n, 64, k, 0);
-//	Set(dp,-1);
-//	LL y = calc(2*n,64, k,0);
+//	//	Set(dp,-1);
+//	LL x = solve(n, k);
+//	//	Set(dp,-1);
+//	LL y = solve(2*n,k);
 //	return y-x;
 //}
 //
@@ -94,10 +66,9 @@
 //
 //	Set(C,-1);
 //	choose(64,64);
-//
 //	while(cin>>m>>k)
 //	{
-//		LL b= 0, e = 1e18, res = -1;
+//		LL b= 1, e = 1e18, res = -1;
 //		while(b<=e)
 //		{
 //			LL mid = (b+e)/2;

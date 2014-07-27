@@ -5,7 +5,6 @@
 //#include<stdio.h>
 //#include<algorithm>
 //#include<vector>
-//#include<set>
 //#include<map>
 //#include<queue>
 //#define FOR(i, a, b) for( int i = (a); i < (b); i++ )
@@ -15,90 +14,69 @@
 //#define mp make_pair
 //typedef long long LL;
 //using namespace std;
-//int oo=1<<25;
 //
+//int oo=1<<28;
 //
-//int part[100];
-//vector< pair< pair<int,int>,int> >N;
-//		vector< vector<int> >adj;
-//void dfs(int idx , int x)
-//{
-//	if(part[idx]!=-1)
-//		return;
-//	part[idx] = x;
-//	FOR(i,0,adj[idx].size())
-//		dfs(adj[idx][i] , x);
-//}
+//int arr[100009];
+//int arr2[100009];
 //
-//int main() 
+//int main()
 //{
 //	freopen("input.in", "r" , stdin);
-//	int n,m;
-//	while(cin>>n>>m)
+//
+//	int n;
+//
+//	while(cin>>n)
 //	{
-//		//vector< pair<int,int> >V;
-//		N.clear();
-//		adj.clear();
-//		Set(part,-1);
-//		adj.resize(n+1);
-//		int d[100];
-//		Set(d,0);
-//		FOR(i,0,m)
-//		{
-//			int a,b;
-//			cin>>a>>b;
-//			//V.push_back(mp(a,b));
-//			adj[a-1].push_back(b-1);
-//			adj[b-1].push_back(a-1);
-//			d[a-1]++;
-//			d[b-1]++;
-//		}
-//
-//
-//		int c = 0;
+//		int beg, end;
+//		bool valid=1;
 //		FOR(i,0,n)
 //		{
-//			if(part[i]==-1)
+//			cin>>arr[i];
+//			arr2[i] = arr[i];
+//		}
+////		arr[n]=oo;
+//		sort(arr2,arr2+n);
+////		arr2[n]=oo;
+////		n++;
+//		FOR(i,0,n-1)
+//		{
+//			beg = end = i;;
+//			bool enter =0;
+//			while(arr[i]>arr[i+1])
 //			{
-//			dfs(i,c);
-//			++c;
+//				i++;
+//				enter = 1;
+//				end++;
 //			}
+//			end -= (end==n);
+//			if(enter)
+//			{
+//				reverse(arr+beg,arr+beg+(end-beg+1));
+//				//valid =1;
+//				//FOR(i,0,n)
+//				//{
+//				//	valid &= (arr[i]==arr2[i]);	
+//				//}
+//				break;
+//			}
+//
 //		}
 //
-//			FOR(i,0,n)
-//				N.push_back(mp(mp(part[i],d[i]),i));
-//			sort(N.begin() , N.end());
-//			reverse(N.begin() , N.end());
-//			set<int>S;
-//			LL res = 1;
-//			FOR(i,0,n)
-//			{
-//				FOR(j,0,adj[N[i].second].size())
-//				{
-//					if(S.find(adj[N[i].second][j])!=S.end())
-//					{
-//						res *=2;							
-//						break;
-//					}
-//				}
-//				S.insert(N[i].second);
-//			}
 //
-//			//
-//			res = 1;
-//			FOR(i,0,c)
-//			{
-//				int q = 0;
-//				FOR(j,0,n)
-//					if(part[j]==i)
-//						q++;
-//				--q;
-//				while(q-->0)
-//					res *=2;
-//			}
-//			cout<<res<<endl;
+//		FOR(i,0,n)
+//		{
+//			valid &= (arr[i]==arr2[i]);	
+//		}
 //
-//
+//		if(valid)
+//		{
+//			cout << "yes" <<endl;
+//			cout << beg+1 << " " <<end+1 <<endl;
+//		}
+//		else 
+//			cout << "no" <<endl;
 //	}
+//
 //	return 0;
 //}
