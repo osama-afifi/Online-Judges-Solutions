@@ -54,5 +54,8 @@
     <ClCompile Include="Ac.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="LongLongNim.cpp">
+      <Filter>Source Files\IndividualProblems</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
