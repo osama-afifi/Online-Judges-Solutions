@@ -104,6 +104,7 @@
     <ClCompile Include="Pasti Pas.cpp" />
     <ClCompile Include="Pearls.cpp" />
     <ClCompile Include="Perfect Matching.cpp" />
+    <ClCompile Include="Playing With Stones.cpp" />
     <ClCompile Include="Robots on Ice.cpp" />
     <ClCompile Include="Route Redundancy.cpp" />
     <ClCompile Include="Slim Span.cpp" />

@@ -124,6 +124,7 @@
     <ClCompile Include="Longest path in a tree.cpp" />
     <ClCompile Include="Lowest Common Ancestor(Sparse Table).cpp" />
     <ClCompile Include="Lowest Common Ancestor.cpp" />
+    <ClCompile Include="Matrix Game.cpp" />
     <ClCompile Include="Maximum Sum.cpp" />
     <ClCompile Include="Medium Factorization.cpp" />
     <ClCompile Include="Minimum Rotations.cpp" />
