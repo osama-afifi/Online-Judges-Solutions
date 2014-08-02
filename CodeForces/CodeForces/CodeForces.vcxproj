@@ -89,6 +89,7 @@
     <ClCompile Include="Education Reform.cpp" />
     <ClCompile Include="Fish.cpp" />
     <ClCompile Include="Flipping Game.cpp" />
+    <ClCompile Include="Furlo and Rublo and Game.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="Games with Rectangle.cpp" />
     <ClCompile Include="Good Substrings.cpp" />
