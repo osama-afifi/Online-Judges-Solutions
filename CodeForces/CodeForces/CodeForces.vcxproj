@@ -116,6 +116,7 @@
     <ClCompile Include="Password.cpp" />
     <ClCompile Include="Permutations.cpp" />
     <ClCompile Include="Petr-Hash.cpp" />
+    <ClCompile Include="Pipeline.cpp" />
     <ClCompile Include="Pocket Book.cpp" />
     <ClCompile Include="Points.cpp" />
     <ClCompile Include="Quantity of Strings.cpp" />

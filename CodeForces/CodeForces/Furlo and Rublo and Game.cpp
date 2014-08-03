@@ -16,19 +16,35 @@
 #define mp make_pair
 typedef long long LL;
 using namespace std;
-int oo=1<<25;
+
 
 LL grundy(LL x) {
 
 	if(x<4)
 		return 0;
 	set<LL> moves;
-	LL L = floor(sqrt(x));
-	LL R = ceil(sqrt(sqrt(x)));
+	LL L = ceil(sqrt(sqrt(x)));
+	LL R = floor(sqrt(x));
 	LL g1 = grundy(L);
 	LL g2 = grundy(R);
 	moves.insert(g1);
 	moves.insert(g2);
+	moves.insert(grundy((L+(R-L)/2)));
+	LL g= 0;
+	while (moves.find(g)!=moves.end()) g++;
+	return g;
+}
+
+
+LL brute(LL x) {
+
+	if(x<4)
+		return 0;
+	set<LL> moves;
+	LL L = ceil(powl((long double)x, 0.25));
+	LL R = floor(powl((long double)x, 0.5));
+	for(LL i =L ; i<=R ; i++)
+		moves.insert(brute(i));
 	LL g= 0;
 	while (moves.find(g)!=moves.end()) g++;
 	return g;
@@ -37,16 +53,23 @@ LL grundy(LL x) {
 int main()
 {
 	freopen("input.in", "r" , stdin);
-
+		
+		FOR(i,0,10000)
+			if(brute(i)!=grundy(i))
+			{
+			cout<< i<< " " << brute(i) << " " << grundy(i)<<endl;
+			//break;
+			}
 	int n;
 	while(cin>>n)
 	{
+
 		LL res=0;
 		FOR(i,0,n)
 		{
 			LL num;
 			cin>>num;
-			res ^= grundy(sqrt(num));
+			res ^= grundy(num);
 		}
 
 		if(res)
