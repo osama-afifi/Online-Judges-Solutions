@@ -17,76 +17,47 @@
 //typedef long long LL;
 //using namespace std;
 //
+//vector<int> pos[1000009];
 //
-//int dp[1000009];
-//LL grundy(LL x) {
-//
-//	if(x<4)
-//		return 0;
-//	if(dp[x]!=-1)
-//		return dp[x];
-//
-//	set<LL> moves;
-//	LL L = ceil(sqrt(sqrt(x)));
-//	LL R = floor(sqrt(x));
-//	for(LL i =L ; i<=R ; i++)
-//		moves.insert(grundy(i));
-//	moves.insert(grundy(R));
-//	LL g= 0;
-//	while (moves.find(g)!=moves.end()) g++;
-//	return dp[x]=g;
-//}
-//
-//LL G(LL x)
+//__inline bool bs(int g, int l , int r)
 //{
-//if(x<4)
-//		return 0;
-//	set<LL> moves;
-//	LL L = ceil(sqrt(sqrt(x)));
-//	LL R = floor(sqrt(x));
-//	for(LL i =L ; i<=R ; i++)
-//		moves.insert(grundy(i));
-//	moves.insert(grundy(R));
-//	LL g= 0;
-//	while (moves.find(g)!=moves.end()) g++;
-//	return g;
+//	vector<int>::iterator it = lower_bound(pos[g].begin(),pos[g].end(),l);
+//	if(it!=pos[g].end() && (*it)<=r)
+//		return true;
+//	return false;
 //}
 //
-//LL brute(LL x) {
-//
-//	if(x<4)
-//		return 0;
-//	set<LL> moves;
-//	LL L = ceil(powl((long double)x, 0.25));
-//	LL R = floor(powl((long double)x, 0.5));
-//	for(LL i =L ; i<=R ; i++)
-//		moves.insert(brute(i));
-//	LL g= 0;
-//	while (moves.find(g)!=moves.end()) g++;
-//	return g;
-//}
 //
 //int main()
 //{
 //	freopen("input.in", "r" , stdin);
-//		//
-//		//FOR(i,0,10000)
-//		//	if(brute(i)!=grundy(i))
-//		//	{
-//		//	cout<< i<< " " << brute(i) << " " << grundy(i)<<endl;
-//		//	//break;
-//		//	}
 //
-//	int n;
+//	FOR(i,1,90000)
+//	{
+//		int L = ceil(sqrt(sqrt(i)));
+//		int R = sqrt(i);
+//		R = (R>=i) ? i-1 : R;
+//		int g=0;
+//		while(bs(g,L,R))
+//			g++;
+//		pos[g].push_back(i);
+//	}
+//
+//	LL n;
 //	while(cin>>n)
 //	{
-//
 //		LL res=0;
 //		FOR(i,0,n)
 //		{
-//			LL num;
-//			cin>>num;
-//			res ^= G(num);
+//			LL x;
+//			cin>>x;
+//			LL L = ceil(sqrt(sqrt(x)));
+//			LL R = sqrt(x);
+//			R = (R>=x) ? x-1 : R;				
+//			int g=0;
+//			while(bs(g,L,R))
+//				g++;
+//			res ^= g;
 //		}
 //
 //		if(res)

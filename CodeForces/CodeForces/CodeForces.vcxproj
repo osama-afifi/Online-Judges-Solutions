@@ -84,6 +84,7 @@
     <ClCompile Include="Choosing Symbol Pairs.cpp" />
     <ClCompile Include="Cipher.cpp" />
     <ClCompile Include="Cycles.cpp" />
+    <ClCompile Include="Devu and his Brother.cpp" />
     <ClCompile Include="Dima and Sequence.cpp" />
     <ClCompile Include="Dima and Two Sequences.cpp" />
     <ClCompile Include="Education Reform.cpp" />
@@ -96,6 +97,7 @@
     <ClCompile Include="Greg and Array.cpp" />
     <ClCompile Include="Hexadecimal%27s Numbers.cpp" />
     <ClCompile Include="Hungry Sequence.cpp" />
+    <ClCompile Include="Industrial Nim.cpp" />
     <ClCompile Include="Inna and Sequence.cpp" />
     <ClCompile Include="Intresting Game.cpp" />
     <ClCompile Include="Knight Tournament.cpp" />
@@ -114,6 +116,7 @@
     <ClCompile Include="Multiplication Table.cpp" />
     <ClCompile Include="Nearly Lucky Number.cpp" />
     <ClCompile Include="Nuclear Fission.cpp" />
+    <ClCompile Include="Number Busters.cpp" />
     <ClCompile Include="Password.cpp" />
     <ClCompile Include="Permutations.cpp" />
     <ClCompile Include="Petr-Hash.cpp" />
