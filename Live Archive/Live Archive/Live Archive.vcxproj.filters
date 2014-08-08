@@ -132,6 +132,9 @@
     <ClCompile Include="Playing With Stones.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Entmoot.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="input.in" />

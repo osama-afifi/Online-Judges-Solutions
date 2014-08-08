@@ -87,6 +87,7 @@
     <ClCompile Include="Different Digits.cpp" />
     <ClCompile Include="DNA Sequences.cpp" />
     <ClCompile Include="Eleven.cpp" />
+    <ClCompile Include="Entmoot.cpp" />
     <ClCompile Include="Equal Sum Partitions.cpp" />
     <ClCompile Include="Hailstone HOTPO.cpp" />
     <ClCompile Include="Horrible Quiz.cpp" />
