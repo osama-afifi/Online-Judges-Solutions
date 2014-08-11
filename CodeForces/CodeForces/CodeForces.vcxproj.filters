@@ -228,6 +228,12 @@
     <ClCompile Include="Number Busters.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Little Elephant and Elections.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Building Bridges.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="input.in">

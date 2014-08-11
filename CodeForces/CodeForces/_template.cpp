@@ -17,7 +17,8 @@
 #define mp make_pair
 typedef long long LL;
 using namespace std;
-int oo=1<<25;
+
+const LL oo = 1LL<<25;
 
 
 int main()
