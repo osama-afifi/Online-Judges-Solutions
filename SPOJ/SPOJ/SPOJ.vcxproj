@@ -132,6 +132,7 @@
     <ClCompile Include="Multiples of 3.cpp" />
     <ClCompile Include="Nonnegative Partial Sums.cpp" />
     <ClCompile Include="Number of common divisors.cpp" />
+    <ClCompile Include="Order statistic set.cpp" />
     <ClCompile Include="Palindromes.cpp" />
     <ClCompile Include="Parity.cpp" />
     <ClCompile Include="Period.cpp" />
@@ -139,6 +140,7 @@
     <ClCompile Include="PiggyBank.cpp" />
     <ClCompile Include="Potholers.cpp" />
     <ClCompile Include="Prime Generator.cpp" />
+    <ClCompile Include="QMAX3VN.cpp" />
     <ClCompile Include="Query on Tree 2.cpp" />
     <ClCompile Include="Query on Tree.cpp" />
     <ClCompile Include="Rectangles Perimeter.cpp" />
@@ -166,6 +168,7 @@
     <ClCompile Include="Trigraph.cpp" />
     <ClCompile Include="Trip.cpp" />
     <ClCompile Include="Up Subsequence.cpp" />
+    <ClCompile Include="Yet another range difference query!.cpp" />
     <ClCompile Include="Yodaness Level.cpp" />
   </ItemGroup>
   <ItemGroup>

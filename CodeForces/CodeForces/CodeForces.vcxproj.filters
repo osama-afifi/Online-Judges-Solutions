@@ -234,6 +234,18 @@
     <ClCompile Include="Building Bridges.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="A Lot of Games.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Little Pony and Harmony Chest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Pashmak and Parmida%27s problem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Jzzhu and Cities.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="input.in">

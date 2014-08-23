@@ -76,6 +76,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="A Lot of Games.cpp" />
     <ClCompile Include="A. Snow Footprints.cpp" />
     <ClCompile Include="Another Problem on Strings.cpp" />
     <ClCompile Include="Basketball Team.cpp" />
@@ -101,12 +102,14 @@
     <ClCompile Include="Industrial Nim.cpp" />
     <ClCompile Include="Inna and Sequence.cpp" />
     <ClCompile Include="Intresting Game.cpp" />
+    <ClCompile Include="Jzzhu and Cities.cpp" />
     <ClCompile Include="Knight Tournament.cpp" />
     <ClCompile Include="Let%27s Go Rolling!.cpp" />
     <ClCompile Include="Line.cpp" />
     <ClCompile Include="Little Elephant and Elections.cpp" />
     <ClCompile Include="Little Elephant and Interval.cpp" />
     <ClCompile Include="Little Elephant and Magic Square.cpp" />
+    <ClCompile Include="Little Pony and Harmony Chest.cpp" />
     <ClCompile Include="Longest Regular Bracket Sequence.cpp" />
     <ClCompile Include="Lucky Probability.cpp" />
     <ClCompile Include="Lucky String.cpp" />
@@ -119,6 +122,7 @@
     <ClCompile Include="Nearly Lucky Number.cpp" />
     <ClCompile Include="Nuclear Fission.cpp" />
     <ClCompile Include="Number Busters.cpp" />
+    <ClCompile Include="Pashmak and Parmida%27s problem.cpp" />
     <ClCompile Include="Password.cpp" />
     <ClCompile Include="Permutations.cpp" />
     <ClCompile Include="Petr-Hash.cpp" />

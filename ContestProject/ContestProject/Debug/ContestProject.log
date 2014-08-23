@@ -1,0 +1,22 @@
+﻿Build started 8/20/2014 12:29:37 AM.
+     1>Project "D:\Osama\Programming\Online-Judges-Solutions\ContestProject\ContestProject\ContestProject.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt 2.cpp
+         2.cpp
+     1>d:\osama\programming\online-judges-solutions\contestproject\contestproject\2.cpp(35): warning C4996: 'freopen': This function or variable may be unsafe. Consider using freopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(233) : see declaration of 'freopen'
+     1>d:\osama\programming\online-judges-solutions\contestproject\contestproject\2.cpp(54): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(290) : see declaration of 'scanf'
+     1>d:\osama\programming\online-judges-solutions\contestproject\contestproject\2.cpp(69): warning C4018: '<' : signed/unsigned mismatch
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Osama\Programming\Online-Judges-Solutions\ContestProject\Debug\ContestProject.exe" /INCREMENTAL /NOLOGO pthreadVC2.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\Osama\Programming\Online-Judges-Solutions\ContestProject\Debug\ContestProject.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Osama\Programming\Online-Judges-Solutions\ContestProject\Debug\ContestProject.lib" /MACHINE:X86 Debug\1.obj
+         Debug\2.obj
+         Debug\3.obj
+         Debug\4.obj
+         Debug\5.obj
+         ContestProject.vcxproj -> D:\Osama\Programming\Online-Judges-Solutions\ContestProject\Debug\ContestProject.exe
+     1>Done Building Project "D:\Osama\Programming\Online-Judges-Solutions\ContestProject\ContestProject\ContestProject.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.12
