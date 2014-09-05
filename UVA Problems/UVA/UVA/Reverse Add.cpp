@@ -1,47 +1,25 @@
-//#include <iostream>
-//#include <string>
-//#include <math.h>
-//#include <cmath>
+//#include<iostream>
+//#include<iomanip>
+//#include<string>
+//#include<cstring>
+//#include<stdio.h>
+//#include<algorithm>
+//#include<vector>
+//#include<map>
+//#include<sstream>
+//#include<queue>
+//#include<set>
+//#include<stack>
+//#include<math.h>
 //
+//
+//#define FOR(i, a, b) for( int i = (a); i < (b); i++ )
+//#define ALL(A) A.begin(), A.end()
+//#define Set(a, s) memset(a, s, sizeof (a))
+//#define pb push_back
+//#define mp make_pair
+//typedef long long LL;
 //using namespace std;
-//
-//
-//int INTEGER_TO_PALIN_ARRAY(unsigned long long n)
-//{
-//	unsigned long long palin[1000];
-//
-//	for(i=0 ; n!=0 ; i++ )
-//		{
-//			palin[i]=n%10;
-//			n=n/10;
-//		}
-//
-//
-//	return palin;
-//
-//}
-//
-//int PALIN_ARR_TO_INT__ARR(int i)
-//{
-//	for( int j=0 ;j<i ; j++ )
-//			org[j]=palin[i-j-1];
-//
-//	return org;
-//}
-//
-////array to palin and right no
-//int ARR_TO_INT_ARR(int i)
-//{
-//		for( int j=0 ;j<i ; j++ )
-//		{
-//			dig_pal=org[j];
-//		number_pal= number_pal + (dig_pal* pow( 10.0 , j )); //rev
-//
-//		dig_rig=org[i-j-1];
-//		number_rig= number_rig + (dig_rig* pow( 10.0 , j )); //rig
-//
-//		}
-//}
 //
 //int main()
 //{

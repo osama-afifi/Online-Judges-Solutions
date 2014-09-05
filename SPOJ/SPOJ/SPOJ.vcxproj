@@ -82,6 +82,7 @@
     <ClCompile Include="ABCDEF.cpp" />
     <ClCompile Include="ACMAKER.cpp" />
     <ClCompile Include="Aggressive cows.cpp" />
+    <ClCompile Include="Amazing Prime Sequence.cpp" />
     <ClCompile Include="Angels and Devils.cpp" />
     <ClCompile Include="Balancing the Stone.cpp" />
     <ClCompile Include="Bitmap.cpp" />
@@ -91,6 +92,7 @@
     <ClCompile Include="Can you answer these queries I.cpp" />
     <ClCompile Include="Can you answer these queries III.cpp" />
     <ClCompile Include="Can you answer these queries V.cpp" />
+    <ClCompile Include="Can you answer these queries VI.cpp" />
     <ClCompile Include="Card Trick.cpp" />
     <ClCompile Include="Chop Ahoy! Revisited!.cpp" />
     <ClCompile Include="Cobbled streets.cpp" />
@@ -103,10 +105,13 @@
     <ClCompile Include="Distinct Substrings.cpp" />
     <ClCompile Include="DNA Laboratory.cpp" />
     <ClCompile Include="Dungeon of Death.cpp" />
+    <ClCompile Include="Euler Totient Function.cpp" />
     <ClCompile Include="Factorial.cpp" />
+    <ClCompile Include="Fibonacci Sum.cpp" />
     <ClCompile Include="Find String Roots.cpp" />
     <ClCompile Include="Find the Clones.cpp" />
     <ClCompile Include="Fishmonger.cpp" />
+    <ClCompile Include="Flibonakki.cpp" />
     <ClCompile Include="Glass Beads.cpp" />
     <ClCompile Include="He is offside!.cpp" />
     <ClCompile Include="Help the Soldier.cpp" />
@@ -130,7 +135,9 @@
     <ClCompile Include="Minimum Rotations.cpp" />
     <ClCompile Include="Muddy Fields.cpp" />
     <ClCompile Include="Multiples of 3.cpp" />
+    <ClCompile Include="N-Factorful.cpp" />
     <ClCompile Include="Nonnegative Partial Sums.cpp" />
+    <ClCompile Include="Not So Flat After All.cpp" />
     <ClCompile Include="Number of common divisors.cpp" />
     <ClCompile Include="Order statistic set.cpp" />
     <ClCompile Include="Palindromes.cpp" />
@@ -139,6 +146,7 @@
     <ClCompile Include="Philosophers Stone.cpp" />
     <ClCompile Include="PiggyBank.cpp" />
     <ClCompile Include="Potholers.cpp" />
+    <ClCompile Include="Power of Integer.cpp" />
     <ClCompile Include="Prime Generator.cpp" />
     <ClCompile Include="QMAX3VN.cpp" />
     <ClCompile Include="Query on Tree 2.cpp" />

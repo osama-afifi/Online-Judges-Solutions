@@ -15,7 +15,7 @@
 //int maxi;
 //const int oo =1<<25;
 //vector<int>sol;
-//bool s=0;
+//int s=0;
 //void euler(int node)
 //{
 //
@@ -26,9 +26,9 @@
 //				G[node][i]--;G[i][node]--;
 //				euler(i);
 //				s^=1;
-//				if(s)
-//					printf("%d %d\n",node,i);
-//				else
+//		//		if(s)
+//		//			printf("%d %d\n",node,i);
+//		//		else
 //					printf("%d %d\n",i,node);
 //			}
 //}
@@ -85,6 +85,7 @@
 //
 //		if(valid)
 //		{
+//			s=0;
 //			int mini=oo;
 //			int indi;
 //			for(int i = 1 ; i <=50 ; i++)

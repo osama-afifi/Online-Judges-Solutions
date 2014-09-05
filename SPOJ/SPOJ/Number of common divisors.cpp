@@ -59,13 +59,12 @@
 //int main ()
 //{ 
 //	freopen("input.in","r",stdin);
-//	int z=gcd(1000000,1000000);
 //	memset(arr,0 , sizeof arr);
 //
-//	divc(z);
+//	divc(1000000);
 //	int t;
 //
-//	cin>>t;
+//	scanf("%d",&t);
 //	
 //int a,b,x,y;	
 //	while(t--)

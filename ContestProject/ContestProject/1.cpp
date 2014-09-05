@@ -21,43 +21,172 @@
 //typedef long long LL;
 //using namespace std;
 //
-////LL dp[1<<21][21][2];
+//
+//char a[10][10];
+//
+//bool yes=0;
+//int n;
+//
+//int kx[] = {1,2,-1,-2,-1,-2,1,2};
+//int ky[] = {2,1,2,1,-2,-1,-2,-1};
+//
+//int Kx[] = {0,0,1,-1,1,-1,-1,1};
+//int Ky[] = {1,-1,0,0,1,1,-1,-1};
+//
+//
+//__inline bool inside(int i , int j)
+//{
+//	return (i>=0 && j>=0 && i<8 && j<8);
+//}
 ////
-////LL solve(int mask, int p, bool b)
+////void solve(int i1,int j1 ,int i2, int j2, int p, int m,bool turn)
 ////{
-////	if(mask==0)
-////		return 1;
-////	if(dp[mask][p][b]!=-1)
-////		return dp[mask][p][b];
-////	LL sum=0;
-////	FOR(i,1,21)
-////		if((mask & (1<<(i-1))))
-////			if(p==0 || (!b && i>p) || (b && i<p))
-////				sum+=solve(mask-(1<<(i-1)),i,b^1);
-////	return dp[mask][p][b]=sum;
+////	if(yes)return;
+////	if(!inside(i1,j1) || !inside(i2,j2))
+////		return;
+////	if(m>n)
+////		return;
+////	if(p==0)
+////	{
+////		yes=1;
+////		return;
+////	}
+////	//FOR(k,0,8)
+////	//{
+////	//	int newi=i1+Kx[k];
+////	//	int newj=j1+Ky[k];
+////	//	if(a[newi][newj]=='.')
+////	//	{
+////	//		swap(a[newi][newj],a[i1][j1]);
+////	//		solve(newi,newj,i2,j2,p,m+1);
+////	//	}
+////	//	else if(a[newi][newj]=='P')
+////	//	{
+////	//		swap(a[newi][newj],a[i1][j1]);
+////	//		a[i1][j1] = '.';
+////	//		solve(newi,newj,i2,j2,p-1,m+1);
+////	//	}
+////	//}
+////
+////	FOR(k,0,8)
+////	{
+////		int newi=i2+kx[k];
+////		int newj=j2+ky[k];
+////		if(a[newi][newj]!='p')
+////		{
+////			swap(a[newi][newj],a[i2][j2]);
+////			a[i2][j2] = '.';
+////			solve(i1,j1,newi,newj,p,m+1,turn^1);
+////		}
+////		else if(a[newi][newj]=='P')
+////		{
+////			swap(a[newi][newj],a[i2][j2]);
+////			a[i2][j2] = '.';
+////			solve(i1,j1,newi,newj,p-1,m+1,turn^1);
+////		}
+////	}
+////
 ////}
+//
+//bool vis[8][8][1<<10];
 //
 //int main()
 //{
 //	freopen("input.in", "r" , stdin);
-//	//freopen("output.out", "w" , stdout);
-//	LL arr[21]= {0,2,2,4,10,32,122,544,2770,15872,101042,707584,5405530,44736512,398721962,3807514624,38783024290,419730685952,4809759350882,58177770225664,740742376475050};
-//	/*	Set(dp,-1);
-//		solve((1<<20)-1,0,0);
-//		FOR(i,1,21)
-//			arr[i] = solve((1<<i)-1,0,0);;
-//		FOR(i,1,21)
-//			cout << 2*arr[i] << "," ;*/
-//	int k,t,n;
+//
+//	int t;
 //	cin>>t;
-//	int kase=0;
 //	while(t--)
 //	{
-//		cin>>k;
 //		cin>>n;
-//		LL res = arr[n];
-//		cout <<  ++kase << " " << res << endl;
+//		yes=0;
+//		FOR(i,0,8)
+//			FOR(j,0,8)
+//			cin>>a[i][j];
+//		pair<int,int>king;
+//		pair<int,int>knight;
+//		int m[10][10];
+//		Set(m,-1);
+//
+//		int p=0;
+//		FOR(i,0,8)
+//			FOR(j,0,8)
+//		{
+//
+//			if(a[i][j]=='k')
+//				knight = mp(i,j);
+//			if(a[i][j]=='P')
+//			{
+//				m[i][j]=1<<p;
+//				++p;
+//			}
+//
+//		}
+//
+//		if(p==0)
+//		{
+//			cout << "Yes" <<endl;
+//			continue;
+//		}
+//
+//
+//		Set(vis,0);
+//		queue<int>Q;
+//		Q.push(knight.first);
+//		Q.push(knight.second);
+//		Q.push(0);
+//		Q.push(0);
+//
+//		while(Q.size())
+//		{
+//			int k_x = Q.front();Q.pop();
+//			int k_y = Q.front();Q.pop();
+//			int mask = Q.front();Q.pop();
+//			int c = Q.front();Q.pop();
+//
+//			if(c>n)
+//				continue;
+//			if(mask==(1<<p)-1)
+//			{
+//				yes=1;
+//				break;
+//			}
+//
+//			if(vis[k_x][k_y][mask])
+//				continue;
+//			vis[k_x][k_y][mask]=1;
+//			FOR(k,0,8)
+//			{
+//				int newi=k_x+kx[k];
+//				int newj=k_y+ky[k];
+//				if(!inside(newi,newj))
+//					continue;
+//
+//				if((a[newi][newj]=='.' || a[newi][newj]=='P' || a[newi][newj]=='k'))
+//				{
+//
+//					int nmask=mask;
+//					if(a[newi][newj]=='P' &&!(mask & m[newi][newj]))
+//						nmask|=m[newi][newj];
+//					//		if(!vis[newi][newj][nmask])
+//					{
+//						Q.push(newi);
+//						Q.push(newj);
+//						Q.push(nmask);
+//						Q.push(c+1);	
+//					}
+//				}
+//			}
+//
+//
+//		}
+//
+//		if(yes)
+//			cout << "Yes" <<endl;
+//		else
+//			cout << "No" <<endl;
 //	}
-//LL x=232;
+//
+//
 //	return 0;
 //}

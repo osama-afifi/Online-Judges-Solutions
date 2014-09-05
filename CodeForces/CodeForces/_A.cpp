@@ -21,32 +21,47 @@
 //typedef long long LL;
 //using namespace std;
 //
+//		char M[109][109];
+//
+//		bool check(int i, int j)
+//		{
+//			int c=0;
+//			c += (M[i+1][j]=='o');
+//			c += (M[i][j+1]=='o');
+//			c += (M[i-1][j]=='o');
+//			c += (M[i][j-1]=='o');
+//			return c%2==0;
+//		}
+//
 //int main()
 //{
 //	freopen("input.in", "r" , stdin);
 //
-//	int n,m;
-//	while(cin>>n>>m)
+//	int n;
+//	
+//	while(cin>>n)
 //	{
 //
-//		int c=0;
-//		int d=0;
-//		while(1)
-//		{
-//			n--;
-//			if(n<0)break;
-//			c++;
-//			if(c%m==0)
+//		Set(M,0);
+//
+//
+//	FOR(i,1,n+1)
+//		FOR(j,1,n+1)
+//			cin>>M[i][j];
+//
+//	bool b=1;
+//		FOR(i,1,n+1)
+//		FOR(j,1,n+1)
+//			if(!check(i,j))
 //			{
-//				c=0;
-//				n++;
+//				b=0;
+//				break;
 //			}
-//			d++;
-//		}
 //
-//		cout << d << endl;
-//
+//			if(b)
+//				cout << "YES" <<endl;
+//			else 
+//				cout << "NO" <<endl;
 //	}
-//
 //	return 0;
 //}
