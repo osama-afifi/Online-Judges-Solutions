@@ -64,6 +64,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Fiborial.cpp" />
+    <ClCompile Include="Little Chu.cpp" />
     <ClCompile Include="Pawn Game.cpp" />
   </ItemGroup>
   <ItemGroup>

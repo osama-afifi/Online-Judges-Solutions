@@ -220,6 +220,7 @@
     <ClCompile Include="Maze Traversal.cpp" />
     <ClCompile Include="Meeting Prof. Miguel...cpp" />
     <ClCompile Include="Memory Overflow.cpp" />
+    <ClCompile Include="Minimal coverage.cpp" />
     <ClCompile Include="Minimum Transport Cost.cpp" />
     <ClCompile Include="Moliu Number Generator.cpp" />
     <ClCompile Include="MPI Maelstrom.cpp" />
@@ -237,6 +238,7 @@
     <ClCompile Include="Password Search.cpp" />
     <ClCompile Include="Passwords.cpp" />
     <ClCompile Include="Permutation.cpp" />
+    <ClCompile Include="Playing with Stones.cpp" />
     <ClCompile Include="Power Transmission.cpp" />
     <ClCompile Include="PowerStrings.cpp" />
     <ClCompile Include="Pyramid.cpp" />
@@ -257,6 +259,7 @@
     <ClCompile Include="Squares.cpp" />
     <ClCompile Include="Sticks.cpp" />
     <ClCompile Include="Strategic Defense Initiative.cpp" />
+    <ClCompile Include="strcmp Anyone.cpp" />
     <ClCompile Include="String Distance and Transform Process.cpp" />
     <ClCompile Include="String to Palindrome.cpp" />
     <ClCompile Include="Strings.cpp" />

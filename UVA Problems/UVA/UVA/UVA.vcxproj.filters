@@ -688,5 +688,14 @@
     <ClCompile Include="Duathlon.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Playing with Stones.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Minimal coverage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="strcmp Anyone.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
