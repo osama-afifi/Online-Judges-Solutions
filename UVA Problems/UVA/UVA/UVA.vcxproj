@@ -290,6 +290,7 @@
     <ClCompile Include="Travel in Desert.cpp" />
     <ClCompile Include="Tree Summing.cpp" />
     <ClCompile Include="Trouble of 13-Dots.cpp" />
+    <ClCompile Include="Trust groups.cpp" />
     <ClCompile Include="Twin Primes.cpp" />
     <ClCompile Include="Ubiquitous Religions.cpp" />
     <ClCompile Include="Ultra-QuickSort.cpp" />

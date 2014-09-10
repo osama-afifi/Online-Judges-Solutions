@@ -697,5 +697,8 @@
     <ClCompile Include="strcmp Anyone.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Trust groups.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

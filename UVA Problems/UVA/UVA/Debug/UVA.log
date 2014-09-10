@@ -1,12 +1,21 @@
-﻿Build started 9/10/2014 3:13:52 AM.
+﻿Build started 9/10/2014 6:54:46 PM.
      1>Project "D:\Osama\Programming\Online-Judges-Solutions\UVA Problems\UVA\UVA\UVA.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt "Minimal coverage.cpp"
-         Minimal coverage.cpp
-     1>d:\osama\programming\online-judges-solutions\uva problems\uva\uva\minimal coverage.cpp(29): warning C4996: 'freopen': This function or variable may be unsafe. Consider using freopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt "Trust groups.cpp"
+         Trust groups.cpp
+     1>d:\osama\programming\online-judges-solutions\uva problems\uva\uva\trust groups.cpp(35): warning C4018: '<' : signed/unsigned mismatch
+     1>d:\osama\programming\online-judges-solutions\uva problems\uva\uva\trust groups.cpp(61): warning C4996: 'freopen': This function or variable may be unsafe. Consider using freopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(233) : see declaration of 'freopen'
-     1>d:\osama\programming\online-judges-solutions\uva problems\uva\uva\minimal coverage.cpp(55): warning C4018: '<' : signed/unsigned mismatch
-     1>d:\osama\programming\online-judges-solutions\uva problems\uva\uva\minimal coverage.cpp(78): warning C4018: '<' : signed/unsigned mismatch
+     1>d:\osama\programming\online-judges-solutions\uva problems\uva\uva\trust groups.cpp(64): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(290) : see declaration of 'scanf'
+     1>d:\osama\programming\online-judges-solutions\uva problems\uva\uva\trust groups.cpp(83): warning C4996: 'gets': This function or variable may be unsafe. Consider using gets_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(261) : see declaration of 'gets'
+     1>d:\osama\programming\online-judges-solutions\uva problems\uva\uva\trust groups.cpp(91): warning C4996: 'gets': This function or variable may be unsafe. Consider using gets_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(261) : see declaration of 'gets'
+     1>d:\osama\programming\online-judges-solutions\uva problems\uva\uva\trust groups.cpp(93): warning C4996: 'gets': This function or variable may be unsafe. Consider using gets_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(261) : see declaration of 'gets'
+     1>d:\osama\programming\online-judges-solutions\uva problems\uva\uva\trust groups.cpp(71): warning C4101: 'n1' : unreferenced local variable
+     1>d:\osama\programming\online-judges-solutions\uva problems\uva\uva\trust groups.cpp(71): warning C4101: 'n2' : unreferenced local variable
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Osama\Programming\Online-Judges-Solutions\UVA Problems\UVA\Debug\UVA.exe" /INCREMENTAL /NOLOGO pthreadVC2.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\Osama\Programming\Online-Judges-Solutions\UVA Problems\UVA\Debug\UVA.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Osama\Programming\Online-Judges-Solutions\UVA Problems\UVA\Debug\UVA.lib" /MACHINE:X86 "Debug\05-2 Rendezvous.obj"
          "Debug\10199 - Tourist Guide.obj"
@@ -217,6 +226,7 @@
          "Debug\Travel in Desert.obj"
          "Debug\Tree Summing.obj"
          "Debug\Trouble of 13-Dots.obj"
+         "Debug\Trust groups.obj"
          "Debug\Twin Primes.obj"
          "Debug\Ubiquitous Religions.obj"
          "Debug\Ultra-QuickSort.obj"
@@ -238,4 +248,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:04.07
+Time Elapsed 00:00:01.46
