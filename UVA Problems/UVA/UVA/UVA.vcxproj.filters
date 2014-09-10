@@ -700,5 +700,8 @@
     <ClCompile Include="Trust groups.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="N + NOD (N).cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

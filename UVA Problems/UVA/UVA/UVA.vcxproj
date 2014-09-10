@@ -225,6 +225,7 @@
     <ClCompile Include="Moliu Number Generator.cpp" />
     <ClCompile Include="MPI Maelstrom.cpp" />
     <ClCompile Include="Murcia%27s Skyline.cpp" />
+    <ClCompile Include="N + NOD (N).cpp" />
     <ClCompile Include="Nature.cpp" />
     <ClCompile Include="Non-Stop Travel.cpp" />
     <ClCompile Include="Numbering Paths.cpp" />
