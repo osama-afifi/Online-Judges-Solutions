@@ -159,6 +159,7 @@
     <ClCompile Include="Road Network.cpp" />
     <ClCompile Include="Scuba diver.cpp" />
     <ClCompile Include="Selfish Cities.cpp" />
+    <ClCompile Include="Skey.cpp" />
     <ClCompile Include="Sorting Bank Accounts.cpp" />
     <ClCompile Include="Square Free.cpp" />
     <ClCompile Include="Stable Marriage Problem.cpp" />

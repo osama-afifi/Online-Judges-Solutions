@@ -25,6 +25,22 @@ int main()
 {
 	freopen("input.in", "r" , stdin);
 
+	int n,m,a,b;
+	while(cin>>n>>m>>a>>b)
+	{
+		int mini=1<<25;
+		for(int i = 0 ; i<=n ; i++)
+		{
+			if(i*m<=n)
+			{
+				mini = min(mini, b*i+a*(n-i*m));
+			}
+		
+		}
+		cout << mini <<endl;
+	
+	}
+
 
 
 	return 0;

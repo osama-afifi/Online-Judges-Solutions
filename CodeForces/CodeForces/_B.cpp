@@ -21,12 +21,13 @@
 //typedef long long LL;
 //using namespace std;
 //
+//	LL n,x,y;
 //
-//int n,k;
-//
-//
-////int arr[100];
-//
+//LL f(LL i)
+//{
+//	LL j = max(((6L*n)+i-1)/i,y);
+//	return i*j;
+//}
 //
 //int main()
 //{
@@ -34,33 +35,33 @@
 //
 //
 //
-//	while(cin>>n>>k)
+//	while(cin>>n>>x>>y)
 //	{
-//	//	Set(arr,0);
-//		map<int,int>M;
-//		FOR(i,0,n)
+//	
+//		LL b=x,e=6*n;
+//
+//		while(b+100<=e)
 //		{
-//			char c;
-//			cin>>c;
-//			M[c]++;
-//	//		arr[c-'A']++;
-//		}
-//		vector<LL>V;
-//		for(char i='A' ; i<='Z' ; i++)
-//			V.pb(M[i]);
-//		sort(V.begin(), V.end());
-//		reverse(V.begin(), V.end());
-//		LL res=0;
-//		FOR(i,0,V.size())
-//		{
-//			if(k<=0)break;
-//			if(V[i]<=k)
-//				res += V[i]*V[i];
-//			else res += k*k;
-//			k-=V[i];
+//			LL s1 = b + (e-b)/3;
+//			LL s2 = e - (e-b)/3;
+//			
+//			if(f(s1)>f(s2))
+//				b = s1;
+//			else
+//				e = s2;
 //		}
 //
-//		cout << res <<endl;
+//		LL mini = 1e18;
+//		LL indi = 1;
+//		for(LL i = b  ; i<=e; i++)
+//			if(f(i)<mini)
+//				mini = f(i) , indi = i;
+//			
+//		cout << mini <<endl;
+//		LL j = max(((6L*n)+indi-1)/indi,y);
+//		cout << indi << " "  << j <<endl;
+//
+//	
 //	}
 //	return 0;
 //}
