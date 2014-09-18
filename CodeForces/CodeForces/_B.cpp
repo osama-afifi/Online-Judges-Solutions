@@ -21,47 +21,29 @@
 //typedef long long LL;
 //using namespace std;
 //
-//	LL n,x,y;
-//
-//LL f(LL i)
-//{
-//	LL j = max(((6L*n)+i-1)/i,y);
-//	return i*j;
-//}
+//int arr[1000*109];
 //
 //int main()
 //{
 //	freopen("input.in", "r" , stdin);
 //
-//
-//
-//	while(cin>>n>>x>>y)
+//	int n;
+//	while(cin>>n)
 //	{
-//	
-//		LL b=x,e=6*n;
-//
-//		while(b+100<=e)
+//		FOR(i,1,n+1)
+//			cin>>arr[i];
+//		LL sum=0;
+//		LL c=0;
+//		arr[0]=0;
+//		FOR(i,1,n+1)
 //		{
-//			LL s1 = b + (e-b)/3;
-//			LL s2 = e - (e-b)/3;
-//			
-//			if(f(s1)>f(s2))
-//				b = s1;
-//			else
-//				e = s2;
+//			sum += arr[i-1]-arr[i];
+//			if(sum<0)
+//				c+= -sum,sum=0;
 //		}
-//
-//		LL mini = 1e18;
-//		LL indi = 1;
-//		for(LL i = b  ; i<=e; i++)
-//			if(f(i)<mini)
-//				mini = f(i) , indi = i;
-//			
-//		cout << mini <<endl;
-//		LL j = max(((6L*n)+indi-1)/indi,y);
-//		cout << indi << " "  << j <<endl;
-//
-//	
+//		cout << c<<endl;
 //	}
+//
+//
 //	return 0;
 //}

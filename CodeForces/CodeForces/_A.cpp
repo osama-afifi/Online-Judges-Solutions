@@ -25,18 +25,24 @@
 //{
 //	freopen("input.in", "r" , stdin);
 //
-//	int n,m,a,b;
-//	while(cin>>n>>m>>a>>b)
+//	int n,s;
+//	while(cin>>n>>s)
 //	{
-//		int mini=1<<25;
-//		for(int i = 0 ; i<=n ; i++)
-//				mini = min(mini, i*a + ((n-i+m-1)/m)*b);
+//		int a,b;
+//		int maxi = 0;
+//		bool x=0;
+//		FOR(i,0,n)
+//		{
+//			cin>>a>>b;
+//			if(s>a || (s==a && b==0))
+//					maxi = max(maxi,b ? 100-b : 0) , x=1;;
 //
-//		
-//		cout << mini <<endl;
-//	
+//		}
+//		if(x)
+//		cout << maxi <<endl;
+//		else cout << -1 <<endl;
+//
 //	}
-//
 //
 //
 //	return 0;

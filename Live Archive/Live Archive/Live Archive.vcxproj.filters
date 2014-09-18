@@ -135,6 +135,15 @@
     <ClCompile Include="Entmoot.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Chomp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Islands in the Data Stream.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Von Neumann%27s Fly.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="input.in" />

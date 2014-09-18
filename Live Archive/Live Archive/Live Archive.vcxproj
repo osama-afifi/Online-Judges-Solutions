@@ -83,6 +83,7 @@
     <ClCompile Include="Browsing History.cpp" />
     <ClCompile Include="Card Trick.cpp" />
     <ClCompile Include="Cellphone Typing.cpp" />
+    <ClCompile Include="Chomp.cpp" />
     <ClCompile Include="Count.cpp" />
     <ClCompile Include="Different Digits.cpp" />
     <ClCompile Include="DNA Sequences.cpp" />
@@ -95,6 +96,7 @@
     <ClCompile Include="Identify the Number.cpp" />
     <ClCompile Include="Infinite monkey theorem.cpp" />
     <ClCompile Include="Interval Product.cpp" />
+    <ClCompile Include="Islands in the Data Stream.cpp" />
     <ClCompile Include="Joy of the Cylinder Game.cpp" />
     <ClCompile Include="Log Books.cpp" />
     <ClCompile Include="Making Decisions.cpp" />
@@ -115,6 +117,7 @@
     <ClCompile Include="The Next Permutation.cpp" />
     <ClCompile Include="The Rascal Triangle.cpp" />
     <ClCompile Include="Triangle.cpp" />
+    <ClCompile Include="Von Neumann%27s Fly.cpp" />
     <ClCompile Include="Zeros and Ones.cpp" />
   </ItemGroup>
   <ItemGroup>

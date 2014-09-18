@@ -67,7 +67,6 @@
     <ClCompile Include="2.cpp" />
     <ClCompile Include="3.cpp" />
     <ClCompile Include="4.cpp" />
-    <ClCompile Include="5.cpp" />
     <ClCompile Include="template.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
