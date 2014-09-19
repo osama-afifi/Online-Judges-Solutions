@@ -144,6 +144,12 @@
     <ClCompile Include="Von Neumann%27s Fly.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Virology.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Multikill.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="input.in" />

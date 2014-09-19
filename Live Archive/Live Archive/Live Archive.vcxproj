@@ -101,6 +101,7 @@
     <ClCompile Include="Log Books.cpp" />
     <ClCompile Include="Making Decisions.cpp" />
     <ClCompile Include="Minimal Backgammon.cpp" />
+    <ClCompile Include="Multikill.cpp" />
     <ClCompile Include="Mystery.cpp" />
     <ClCompile Include="No Name.cpp" />
     <ClCompile Include="Normalized Form.cpp" />
@@ -117,6 +118,7 @@
     <ClCompile Include="The Next Permutation.cpp" />
     <ClCompile Include="The Rascal Triangle.cpp" />
     <ClCompile Include="Triangle.cpp" />
+    <ClCompile Include="Virology.cpp" />
     <ClCompile Include="Von Neumann%27s Fly.cpp" />
     <ClCompile Include="Zeros and Ones.cpp" />
   </ItemGroup>
