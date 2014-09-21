@@ -1,3 +1,5 @@
+
+
 #include<iostream>
 #include<iomanip>
 #include<string>
@@ -21,38 +23,20 @@
 typedef long long LL;
 using namespace std;
 
+bool vis1[100009];
+bool vis2[100009];
+map<int,int>M;
+set<int>S;
+int n,a,b;
 
-int n,k;
-vector<int>V[10];
-
-int LIS(vector<int> &b )
+bool dfs(int cur, int q, bool vis[])
 {
-vector <int> d(n+1);
-   d[0]=-(1<<25);
-   for(int i=1;i<=n;i++) d[i]= 1<<25;;
-   int maxi=0;
-   for(int i=0;i<n;i++)
-   {
-       int j=int(upper_bound(d.begin(),d.end(),b[i])-d.begin());
-       if(d[j-1]<b[i] && b[i]<d[j])
-            d[j]=b[i];
-       if(maxi<j) 
-		   maxi=j;
-   }
-   return maxi;
-}
-
-int temp[2009];
-
-int LCS( vector<int>&V1 , vector<int>&V2)
-{
-	vector<int>arr;
-	FOR(i,0,V1.size())
-		temp[V1[i]]=i;
-	FOR(i,0,V2.size())
-		arr.push_back(temp[V2[i]]);
-	int ret = LIS(arr);
-	return ret;
+	if(S.find(q-cur)==S.end())
+		return false;
+	int idx = M[cur];
+	if(vis[idx])return true;
+	vis[idx]=1;
+	return dfs(q-cur,q,vis);
 }
 
 int main()
@@ -60,31 +44,121 @@ int main()
 	freopen("input.in", "r" , stdin);
 
 
-	while(cin>>n>>k)
+	while(cin>>n>>a>>b)
 	{
+		M.clear();
+		S.clear();
+		vector<int>V;
+		int num;
+
+		int c=0;
 		FOR(i,0,n)
 		{
-			V[i].clear();
-			V[i].resize(n);
+			cin>>num;V.push_back(num);
+			S.insert(num);
+			M[num]=c++;
 		}
-		FOR(i,0,k)
-			FOR(j,0,n)
+
+		Set(vis1,0);
+		bool b1=0,b2=0;
+		 b1= dfs(V[0],a,vis1);
+		bool ok1=0,ok2=0;
+		int c1=0,c2=0;
+		if(b1)
 		{
-			int num;
-			cin>>num;
-			V[i][j]=num-1;
+			ok1=1;
+			FOR(i,0,n)
+			{
+				map<int,int>::iterator it;;
+				map<int,int>::iterator it2;
+				it = M.find(V[i]);
+
+
+				if(vis1[it->second])
+				{
+					it2 = M.find(a-V[i]);
+					if(it2==M.end() || vis1[it->second]!=vis1[it2->second])
+					{
+						ok1=false;
+						break;
+					}
+					c1++;
+				}
+				else
+				{
+					it2 = M.find(b-V[i]);
+					if(it2==M.end() || vis1[it->second]!=vis1[it2->second])
+					{
+						ok1=false;
+						break;
+					}
+					c2++;
+				}
+			}
+		}
+		//if(ok1) goto ANSWER;
+		Set(vis2,0);
+		b2= dfs(V[0],b,vis2);
+		ok2=0;
+		c1=c2=0;
+		if(b2)
+		{
+			ok2=1;
+			FOR(i,0,n)
+			{
+				map<int,int>::iterator it;
+				map<int,int>::iterator it2;
+				it = M.find(V[i]);
+
+
+				if(vis2[it->second])
+				{
+					it2 = M.find(b-V[i]);
+					if(it2==M.end() || vis2[it->second]!=vis2[it2->second])
+					{
+						ok2=false;
+						break;
+					}
+					c1++;
+				}
+				else
+				{
+					it2 = M.find(a-V[i]);
+					if(it2==M.end() || vis2[it->second]!=vis2[it2->second])
+					{
+						ok2=false;
+						break;
+					}
+					c2++;
+				}
+			}
 		}
 
+		ANSWER:
+		bool z = (c1==0 || c2==0) && (ok1&&ok2);
+		if( z || (ok1 || ok2) )
+		{
+			cout << "YES\n";
+			if(!z)
+			{
+			FOR(i,0,n)
+				cout << ((ok1) ? !vis1[M[V[i]]] : !vis2[M[V[i]]]) << " ";
+			}
+			else
+			{
+				cout << "1 ";
+				FOR(i,1,n)
+					cout << "0 ";
+			}
+			cout <<endl;
 		
-	int mini = n;
-	FOR(i,0,k)
-		FOR(j,i+1,k)
-			mini= min(mini,LCS(V[i],V[j]));
-	cout << mini <<endl;
-		
+		}
+		else
+			cout <<"NO\n" ;
+
 	}
-
-
 
 	return 0;
 }
+
+

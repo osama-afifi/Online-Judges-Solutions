@@ -21,29 +21,48 @@
 //typedef long long LL;
 //using namespace std;
 //
-//int arr[1000*109];
 //
+//bool overlap(pair<int,int>  A, pair<int,int> B)
+//{
+//	return max(A.first,B.first) <= min(A.second,B.second);
+//}
 //int main()
 //{
 //	freopen("input.in", "r" , stdin);
 //
-//	int n;
-//	while(cin>>n)
-//	{
-//		FOR(i,1,n+1)
-//			cin>>arr[i];
-//		LL sum=0;
-//		LL c=0;
-//		arr[0]=0;
-//		FOR(i,1,n+1)
-//		{
-//			sum += arr[i-1]-arr[i];
-//			if(sum<0)
-//				c+= -sum,sum=0;
-//		}
-//		cout << c<<endl;
-//	}
+//	int p,q,l,r;
 //
+//	while(cin>>p>>q>>l>>r)
+//	{
+//		vector< pair<int,int> >X;
+//		vector< pair<int,int> >Z;
+//		int a,b;
+//		FOR(i,0,p)
+//		{
+//			cin>>a>>b;
+//			Z.push_back(mp(a,b));
+//		}
+//		FOR(i,0,q)
+//		{
+//			cin>>a>>b;
+//			X.push_back(mp(a,b));
+//		}
+//
+//
+//		int c=0;
+//		FOR(k,l,r+1)
+//		{
+//			bool done=0;
+//			FOR(i,0,p)
+//				FOR(j,0,q)
+//			{
+//				if(done)break;
+//				if(overlap(Z[i],mp(X[j].first+k,X[j].second+k)))
+//					c++, done=1;
+//			}
+//		}
+//		cout << c <<endl;
+//	}
 //
 //	return 0;
 //}

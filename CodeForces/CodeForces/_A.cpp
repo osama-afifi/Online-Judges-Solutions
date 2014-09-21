@@ -25,25 +25,31 @@
 //{
 //	freopen("input.in", "r" , stdin);
 //
-//	int n,s;
-//	while(cin>>n>>s)
+//	int n;
+//	while(cin>>n)
 //	{
-//		int a,b;
-//		int maxi = 0;
-//		bool x=0;
-//		FOR(i,0,n)
+//		set<int>S;
+//		int p,q;
+//		
+//		int num;
+//		cin>>p;
+//		FOR(i,0,p)
 //		{
-//			cin>>a>>b;
-//			if(s>a || (s==a && b==0))
-//					maxi = max(maxi,b ? 100-b : 0) , x=1;;
-//
+//			cin>>num;
+//			S.insert(num);
 //		}
-//		if(x)
-//		cout << maxi <<endl;
-//		else cout << -1 <<endl;
+//
+//				cin>>q;
+//		FOR(i,0,q)
+//		{
+//			cin>>num;
+//			S.insert(num);
+//		}
+//		if(S.size()==n)
+//			cout << "I become the guy." <<endl;
+//		else
+//			cout << "Oh, my keyboard!" <<endl;
 //
 //	}
-//
-//
 //	return 0;
 //}
