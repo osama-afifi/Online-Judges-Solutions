@@ -703,5 +703,17 @@
     <ClCompile Include="N + NOD (N).cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="See Emily Play.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="The Twin Head Dragon.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Little Rakin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GCD The Largest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

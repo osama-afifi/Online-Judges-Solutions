@@ -171,6 +171,7 @@
     <ClCompile Include="Frosh Week.cpp" />
     <ClCompile Include="Game of Sum.cpp" />
     <ClCompile Include="GATTACA.cpp" />
+    <ClCompile Include="GCD The Largest.cpp" />
     <ClCompile Include="Getting in Line.cpp" />
     <ClCompile Include="Goldbach and Euler.cpp" />
     <ClCompile Include="Gone Fishing.cpp" />
@@ -208,6 +209,7 @@
     <ClCompile Include="LCM.cpp" />
     <ClCompile Include="Let Me Count The Ways.cpp" />
     <ClCompile Include="Life Forms.cpp" />
+    <ClCompile Include="Little Rakin.cpp" />
     <ClCompile Include="Longest Common Subsequence.cpp" />
     <ClCompile Include="Longest Match.cpp" />
     <ClCompile Include="Longest Paths.cpp" />
@@ -251,6 +253,7 @@
     <ClCompile Include="Safe Salutations.cpp" />
     <ClCompile Include="Scarecrow.cpp" />
     <ClCompile Include="Scheduling Lectures.cpp" />
+    <ClCompile Include="See Emily Play.cpp" />
     <ClCompile Include="Sending email.cpp" />
     <ClCompile Include="Shoemaker%27s Problem.cpp" />
     <ClCompile Include="Shopaholic.cpp" />
@@ -279,6 +282,7 @@
     <ClCompile Include="The Suspects.cpp" />
     <ClCompile Include="The Tourist Guide.cpp" />
     <ClCompile Include="The Treasure Hunt.cpp" />
+    <ClCompile Include="The Twin Head Dragon.cpp" />
     <ClCompile Include="The Twin Towers.cpp" />
     <ClCompile Include="Three-square.cpp" />
     <ClCompile Include="Thunder Mountain.cpp" />

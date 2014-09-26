@@ -25,31 +25,43 @@
 //{
 //	freopen("input.in", "r" , stdin);
 //
-//	int n;
-//	while(cin>>n)
+//	int x1,x2,y1,y2;
+//	while(cin>>x1>>y1>>x2>>y2)
 //	{
-//		set<int>S;
-//		int p,q;
-//		
-//		int num;
-//		cin>>p;
-//		FOR(i,0,p)
+//		int x3,y3,x4,y4;
+//		if(x1==x2)
 //		{
-//			cin>>num;
-//			S.insert(num);
+//			int s = abs(y2-y1);
+//			x3 = x4 = x1+s;
+//			y3 = y1;
+//			y4 = y2;
+//		}
+//		else if(y1==y2)
+//		{
+//			int s = abs(x2-x1);
+//			y3 = y4 = y1+s;
+//			x3 = x1;
+//			x4 = x2;
+//		}
+//		else
+//		{
+//			if(abs(x1-x2)==abs(y1-y2))
+//			{
+//				x3=x1;y3=y2;
+//				x4=x2;y4=y1;
+//
+//			}
+//			else
+//			{
+//				cout << -1 << endl;
+//				continue;
+//			}
+//
 //		}
 //
-//				cin>>q;
-//		FOR(i,0,q)
-//		{
-//			cin>>num;
-//			S.insert(num);
-//		}
-//		if(S.size()==n)
-//			cout << "I become the guy." <<endl;
-//		else
-//			cout << "Oh, my keyboard!" <<endl;
+//		cout << x3 << " " << y3 << " "  << x4 << " "  << y4 <<endl;
 //
 //	}
+//
 //	return 0;
 //}

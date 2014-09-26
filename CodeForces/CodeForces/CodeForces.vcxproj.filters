@@ -246,6 +246,9 @@
     <ClCompile Include="Jzzhu and Cities.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Fedor and Essay.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="input.in">

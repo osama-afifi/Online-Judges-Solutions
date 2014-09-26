@@ -90,6 +90,7 @@
     <ClCompile Include="Dima and Sequence.cpp" />
     <ClCompile Include="Dima and Two Sequences.cpp" />
     <ClCompile Include="Education Reform.cpp" />
+    <ClCompile Include="Fedor and Essay.cpp" />
     <ClCompile Include="Fish.cpp" />
     <ClCompile Include="Flipping Game.cpp" />
     <ClCompile Include="Furlo and Rublo and Game.cpp" />
