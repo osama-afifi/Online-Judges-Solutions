@@ -1,14 +1,10 @@
-﻿Build started 9/10/2014 8:56:33 PM.
+﻿Build started 29-Sep-14 12:00:12 AM.
      1>Project "D:\Osama\Programming\Online-Judges-Solutions\UVA Problems\UVA\UVA\UVA.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt "N + NOD (N).cpp"
-         N + NOD (N).cpp
-     1>d:\osama\programming\online-judges-solutions\uva problems\uva\uva\n + nod (n).cpp(95): warning C4996: 'freopen': This function or variable may be unsafe. Consider using freopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt "Block Meh.cpp"
+         Block Meh.cpp
+     1>d:\osama\programming\online-judges-solutions\uva problems\uva\uva\block meh.cpp(27): warning C4996: 'freopen': This function or variable may be unsafe. Consider using freopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(233) : see declaration of 'freopen'
-     1>d:\osama\programming\online-judges-solutions\uva problems\uva\uva\n + nod (n).cpp(109): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(290) : see declaration of 'scanf'
-     1>d:\osama\programming\online-judges-solutions\uva problems\uva\uva\n + nod (n).cpp(112): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(290) : see declaration of 'scanf'
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Osama\Programming\Online-Judges-Solutions\UVA Problems\UVA\Debug\UVA.exe" /INCREMENTAL /NOLOGO pthreadVC2.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\Osama\Programming\Online-Judges-Solutions\UVA Problems\UVA\Debug\UVA.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Osama\Programming\Online-Judges-Solutions\UVA Problems\UVA\Debug\UVA.lib" /MACHINE:X86 "Debug\05-2 Rendezvous.obj"
          "Debug\10199 - Tourist Guide.obj"
@@ -39,6 +35,7 @@
          "Debug\Binomial Showdown.obj"
          "Debug\Binomial Theorem.obj"
          "Debug\Black and white painting.obj"
+         "Debug\Block Meh.obj"
          "Debug\Block Voting.obj"
          Debug\Boxes.obj
          "Debug\Bubbles and Buckets.obj"
@@ -100,6 +97,7 @@
          "Debug\Frosh Week.obj"
          "Debug\Game of Sum.obj"
          Debug\GATTACA.obj
+         "Debug\GCD The Largest.obj"
          "Debug\Getting in Line.obj"
          "Debug\Goldbach and Euler.obj"
          "Debug\Gone Fishing.obj"
@@ -137,6 +135,7 @@
          Debug\LCM.obj
          "Debug\Let Me Count The Ways.obj"
          "Debug\Life Forms.obj"
+         "Debug\Little Rakin.obj"
          "Debug\Longest Common Subsequence.obj"
          "Debug\Longest Match.obj"
          "Debug\Longest Paths.obj"
@@ -180,6 +179,7 @@
          "Debug\Safe Salutations.obj"
          Debug\Scarecrow.obj
          "Debug\Scheduling Lectures.obj"
+         "Debug\See Emily Play.obj"
          "Debug\Sending email.obj"
          "Debug\Shoemaker's Problem.obj"
          Debug\Shopaholic.obj
@@ -208,6 +208,7 @@
          "Debug\The Suspects.obj"
          "Debug\The Tourist Guide.obj"
          "Debug\The Treasure Hunt.obj"
+         "Debug\The Twin Head Dragon.obj"
          "Debug\The Twin Towers.obj"
          "Debug\Three-square.obj"
          "Debug\Thunder Mountain.obj"
@@ -242,4 +243,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:01.23
+Time Elapsed 00:00:04.26

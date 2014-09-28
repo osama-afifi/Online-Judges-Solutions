@@ -21,31 +21,50 @@
 //typedef long long LL;
 //using namespace std;
 //
-//LL n;
-//LL arr[1000009];
-//
+//int arr[10];
 //int main()
 //{
 //	freopen("input.in", "r" , stdin);
 //
-//	
+//	int n;
 //	while(cin>>n)
 //	{
-//		map<LL,LL>M;
-//		FOR(i,0,n)
-//			cin>>arr[i];
-//		LL mini = 1e9+5;
-//		LL maxi=0;
-//		FOR(i,0,n) {mini = min(mini,arr[i]);maxi = max(maxi,arr[i]);M[arr[i]]++;}
-//		LL target = maxi-mini;
-//		int c=0;
-//		if(M.size()==1)
-//		{
-//			cout << target << " " << (n*(n-1))/2 <<endl;
-//			continue;
-//		}
 //
-//		cout << target << " " << M[maxi]*M[mini] <<endl;
+//
+//		vector<pair<int,int> > A;
+//		FOR(i, 0, n)
+//		{
+//			int a;
+//			cin >> a;
+//			A.push_back(mp(a, i));
+//		}
+//		sort(A.begin(), A.end());
+//
+//		vector< vector<pair<int,int> > > res;
+//		res.push_back(A);
+//
+//		FOR(i, 0, A.size())
+//		{
+//			if(i > 0 && A[i].first == A[i-1].first){
+//				swap(A[i], A[i-1]);
+//				res.push_back(A);
+//
+//				if(res.size()==3)
+//				{
+//					cout <<"YES" <<endl;
+//					FOR(i,0,3)
+//					{
+//						FOR(j,0,n)
+//							cout << res[i][j].second+1 << " ";
+//						cout <<endl;
+//					}
+//				}
+//				swap(A[i], A[i-1]);
+//			}
+//		}
+//						if(res.size()<3)
+//							cout <<"NO" <<endl;
+//
 //	}
 //
 //	return 0;

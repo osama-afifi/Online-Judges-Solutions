@@ -21,47 +21,35 @@
 //typedef long long LL;
 //using namespace std;
 //
+//int arr[10];
 //int main()
 //{
 //	freopen("input.in", "r" , stdin);
+//	
+//	map<int,int>M;
+//	bool ani=0;
 //
-//	int x1,x2,y1,y2;
-//	while(cin>>x1>>y1>>x2>>y2)
-//	{
-//		int x3,y3,x4,y4;
-//		if(x1==x2)
+//	bool f=0;
+//		FOR(i,0,6)
 //		{
-//			int s = abs(y2-y1);
-//			x3 = x4 = x1+s;
-//			y3 = y1;
-//			y4 = y2;
+//			cin>>arr[i];
+//		M[arr[i]]++;
+//		if(M[arr[i]]==4)
+//			ani=1;
+//				if(M[arr[i]]==5)
+//			f=1;
 //		}
-//		else if(y1==y2)
-//		{
-//			int s = abs(x2-x1);
-//			y3 = y4 = y1+s;
-//			x3 = x1;
-//			x4 = x2;
-//		}
+//		
+//		if(ani && M.size()==1)
+//			cout << "Elephant" <<endl;
+//		else if(!f && ani && M.size()==2)
+//			cout << "Elephant" <<endl;
+//		else if(ani && (f || M.size()==3))
+//			cout << "Bear" <<endl;
 //		else
-//		{
-//			if(abs(x1-x2)==abs(y1-y2))
-//			{
-//				x3=x1;y3=y2;
-//				x4=x2;y4=y1;
-//
-//			}
-//			else
-//			{
-//				cout << -1 << endl;
-//				continue;
-//			}
-//
-//		}
-//
-//		cout << x3 << " " << y3 << " "  << x4 << " "  << y4 <<endl;
-//
-//	}
-//
+//			cout << "Alien" <<endl;
+//		
+//		
+//		
 //	return 0;
 //}

@@ -21,54 +21,29 @@
 typedef long long LL;
 using namespace std;
 
-		int mat[1009][1009];
-		int arr[1009];
+
+LL acc[1000009];
 
 int main()
 {
 	freopen("input.in", "r" , stdin);
 
-	int n,k,d;
-	while(cin>>n>>k>>d)
+
+	LL n;
+	while(cin>>n)
 	{
-
-		LL p=1;
-		FOR(i,0,d)
+		LL c=0;
+		LL x = sqrt(n)+1;
+		LL sum=0;
+		FOR(i,1,1000000)
 		{
-			p *=(LL)k;
-			if(p>=n)
-				break;
+			sum += 3*i-1;
+			if(sum>n)break;
+			if((n-sum)%3==0)
+				c++;
 		}
-		if(p<n)
-		{
-			cout << -1 <<endl;
-			continue;
-		}
-
-		FOR(i,0,d)
-			arr[i]=1;
-		FOR(i,0,n)
-		{
-			FOR(j,0,d)
-				mat[j][i] = arr[j];
-			for(int j=d-1 ; j>=0 ; j--)
-				if(arr[j]<k)
-				{
-					arr[j]++;
-					break;
-				}
-				else arr[j]=1;
-		}	
-		FOR(i,0,d)
-		{
-			FOR(j,0,n)
-			{
-				cout << mat[i][j] << " ";
-			}
-			cout <<endl;
-		}
+		cout << c <<endl;
 	}
-
 
 	return 0;
 }

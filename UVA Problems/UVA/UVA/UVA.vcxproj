@@ -110,6 +110,7 @@
     <ClCompile Include="Binomial Showdown.cpp" />
     <ClCompile Include="Binomial Theorem.cpp" />
     <ClCompile Include="Black and white painting.cpp" />
+    <ClCompile Include="Block Meh.cpp" />
     <ClCompile Include="Block Voting.cpp" />
     <ClCompile Include="Boxes.cpp" />
     <ClCompile Include="Bubbles and Buckets.cpp" />
