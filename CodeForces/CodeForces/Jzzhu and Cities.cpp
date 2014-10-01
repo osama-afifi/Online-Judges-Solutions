@@ -39,6 +39,7 @@
 //LL d[MAX+7];
 //LL R[MAX+7];
 //LL RFreq[MAX+7];
+//// Relax Freq represents the number of ways we can reach this relaxation distance of a specific node
 //LL relaxFreq[MAX+7];
 //
 //vector< vector<node> > A;
@@ -112,7 +113,7 @@
 //			dijkstra(1);
 //			int res=0;
 //			FOR(i,1,n+1)
-//				if(RFreq[i] && (R[i]>d[i] || (R[i]>=d[i] && relaxFreq[i]>1) ))
+//				if(RFreq[i] && (R[i]>d[i] || (R[i]==d[i] && relaxFreq[i]>1) ))
 //					res++;
 //			FOR(i,1,n+1)
 //				if(RFreq[i]>1)

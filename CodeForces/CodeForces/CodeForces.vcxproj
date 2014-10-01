@@ -103,6 +103,7 @@
     <ClCompile Include="Industrial Nim.cpp" />
     <ClCompile Include="Inna and Sequence.cpp" />
     <ClCompile Include="Intresting Game.cpp" />
+    <ClCompile Include="Jzzhu and Apples.cpp" />
     <ClCompile Include="Jzzhu and Cities.cpp" />
     <ClCompile Include="Knight Tournament.cpp" />
     <ClCompile Include="Let%27s Go Rolling!.cpp" />
@@ -130,6 +131,7 @@
     <ClCompile Include="Pipeline.cpp" />
     <ClCompile Include="Pocket Book.cpp" />
     <ClCompile Include="Points.cpp" />
+    <ClCompile Include="Present.cpp" />
     <ClCompile Include="Quantity of Strings.cpp" />
     <ClCompile Include="Random Tasks.cpp" />
     <ClCompile Include="Right Triangles.cpp" />

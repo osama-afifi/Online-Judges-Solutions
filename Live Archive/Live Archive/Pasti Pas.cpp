@@ -14,38 +14,34 @@
 //#define OO 1e9
 //#define EPS 1e-9
 //#define FOR(i, s, e) for(int i = s; i < e; ++i)
-//#define MEMS(c, v) memset(c, v, sizeof c)
+//#define SET(c, v) memset(c, v, sizeof c)
 //#define ALL(c) c.begin(), c.end()
-//#define SZ(c) c.size()
 //
 //
 //using namespace std;
 //
 //typedef long long ll;
 //
-//#define sz(v) (int)v.size()
 //
-//char s[50009];
+//
 //LL M  = 1e9+7;
 //LL B  = 29;
-//LL hsh[50009];
 //LL p[50009];
 //LL inv[50009];
-//int len;
 //
-//long long PowerMod(LL x, LL p, LL m) { 
-//  if (!p) 
+//
+//LL powerMod(LL n, LL p, LL m) { 
+//  if (p==0) 
 //    return 1; 
-//  LL y = PowerMod(x, p >> 1, m); 
-//  y = y%m; 
-//  y = (y * y) % m; 
+//  LL x = powerMod(n, p/2, m); 
+//  x = (x * x) % m; 
 //  if (p & 1LL) 
-//    y = (y * x) % m; 
-//  return y; 
+//    x = (x * n) % m; 
+//  return x; 
 //} 
 // 
-//long long modInv(int x, int m) { 
-//  return PowerMod(x, m - 2, m); 
+//LL modInv(int x, int m) { 
+//  return powerMod(x, m - 2, m); 
 //}
 //
 //
@@ -53,48 +49,52 @@
 //{
 //	p[0] = 1;
 //	for(int i =1 ; i<=len ; i++ )
+//	{
 //		p[i] = (p[i-1]*B)%M;
-//	for(int i =0 ; i<=len ; i++ )
 //		inv[i] = modInv(p[i], M);	
+//	}
 //}
 //
 //
-//void H()
+//void H(string &s, LL arr[])
 //{
-//	hsh[0] = s[0]-'A';
-//	for(int i =1 ; i<=len ; i++ )
-//		hsh[i] = (hsh[i-1] + (s[i]-'A')*p[i]) %M;
+//	arr[0] = s[0];
+//	for(int i =1 ; i<s.length() ; i++ )
+//		arr[i] = (arr[i-1] + (s[i])*p[i]) %M;
 //	
 //}
 //
-//LL getHash(int a  , int b)
+//LL getHash(int a  , int b , LL arr[])
 //{
-//	if(a==0)return hsh[b];
-//	LL x = hsh[b]-hsh[a-1];
+//	if(a==0)return arr[b];
+//	LL x = arr[b]-arr[a-1];
 //	if(x<0)x+=M;
-//	x%=M;
 //	LL ret =  (x*inv[a])%M;
 //	return ret;
 //}
+//
+//LL hsh[50009];
 //
 //int main(){
 //	freopen("input.in", "r", stdin);
 //	int t;
 //	int kase = 0;
 //	pre(50001);
+//
 //	scanf("%d" , &t);
 //	while(t--)
 //	{
-//		scanf("%s" , &s);
-//		len  = strlen(s);
-//		H();	
+//		string s;
+//		cin>>s;
+//		H(s,hsh);
+//		int len =s.length();
 //		int res = 0;
 //		int st = 0;
 //		int i = 0;
 //		for(int i = 0 ; i<len/2 ; i++)
 //		{
-//			LL h1 = getHash(st,i);
-//			LL h2 = getHash(len-1-i , len-1-st);
+//			LL h1 = getHash(st,i,hsh);
+//			LL h2 = getHash(len-1-i, len-1-st, hsh);
 //			if(h1 == h2)
 //				st = i+1 , res+=2;
 //		}
@@ -104,3 +104,4 @@
 //	}
 //	return 0;
 //}
+//

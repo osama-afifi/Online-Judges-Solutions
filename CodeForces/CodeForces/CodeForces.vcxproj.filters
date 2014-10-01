@@ -249,6 +249,12 @@
     <ClCompile Include="Fedor and Essay.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Jzzhu and Apples.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Present.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="input.in">

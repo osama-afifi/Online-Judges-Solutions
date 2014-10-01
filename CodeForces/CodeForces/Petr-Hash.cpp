@@ -1,3 +1,5 @@
+// //Double Hashing
+//
 //#include<iostream>
 //#include<iomanip>
 //#include<string>
@@ -18,129 +20,108 @@
 //typedef long long LL;
 //using namespace std;
 //
-//string s;
-//string p1;
-//string p2;
-//long long hsh1[4009];
-//long long hsh2[4009];
-//long long pw1[4009];
-//long long pw2[4009];
-//long long inv1[4009];
-//long long inv2[4009];
-//long long hash11;
-//long long hash12;
-//long long hash21;
-//long long hash22;
-//const long long B1 = 10007;
-//const long long B2 = 31;
-//const long long MOD = 1000000007;
 //
-//long long PowerMod(LL x, LL p, LL m) 
-//{ 
-//	if (!p) 
-//		return 1; 
-//	LL y = PowerMod(x, p >> 1, m); 
-//	y = y%m; 
-//	y = (y * y) % m; 
-//	if (p & 1LL) 
-//		y = (y * x) % m; 
-//	return y; 
+//LL powerMod(LL n, LL p, LL m) { 
+//  if (p==0) 
+//    return 1; 
+//  LL x = powerMod(n, p/2, m); 
+//  x = (x * x) % m; 
+//  if (p & 1LL) 
+//    x = (x * n) % m; 
+//  return x; 
 //} 
-//
-//long long modInv(LL x, LL m) { 
-//	return PowerMod(x, m - 2, m); 
+// 
+//LL modInv(int x, int m) { 
+//  return powerMod(x, m - 2, m); 
 //}
 //
 //
-//__inline void pre(int len)
+//void pre(int len,LL p[], LL inv[], LL B=31, LL M=1e9+7)
 //{
-//	pw1[0] = pw2[0] = 1;
+//	p[0] = 1;
 //	for(int i =1 ; i<=len ; i++ )
 //	{
-//		if(i)
-//		{
-//			pw1[i] = (pw1[i-1]*B1)%MOD;
-//			pw2[i] = (pw2[i-1]*B2)%MOD;
-//		}
-//		inv1[i] = modInv(pw1[i], MOD);	
-//		inv2[i] = modInv(pw2[i], MOD);	
-//
-//	}	
-//}
-//
-//
-//__inline void H()
-//{
-//	int len = s.length();
-//	hsh1[0] = s[0];
-//	hsh2[0] = s[0];
-//	for(int i =1 ; i<=len ; i++ )
-//	{
-//		hsh1[i] = (hsh1[i-1] + ((LL)s[i])*pw1[i]) %MOD;
-//		hsh2[i] = (hsh2[i-1] + ((LL)s[i])*pw2[i]) %MOD;
-//	}
-//
-//}
-//
-//pair<LL,LL> getHash(int a  , int b)
-//{
-//	if(a==0)return make_pair( hsh1[b]%MOD , hsh2[b]%MOD);
-//	LL x1 = hsh1[b]-hsh1[a-1];
-//	LL x2 = hsh2[b]-hsh2[a-1];
-//	if(x1<0)x1+=MOD;
-//	if(x2<0)x2+=MOD;
-//	x1%=MOD;
-//	x2%=MOD;
-//	LL ret1 =  (x1*inv1[a])%MOD;
-//	LL ret2 =  (x2*inv2[a])%MOD;
-//	return make_pair(ret1,ret2);
-//}
-//
-//__inline void preHashPatterns()
-//{
-//	int l1 = p1.length();
-//	int l2 = p2.length();
-//	hash11 = hash12 =  hash21 = hash22 = 0;
-//	FOR(i,0,l1)
-//	{
-//		hash11 = (hash11 + ((LL)p1[i])*pw1[i])%MOD;
-//		hash12 = (hash12 + ((LL)p1[i])*pw2[i])%MOD;
-//	}
-//	FOR(i,0,l2)
-//	{
-//		hash21 = (hash21 + ((LL)p2[i])*pw1[i])%MOD;
-//		hash22 = (hash22 + ((LL)p2[i])*pw2[i])%MOD;
+//		p[i] = (p[i-1]*B)%M;
+//		inv[i] = modInv(p[i], M);	
 //	}
 //}
+//
+//
+//void H(string &s, LL arr[], LL p[], LL M=1e9+7)
+//{
+//	arr[0] = s[0];
+//	for(int i =1 ; i<s.length() ; i++ )
+//		arr[i] = (arr[i-1] + (LL)(s[i])*p[i]) %M;
+//	
+//}
+//
+//LL getHash(int a  , int b , LL arr[],LL inv[], LL M=1e9+7)
+//{
+//	if(a==0)return arr[b];
+//	LL x = arr[b]-arr[a-1];
+//	if(x<0)x+=M;
+//	LL ret =  (x*inv[a])%M;
+//	return ret;
+//}
+//
+//LL hp1_1[5009];
+//LL hp2_1[5009];
+//LL hp1_2[5009];
+//LL hp2_2[5009];
+//
+//LL hp1[5009];
+//LL hp2[5009];
+//
+//LL hs1[5009];
+//LL hs2[5009];
+//
+//
+//LL M1  = 1000LL*1000LL*1000LL+7LL;
+//LL B1  = 31;
+//LL M2  = (1LL<<31)-1LL;
+//LL B2  = 10007;
+//
+//LL pw1[5009];
+//LL inv1[5009];
+//
+//LL pw2[5009];
+//LL inv2[5009];
+//
 //
 //int main()
 //{
 //	freopen("input.in", "r" , stdin);
 //
-//	pre(4005);
+//	pre(5000,pw1,inv1,B1,M1);
+//	pre(5000,pw2,inv2,B2,M2);
+//	string s,p1,p2;
 //
 //	while(cin>>s)
 //	{
-//		bool flag =1;
+//		
 //		int n  = s.length();
 //		cin>>p1;
 //		cin>>p2;
 //
-//		H();
-//		preHashPatterns();
+//		H(s,hs1,pw1,M1);
+//		H(s,hs2,pw2,M2);
+//
+//		H(p1,hp1_1,pw1,M1);
+//		H(p1,hp1_2,pw2,M2);
+//		H(p2,hp2_1,pw1,M1);
+//		H(p2,hp2_2,pw2,M2);
+//
 //		int l1 = p1.length();
 //		int l2 = p2.length();
 //		int count =0;
 //		unordered_set< LL > S;
 //		for(int i=0;i+l1<=n ; i++)
 //		{
-//			if(getHash(i,i+l1-1)== make_pair(hash11 ,hash12))
+//			if((getHash(i,i+l1-1,hs1,inv1,M1)== hp1_1[l1-1]) && (getHash(i,i+l1-1,hs2,inv2,M2)== hp1_2[l1-1]))
 //				for(int j = i;j+l2<=n ; j++)
-//					if(j+l2>=i+l1 && getHash(j,j+l2-1) ==  make_pair(hash21 ,hash22) )
-//					{
-//
-//						S.insert( getHash(i,j+l2-1).first *MOD + getHash(i,j+l2-1).second );		
-//					}
+//					if( (j+l2>=i+l1 && (getHash(j,j+l2-1,hs1,inv1,M1) ==  hp2_1[l2-1] ) && (getHash(j,j+l2-1,hs2,inv2,M2) ==  hp2_2[l2-1] )))
+//						S.insert( getHash(i,j+l2-1,hs1,inv1,M1) * M2 +  getHash(i,j+l2-1,hs2,inv2,M2));		
+//				
 //		}
 //
 //			printf("%d\n" , S.size());
