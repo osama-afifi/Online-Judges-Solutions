@@ -96,6 +96,7 @@
     <ClCompile Include="Furlo and Rublo and Game.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="Games with Rectangle.cpp" />
+    <ClCompile Include="Gargari and Bishops.cpp" />
     <ClCompile Include="Good Substrings.cpp" />
     <ClCompile Include="Greg and Array.cpp" />
     <ClCompile Include="Hexadecimal%27s Numbers.cpp" />
