@@ -121,6 +121,7 @@
     <ClCompile Include="Magic Five.cpp" />
     <ClCompile Include="Maxim and Restaurant.cpp" />
     <ClCompile Include="Monitor.cpp" />
+    <ClCompile Include="MUH and Cube Walls.cpp" />
     <ClCompile Include="Multiplication Table.cpp" />
     <ClCompile Include="Nearly Lucky Number.cpp" />
     <ClCompile Include="Nuclear Fission.cpp" />
