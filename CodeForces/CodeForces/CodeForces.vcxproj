@@ -101,6 +101,7 @@
     <ClCompile Include="Greg and Array.cpp" />
     <ClCompile Include="Hexadecimal%27s Numbers.cpp" />
     <ClCompile Include="Hungry Sequence.cpp" />
+    <ClCompile Include="Increasing Sequence.cpp" />
     <ClCompile Include="Industrial Nim.cpp" />
     <ClCompile Include="Inna and Sequence.cpp" />
     <ClCompile Include="Intresting Game.cpp" />

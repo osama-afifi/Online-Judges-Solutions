@@ -261,6 +261,9 @@
     <ClCompile Include="MUH and Cube Walls.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Increasing Sequence.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="input.in">
