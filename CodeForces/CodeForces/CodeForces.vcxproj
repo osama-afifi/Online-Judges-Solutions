@@ -83,12 +83,14 @@
     <ClCompile Include="Big Maximum Sum.cpp" />
     <ClCompile Include="Building Bridges.cpp" />
     <ClCompile Include="Camels.cpp" />
+    <ClCompile Include="Captain Marmot.cpp" />
     <ClCompile Include="Choosing Symbol Pairs.cpp" />
     <ClCompile Include="Cipher.cpp" />
     <ClCompile Include="Cycles.cpp" />
     <ClCompile Include="Devu and his Brother.cpp" />
     <ClCompile Include="Dima and Sequence.cpp" />
     <ClCompile Include="Dima and Two Sequences.cpp" />
+    <ClCompile Include="Dreamoon and Strings.cpp" />
     <ClCompile Include="Education Reform.cpp" />
     <ClCompile Include="Fedor and Essay.cpp" />
     <ClCompile Include="Fish.cpp" />
@@ -161,11 +163,17 @@
     <ClCompile Include="_template.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="_x.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="B. Sail.cpp" />
     <None Include="C. Parity Game.cpp" />
     <None Include="input.in" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="output.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
