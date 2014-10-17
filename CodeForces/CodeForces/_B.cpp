@@ -21,42 +21,28 @@
 //typedef long long LL;
 //using namespace std;
 //
-//string s1,s2;
-//int f=0;
 //
-//long double solve(int idx, int pos)
-//{
-//	if(idx==s2.length())
-//		return (pos==f) ? 1.0 : 0.0;
-//	
-//	long double ret=0;
 //
-//	if(s2[idx]=='?')
-//	{
-//		ret += solve(idx+1,pos-1)*0.5;
-//		ret += solve(idx+1,pos+1)*0.5;
-//	}
-//	else if(s2[idx]=='+')
-//		ret += solve(idx+1,pos+1);
-//	else if(s2[idx]=='-')
-//		ret += solve(idx+1,pos-1);
-//	return ret;
-//}
 //
 //int main()
 //{
+//	ios_base::sync_with_stdio(0);
 //	freopen("input.in", "r" , stdin);
 //	
-//	while(cin>>s1>>s2)
+//	LL n,m;
+//	while(cin>>n>>m)
 //	{
-//		f=0;
-//		FOR(i,0,s1.length())
-//			if(s1[i]=='+')
-//				f++;
-//			else f--;
-//			
-//		long double res = solve(0,0);
-//		cout << setprecision(12) << fixed <<  res <<endl;
+//		LL x1= n/m;
+//		LL c1 = m-n%m;
+//		LL mini = (x1*(x1-1) * c1) + ((x1+1)*(x1) * (n%m));
+//
+//		LL x2 = n-(m-1);
+//		LL maxi = x2*(x2-1);
+//
+//		cout << mini/2 << " " << maxi/2 <<endl;
+//
+//
 //	}
+//	
 //	return 0;
 //}

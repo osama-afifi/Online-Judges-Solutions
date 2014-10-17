@@ -718,5 +718,8 @@
     <ClCompile Include="Block Meh.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="The Win-stay and Lose-shift Strategy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -1,6 +1,4 @@
-﻿//
-//
-//#include<iostream>
+﻿//#include<iostream>
 //#include<iomanip>
 //#include<string>
 //#include<cstring>
@@ -23,23 +21,16 @@
 //typedef long long LL;
 //using namespace std;
 //
-//LL a,b;
-//LL MOD = 1e9+7;
-//
 //int main()
 //{
 //	freopen("input.in", "r" , stdin);
 //
-//
-//	while(cin >> a >> b)
+//	LL arr[15];
+//	while(cin>>arr[0]>>arr[1]>>arr[2])
 //	{
-//		LL res=0;
-//		FOR(mod,1,b)
-//		{
-//				res += (((((mod%MOD) * (b%MOD))%MOD) * ((a*(a+1)/2)%MOD))%MOD) + (mod*a)%MOD;
-//				res%=MOD;
-//		}
-//		cout << res%MOD <<endl;
+//		sort (arr, arr+3);
+//		cout<< min((arr[0]+arr[1]+arr[2])/3,arr[0]+arr[1])<<endl;
+//
 //	}
 //	return 0;
 //}

@@ -285,6 +285,7 @@
     <ClCompile Include="The Treasure Hunt.cpp" />
     <ClCompile Include="The Twin Head Dragon.cpp" />
     <ClCompile Include="The Twin Towers.cpp" />
+    <ClCompile Include="The Win-stay and Lose-shift Strategy.cpp" />
     <ClCompile Include="Three-square.cpp" />
     <ClCompile Include="Thunder Mountain.cpp" />
     <ClCompile Include="To Carry or not to Carry.cpp" />

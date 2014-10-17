@@ -21,26 +21,22 @@
 //typedef long long LL;
 //using namespace std;
 //
+//
+//int arr[109];
+//
 //int main()
 //{
+//	ios_base::sync_with_stdio(0);
 //	freopen("input.in", "r" , stdin);
-//	int n,m;
-//	while(cin>>n>>m)
-//	{
-//		int mini;
-//		mini=(n+1)/2;
-//		int res=-1;
-//		for(int i=mini;i<=n;i++)
-//		{
-//			if(i%m==0)
-//			{
-//				res=i;
-//				break;
-//			}
+//	
 //
-//		}
+//		int sum=0;
+//		FOR(i,0,5)cin>>arr[i];
+//		FOR(i,0,5)sum+=arr[i];
+//		if(sum>0 && sum%5==0)
+//			cout << sum/5 <<endl;
+//		else cout << -1 <<endl;
 //
-//		cout << res <<endl;
-//	}
+//	
 //	return 0;
 //}

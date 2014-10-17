@@ -1,4 +1,13 @@
-aaaaa
-aa
-axbaxxb
-ab
+4
+SPR
+PPR
+5 80 15
+RRR
+PPR
+5 80 15
+S
+S
+33 34 33
+S
+S
+34 33 33
