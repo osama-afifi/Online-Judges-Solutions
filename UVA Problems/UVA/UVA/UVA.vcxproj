@@ -168,6 +168,7 @@
     <ClCompile Include="Frequent Substrings.cpp" />
     <ClCompile Include="Frequent Values.cpp" />
     <ClCompile Include="Friends.cpp" />
+    <ClCompile Include="Friendship Networks.cpp" />
     <ClCompile Include="Frogger.cpp" />
     <ClCompile Include="Frosh Week.cpp" />
     <ClCompile Include="Game of Sum.cpp" />

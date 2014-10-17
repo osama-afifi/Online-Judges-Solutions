@@ -721,5 +721,8 @@
     <ClCompile Include="The Win-stay and Lose-shift Strategy.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Friendship Networks.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
