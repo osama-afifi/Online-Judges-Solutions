@@ -1,122 +1,106 @@
-#include <iostream>
-#include <stdio.h>
-#include <cmath>
-#include <math.h>
-#include <vector>
-#include <sstream>
-#include <map>
-#include <set>
-#include <algorithm>
-#include <string>
-#include <iomanip>
-#include <cstring>
-#include <limits.h>
-#include <queue>
+#include <bits/stdc++.h>
+
+#define FOR(i, a, b) for( int i = (a); i < (b); i++ )
+#define ALL(A) A.begin(), A.end()
+#define Set(a, s) memset(a, s, sizeof (a))
+#define pb push_back
+#define mp make_pair
+typedef long long LL;
+
 using namespace std;
 
 
-#define rep(i, x, y) for(int i = x; i < y; i++)
-#define Rep(i, x, y) for(int i = x; i <= y; i++)
-#define vi vector<int>
-#define vvi vector<vector<int> >
-#define vp vector< pair< int, int > >
-#define point pair<double, double >
-#define pp push_back
-#define mp make_pair
-#define eps pow(10.0,-9.0)
-#define MOD 1000000007
-#define oo 1e18
-#define Maxi 250000
-#define Set(a, s) memset(a, s, sizeof (a))
-typedef unsigned long long ull;
-typedef long long ll;
+int G[30][30];
+int vis[30];
+int cycle;
+int from[30];
+int d[30];
 
-struct trie
-{
-    trie* next[27];
-    bool wordend;
-};
-string s;
 
-trie* addword(int idx, trie* t)
+void dfs(int cur, int p)
 {
-    if( idx == (int)s.length())
+    if(cycle!=-1)return;
+    if(vis[cur]==2)return;
+    from[cur]=p;
+    if(vis[cur]==1)
     {
-        t->wordend = true;
-        return t;
+        cycle=cur;
+        return;
     }
-	t->wordend = true;
-    int edge = s[ idx ] - 'a';
-    if( t->next[edge] ==NULL)
-        t->next[edge] = new trie();
-    t->next[edge] = addword( idx+1, t->next[edge]);
-
-    return t;
-}
-
-char dp[100009];
-bool search ( int idx, trie* t)
-{
-    if( idx == (int)s.length() )
-        return dp[idx]=t->wordend;
-    if(dp[idx]!=-1)
-        return dp[idx];
-    if( s[idx] == '*')
-    {
-        bool check = false;
-        rep( i, 0, 26 )
-        if( t->next[i] > 0 )
+    vis[cur]=1;
+    FOR(i,0,26)
+        if(G[cur][i])
         {
-            check |= search( idx + 1, t->next[i]);
-            if(check)break;
+            dfs(i,cur);
+            d[cur]=max(d[cur],d[i]+1);
         }
 
-        return dp[idx]=check;
-    }
-    else
-    {
-        int edge = s[idx] - 'a';
-        if( t->next[edge] > 0 )
-            return dp[idx]=search( idx +1, t->next[edge]);
-        else if( idx > 0 && s[ idx - 1] == '*')
-        {
-            bool check = false;
-        rep( i, 0, 26 )
-        if( t->next[i] > 0 )
-        {
-
-
-            check |= search( idx, t->next[i]);
-            if(check)break;
-             }
-        return dp[idx]=check;
-        }
-        else
-            return dp[idx]=false;
-    }
+    vis[cur]=2;
 }
 
 int main()
 {
     ios_base::sync_with_stdio(0);
-	freopen( "input.txt", "r", stdin );
-	int n;
-	while( cin>>n )
+    freopen("input.txt", "r" , stdin);
+
+    int t;
+    cin>>t;
+    while(t--)
     {
-        trie* t = new trie();
-       cin>>s;
-       rep( i, 0, (int)s.length() )
-       addword( i, t);
-       rep( i, 0, n)
-       {
-           Set(dp,-1);
-           cin>>s;
-          if( search( 0,t) )
-            cout<<"yes"<<endl;
-          else
-            cout<<"no"<<endl;
-       }
+        int n;
+        cin>>n;
+        Set(d,0);
+        FOR(i,0,26)FOR(j,0,26)G[i][j]=1;
+        FOR(i,0,n)
+            {
+                string s;
+                cin>>s;
+                G[s[0]-'a'][s[1]-'a']=0;
+            }
+        cycle=-1;
+        Set(vis,0);
+        Set(from,-1);
+        FOR(i,0,26)
+                dfs(i,-1);
+        vector<int>P;
+        if(cycle!=-1)
+        {
+            int c=39;
+            while(c--)
+            {
+            P.pb(cycle);
+            cycle = from[cycle];
+            }
+        }
+        else
+        {
+            int start=0;
+            FOR(i,0,26)
+                if(d[i]>d[start])
+                    start=i;
+            P.push_back(start);
+            while(d[start]>0)
+            {
+                FOR(i,0,26)
+                    if(G[start][i] && d[start]==d[i]+1)
+                    {
+                    P.push_back(i);
+                    start=i;
+                    break;
+                    }
+            }
+        }
+
+        reverse(P.begin(),P.end());
+        int dim = (P.size()+1)/2;
+        FOR(i,0,dim)
+        {
+            FOR(j,0,dim)
+                cout << (char)(P[i+j]+'a');
+            cout << endl;
+        }
 
     }
-	return 0;
+    return 0;
 }
+

@@ -86,6 +86,7 @@
     <ClCompile Include="Chomp.cpp" />
     <ClCompile Include="Count.cpp" />
     <ClCompile Include="Different Digits.cpp" />
+    <ClCompile Include="Digraph.cpp" />
     <ClCompile Include="DNA Sequences.cpp" />
     <ClCompile Include="Eleven.cpp" />
     <ClCompile Include="Entmoot.cpp" />

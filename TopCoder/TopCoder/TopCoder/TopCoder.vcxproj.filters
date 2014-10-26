@@ -21,41 +21,47 @@
     <ClCompile Include="..\Current.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\SRM 567.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\SRM 563.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\SRM 564.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="x.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="SRM 577.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="578.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="SRM 464.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="465.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="466.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="IndividualProblems\CuttingBitString.cpp">
       <Filter>Source Files\IndividualProblems</Filter>
     </ClCompile>
-    <ClCompile Include="Ac.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="LongLongNim.cpp">
       <Filter>Source Files\IndividualProblems</Filter>
+    </ClCompile>
+    <ClCompile Include="465.cpp">
+      <Filter>Source Files\IndividualProblems</Filter>
+    </ClCompile>
+    <ClCompile Include="466.cpp">
+      <Filter>Source Files\IndividualProblems</Filter>
+    </ClCompile>
+    <ClCompile Include="578.cpp">
+      <Filter>Source Files\IndividualProblems</Filter>
+    </ClCompile>
+    <ClCompile Include="Ac.cpp">
+      <Filter>Source Files\IndividualProblems</Filter>
+    </ClCompile>
+    <ClCompile Include="SRM 464.cpp">
+      <Filter>Source Files\IndividualProblems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SRM 563.cpp">
+      <Filter>Source Files\IndividualProblems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SRM 564.cpp">
+      <Filter>Source Files\IndividualProblems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\SRM 567.cpp">
+      <Filter>Source Files\IndividualProblems</Filter>
+    </ClCompile>
+    <ClCompile Include="SRM 577.cpp">
+      <Filter>Source Files\IndividualProblems</Filter>
+    </ClCompile>
+    <ClCompile Include="250.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="500.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="1000.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

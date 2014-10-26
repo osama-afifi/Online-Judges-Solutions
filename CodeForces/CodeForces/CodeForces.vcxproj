@@ -106,6 +106,7 @@
     <ClCompile Include="Increasing Sequence.cpp" />
     <ClCompile Include="Industrial Nim.cpp" />
     <ClCompile Include="Inna and Sequence.cpp" />
+    <ClCompile Include="Interesting Array.cpp" />
     <ClCompile Include="Intresting Game.cpp" />
     <ClCompile Include="Jzzhu and Apples.cpp" />
     <ClCompile Include="Jzzhu and Cities.cpp" />
@@ -123,6 +124,7 @@
     <ClCompile Include="Lucky Tree.cpp" />
     <ClCompile Include="Magic Five.cpp" />
     <ClCompile Include="Maxim and Restaurant.cpp" />
+    <ClCompile Include="Maximum Submatrix 2.cpp" />
     <ClCompile Include="Monitor.cpp" />
     <ClCompile Include="MUH and Cube Walls.cpp" />
     <ClCompile Include="Multiplication Table.cpp" />

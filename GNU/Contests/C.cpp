@@ -8,54 +8,100 @@
 typedef long long LL;
 
 using namespace std;
-vector< pair<string,string> > V;
+
+
+int G[30][30];
+int vis[30];
+int cycle;
+int from[30];
+int d[30];
+
+
+void dfs(int cur, int p)
+{
+    if(cycle!=-1)return;
+    if(vis[cur]==2)return;
+    from[cur]=p;
+    if(vis[cur]==1)
+    {
+        cycle=cur;
+        return;
+    }
+    vis[cur]=1;
+    FOR(i,0,26)
+        if(G[cur][i])
+        {
+            dfs(i,cur);
+            d[cur]=max(d[cur],d[i]+1);
+        }
+
+    vis[cur]=2;
+}
+
 int main()
 {
+    ios_base::sync_with_stdio(0);
     freopen("input.txt", "r" , stdin);
 
-    int n;
-    while(cin>>n)
+    int t;
+    cin>>t;
+    while(t--)
     {
-        V.clear();
+        int n;
+        cin>>n;
+        Set(d,0);
+        FOR(i,0,26)FOR(j,0,26)G[i][j]=1;
         FOR(i,0,n)
             {
-                string s1,s2;
-                cin>>s1>>s2;
-                V.push_back(mp(s1,s2));
+                string s;
+                cin>>s;
+                G[s[0]-'a'][s[1]-'a']=0;
             }
-        int num;
-        bool ok=1;
-        cin>>num;
-        --num;
-        string cur=min(V[num].first,V[num].second);
-        FOR(i,1,n)
+        cycle=-1;
+        Set(vis,0);
+        Set(from,-1);
+        FOR(i,0,26)
+            if(!vis[i])
+                dfs(i,-1);
+        vector<int>P;
+        if(cycle!=-1)
         {
-            cin>>num;
-            --num;
-            string mini = min(V[num].first,V[num].second);
-            string maxi = max(V[num].first,V[num].second);
-            if(cur<mini)
-                cur=mini;
-            else if(cur<maxi)
-                cur=maxi;
-            else
+            int c=39;
+            while(c--)
             {
-                ok=0;
-              //  break;
+            P.pb(cycle);
+            cycle = from[cycle];
+            }
+        }
+        else
+        {
+            int start=0;
+            FOR(i,0,26)
+                if(d[i]>d[start])
+                    start=i;
+            P.push_back(start);
+            while(d[start]>0)
+            {
+            FOR(i,0,26)
+                if(d[start]==d[i]+1)
+                {
+                P.push_back(i);
+                start=i;
+                break;
+                }
             }
         }
 
-      //  sort(ALL(V));
+        reverse(P.begin(),P.end());
+        int dim = (P.size()+1)/2;
+        FOR(i,0,dim)
+        {
+            FOR(j,0,dim)
+                cout << (char)(P[i+j]+'a');
+            cout << endl;
+        }
 
-
-        if(ok)
-            cout << "YES" << endl;
-        else cout << "NO" << endl;
     }
-
-
     return 0;
 }
-
-
 

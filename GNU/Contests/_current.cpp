@@ -8,82 +8,106 @@
 typedef long long LL;
 
 using namespace std;
-string s1,s2;
-double R,P,S;
-map<char,int>M;
-map<char,char>B;
-int win(char c1 , char c2)
+
+
+int G[30][30];
+int vis[30];
+int cycle;
+int from[30];
+int d[30];
+
+
+void dfs(int cur, int p)
 {
-    if(c1==c2)
-        return 0;
-    if(c1=='R' && c2=='S')
-        return 1;
-    if(c1=='S' && c2=='P')
-        return 1;
-    if(c1=='P' && c2=='R')
-        return 1;
-    return 2;
+    if(cycle!=-1)return;
+    if(vis[cur]==2)return;
+    from[cur]=p;
+    if(vis[cur]==1)
+    {
+        cycle=cur;
+        return;
+    }
+    vis[cur]=1;
+    FOR(i,0,26)
+        if(G[cur][i])
+        {
+            dfs(i,cur);
+            d[cur]=max(d[cur],d[i]+1);
+        }
+
+    vis[cur]=2;
 }
 
-double cost(int p)
-{
-    if(p==2)
-        return -1;
-    return p;
-}
-
-double dp[10009][5][5];
-bool vis[10009][5][5];
-double solve(int idx, int w, char p)
-{
-    if(idx==s1.size())
-        return 0;
-    if(vis[idx][w][M[w]])
-        return dp[idx][w][M[w]];
-    vis[idx][w][M[w]]=1;
-        double ret=0;
-    if(idx==0 || w==0)
-    {
-        ret += solve(idx+1, win('R',s2[idx]) ,'R')*R + cost(win('R',s2[idx]))*R;
-        ret += solve(idx+1, win('P',s2[idx]) ,'P')*P + cost(win('P',s2[idx]))*P;
-        ret += solve(idx+1, win('S',s2[idx]) ,'S')*S + cost(win('S',s2[idx]))*S;
-    }
-    else if(w==2)
-    {
-        ret +=  solve(idx+1, win(B[s2[idx-1]],s2[idx]) , B[s2[idx-1]]) + cost(win(B[s2[idx-1]],s2[idx]));
-    }
-    else
-        ret +=  solve(idx+1, win(B[p],s2[idx]) , B[p]) + cost(win(B[p],s2[idx]));
-    return dp[idx][w][M[w]]=ret;
-}
 int main()
 {
     ios_base::sync_with_stdio(0);
     freopen("input.txt", "r" , stdin);
-	int t;
-	cin>>t;
-	M['R']=0;
-	M['P']=1;
-	M['S']=2;
-	M['$']=3;
-    B['R']='P';
-	B['P']='S';
-	B['S']='R';
-	while(t--)
-	{
-	    Set(vis,0);
-	    cin>>s1>>s2;
-	    int a=0;
-	    FOR(i,0,s1.size())
-	    {
-	        a += cost(win(s1[i],s2[i]));
-	    }
-        cin>>R>>P>>S;
-        R/=100.0;
-        P/=100.0;
-        S/=100.0;
-        double res = solve(0,0,'$');
-        cout << a << " " << setprecision(4) << fixed << res << " " << ((res>a) ? 'Y' : 'N') <<endl;
+
+    int t;
+    cin>>t;
+    while(t--)
+    {
+        int n;
+        cin>>n;
+        Set(d,0);
+        FOR(i,0,26)FOR(j,0,26)G[i][j]=1;
+        FOR(i,0,n)
+            {
+                string s;
+                cin>>s;
+                G[s[0]-'a'][s[1]-'a']=0;
+            }
+        cycle=-1;
+        Set(vis,0);
+        Set(from,-1);
+        FOR(i,0,26)
+        {
+             dfs(i,-1);
+             if(cycle!=-1)break;
+        }
+
+        vector<int>P;
+        if(cycle!=-1)
+        {
+            int c=39;
+            while(c--)
+            {
+            P.pb(cycle);
+            cycle = from[cycle];
+            }
+            reverse(P.begin(),P.end());
+        }
+        else
+        {
+            int start=0;
+            FOR(i,0,26)
+                if(d[i]>d[start])
+                    start=i;
+             P.push_back(start);
+            while(d[start]>0)
+            {
+
+                FOR(i,0,26)
+                    if(G[start][i] && d[start]==d[i]+1)
+                    {
+                    start=i;
+                    P.push_back(start);
+                    break;
+                    }
+            }
+
+        }
+
+
+        int dim = (P.size()+1)/2;
+        FOR(i,0,dim)
+        {
+            FOR(j,0,dim)
+                cout << (char)(P[i+j]+'a');
+            cout << endl;
+        }
+
     }
-	return 0;
+    return 0;
 }
+

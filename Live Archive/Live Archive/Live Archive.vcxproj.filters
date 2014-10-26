@@ -153,6 +153,9 @@
     <ClCompile Include="Sorted Queues.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Digraph.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="input.in" />
