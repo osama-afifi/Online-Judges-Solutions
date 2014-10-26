@@ -63,6 +63,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="AdventureTime.cpp" />
     <ClCompile Include="Fiborial.cpp" />
     <ClCompile Include="Little Chu.cpp" />
     <ClCompile Include="Pawn Game.cpp" />

@@ -32,5 +32,8 @@
     <ClCompile Include="Little Chu.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="AdventureTime.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
