@@ -156,6 +156,9 @@
     <ClCompile Include="Digraph.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="GrandPa%27s Pepe%27s Pizza.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="input.in" />

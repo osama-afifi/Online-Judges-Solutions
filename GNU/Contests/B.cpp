@@ -9,98 +9,72 @@ typedef long long LL;
 
 using namespace std;
 
-
-int G[30][30];
-int vis[30];
-int cycle;
-int from[30];
-int d[30];
-
-
-void dfs(int cur, int p)
+struct point
 {
-    if(cycle!=-1)return;
-    if(vis[cur]==2)return;
-    from[cur]=p;
-    if(vis[cur]==1)
+    double x,y;
+    point()
     {
-        cycle=cur;
-        return;
+        x=y=0;
     }
-    vis[cur]=1;
-    FOR(i,0,26)
-        if(G[cur][i])
-        {
-            dfs(i,cur);
-            d[cur]=max(d[cur],d[i]+1);
-        }
+    point(double x, double y): x(x) , y(y)
+    {
+    }
 
-    vis[cur]=2;
+};
+
+map<pair<int,int>, set<double> >M;
+
+double slope(point a , point b)
+{
+    return (b.y-a.y)/(b.x-a.x);
 }
+
+double inter(point a , point b)
+{
+    return a.y - slope(a,b)*a.x;
+}
+
+double perp(double s)
+{
+    return -(1.0/s);
+}
+
+vector< pair<int,int> >V;
 
 int main()
 {
     ios_base::sync_with_stdio(0);
     freopen("input.txt", "r" , stdin);
 
-    int t;
-    cin>>t;
-    while(t--)
+    int n;
+    while(cin>>n)
     {
-        int n;
-        cin>>n;
-        Set(d,0);
-        FOR(i,0,26)FOR(j,0,26)G[i][j]=1;
+
+        M.clear();
         FOR(i,0,n)
             {
-                string s;
-                cin>>s;
-                G[s[0]-'a'][s[1]-'a']=0;
+                int a,b,c,d;
+                cin>>a>>b>>c>>d;
+        //        V.pb(mp(point(a,b),point(c,d)));
+                M[slope(point(a,b),point(c,d))].insert(inter(point(a,b),point(c,d)));
             }
-        cycle=-1;
-        Set(vis,0);
-        Set(from,-1);
-        FOR(i,0,26)
-                dfs(i,-1);
-        vector<int>P;
-        if(cycle!=-1)
-        {
-            int c=39;
-            while(c--)
-            {
-            P.pb(cycle);
-            cycle = from[cycle];
-            }
-        }
-        else
-        {
-            int start=0;
-            FOR(i,0,26)
-                if(d[i]>d[start])
-                    start=i;
-            P.push_back(start);
-            while(d[start]>0)
-            {
-                FOR(i,0,26)
-                    if(G[start][i] && d[start]==d[i]+1)
-                    {
-                    P.push_back(i);
-                    start=i;
-                    break;
-                    }
-            }
-        }
 
-        reverse(P.begin(),P.end());
-        int dim = (P.size()+1)/2;
-        FOR(i,0,dim)
-        {
-            FOR(j,0,dim)
-                cout << (char)(P[i+j]+'a');
-            cout << endl;
-        }
 
+    map<double, set<double> > ::iterator it;
+    LL res=0;
+    for(it=M.begin() ; it!=M.end() ; it++)
+    {
+            map<double, set<double> > ::iterator p;
+            p=M.find(perp(it->first));
+            if(p==M.end())continue;
+            LL c1 = it->second.size();
+            LL c2 = p->second.size();
+            res += ((c1*(c1-1))) * ((c2*(c2-1)));
     }
+
+        cout << res/2 << endl;
+    }
+
     return 0;
 }
 

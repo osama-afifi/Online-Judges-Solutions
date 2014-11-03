@@ -91,6 +91,7 @@
     <ClCompile Include="Eleven.cpp" />
     <ClCompile Include="Entmoot.cpp" />
     <ClCompile Include="Equal Sum Partitions.cpp" />
+    <ClCompile Include="GrandPa%27s Pepe%27s Pizza.cpp" />
     <ClCompile Include="Hailstone HOTPO.cpp" />
     <ClCompile Include="Horrible Quiz.cpp" />
     <ClCompile Include="Hours and Minutes.cpp" />
