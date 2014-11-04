@@ -9,7 +9,63 @@ typedef long long LL;
 
 using namespace std;
 
-int arr[100009];
+
+struct student{
+ int ab;
+ int cost;
+ int idx;
+ bool operator < (const student &s) const
+ {
+     if(ab!=s.ab)
+        return ab>s.ab;
+     return cost<s.cost;
+ }
+};
+
+pair<int,int> b[100009];
+student s[100009];
+int ans[100009];
+int temp[100009];
+int n,m;
+int P;
+
+
+bool solve(int days)
+{
+	set<pair<int,int>, greater<pair<int,int> > >bugs;
+    FOR(i,0,m)
+        bugs.insert(b[i]);
+
+int pass=0;
+    FOR(i,0,n)
+	{
+	    int d=days;
+        bool done=0;
+        if(pass+s[i].cost>P)continue;
+		while(d--)
+        {
+            if(bugs.size()==0)break;
+            pair<int,int> B= *(bugs.begin());
+            if(B.first>s[i].ab)break;
+            else
+                {
+                    bugs.erase(B);
+                    temp[B.second]=s[i].idx;
+                    done=1;
+                }
+        }
+        if(done)
+             pass+=s[i].cost;
+	}
+
+if(pass>P)return false;
+if(bugs.size()==0)
+    return true;
+return false;
+}
+
+
+
 
 
 int main()
@@ -17,41 +73,39 @@ int main()
     ios_base::sync_with_stdio(0);
     freopen("input.txt", "r" , stdin);
 
-    int c,n;
-    while(cin>>c>>n)
+    while(cin>>n>>m>>P)
     {
-        FOR(i,0,n)cin>>arr[i];
-        int mini=1<<25;
-        int maxi=0;
-
-    bool found=0;
-    int arc=c/n;
-    arr[n]=arr[0]+c;
-    n++;
-
-    for(int d = arr[0] ; d<arr[1] ; d++)
-    {
-        bool ok=1;
-        int cur=d;
-        FOR(i,1,n)
-            if(cur<arr[i] && cur+arc>=arr[i])
-                cur+=arc;
-            else {ok=0;break;}
-        if(ok)
+        FOR(i,0,m)
+            cin>>b[i].first,b[i].second=i;
+        FOR(i,0,n)
+            cin>>s[i].ab,s[i].idx=i;
+        FOR(i,0,n)
+            cin>>s[i].cost;
+        sort(s,s+n);
+        sort(b,b+m);
+        int b=0,e=m,res=-1;
+        while(b<=e)
         {
-            found=1;
-            break;
+            int mid = (b+e)/2;
+            if(solve(mid))
+            {
+                  e=mid-1,res=mid;
+                  FOR(i,0,m) ans[i]=temp[i]+1;
+            }
+
+            else b=mid+1;
         }
-    }
-
-
-        if(found)
-        cout << "S" <<endl;
+        if(res==-1)
+            cout << "NO" <<endl;
         else
-            cout << "N" <<endl;
+            {
+                cout << "YES" <<endl;
+                FOR(i,0,m)
+                cout << ans[i] << " ";
+                cout <<endl;
 
+            }
     }
-
 
     return 0;
 }
