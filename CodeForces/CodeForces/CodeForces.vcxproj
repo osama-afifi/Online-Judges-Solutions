@@ -96,6 +96,7 @@
     <ClCompile Include="Fish.cpp" />
     <ClCompile Include="Flipping Game.cpp" />
     <ClCompile Include="Furlo and Rublo and Game.cpp" />
+    <ClCompile Include="Galactic Warlords.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="Games with Rectangle.cpp" />
     <ClCompile Include="Gargari and Bishops.cpp" />
@@ -110,6 +111,7 @@
     <ClCompile Include="Intresting Game.cpp" />
     <ClCompile Include="Jzzhu and Apples.cpp" />
     <ClCompile Include="Jzzhu and Cities.cpp" />
+    <ClCompile Include="Kindergarten.cpp" />
     <ClCompile Include="Knight Tournament.cpp" />
     <ClCompile Include="Let%27s Go Rolling!.cpp" />
     <ClCompile Include="Line.cpp" />
@@ -142,6 +144,7 @@
     <ClCompile Include="Quantity of Strings.cpp" />
     <ClCompile Include="Random Tasks.cpp" />
     <ClCompile Include="Right Triangles.cpp" />
+    <ClCompile Include="Road Work.cpp" />
     <ClCompile Include="Roma and Changing Signs.cpp" />
     <ClCompile Include="Rounds.cpp" />
     <ClCompile Include="Sereja and Algorithm.cpp" />
@@ -154,6 +157,7 @@
     <ClCompile Include="Test.cpp" />
     <ClCompile Include="The World is a Theatre.cpp" />
     <ClCompile Include="Tree-String Problem.cpp" />
+    <ClCompile Include="Treeland.cpp" />
     <ClCompile Include="Watermelon.cpp" />
     <ClCompile Include="Writing a Song.cpp" />
     <ClCompile Include="Xenia and Hamming.cpp" />

@@ -1,110 +1,143 @@
 #include <bits/stdc++.h>
 
 #define FOR(i, a, b) for( int i = (a); i < (b); i++ )
-#define ALL(A) A.begin(), A.end()
-#define Set(a, s) memset(a, s, sizeof (a))
+#define  Set(a,b) memset(a,b,sizeof(a))
 #define pb push_back
 #define mp make_pair
 typedef long long LL;
 
 using namespace std;
 
+int teacher[209];
+int arr[209][209];
+vector< vector<int> >G;
 
-struct student{
- int ab;
- int cost;
- int idx;
- bool operator < (const student &s) const
- {
-     if(ab!=s.ab)
-        return ab>s.ab;
-     return cost<s.cost;
- }
-};
+const int MAX = 409;
 
-pair<int,int> b[100009];
-student s[100009];
-int ans[100009];
-int temp[100009];
-int n,m;
-int P;
-
-
-bool solve(int days)
+struct SCC
 {
-	set<pair<int,int>, greater<pair<int,int> > >bugs;
-    FOR(i,0,m)
-        bugs.insert(b[i]);
+	int SCC;
+    int zatouna=0;
+	int nodelow[MAX];
+	int nodeindex[MAX];
+	bool vis[MAX];
+	int component[MAX];
+	int degree[MAX];
+	stack<int>S;
 
-int pass=0;
-    FOR(i,0,n)
+	void tarjanSCC(int cur)
 	{
-	    int d=days;
-        bool done=0;
-        if(pass+s[i].cost>P)continue;
-		while(d--)
-        {
-            if(bugs.size()==0)break;
-            pair<int,int> B= *(bugs.begin());
-            if(B.first>s[i].ab)break;
-            else
-                {
-                    bugs.erase(B);
-                    temp[B.second]=s[i].idx;
-                    done=1;
-                }
-        }
-        if(done)
-             pass+=s[i].cost;
+		nodeindex[cur]=nodelow[cur]=zatouna++;
+		vis[cur]=1;
+		S.push(cur);
+		FOR(i,0,G[cur].size())
+		{
+			int v=G[cur][i];
+			if(nodeindex[v]==-1)
+				tarjanSCC(v);
+			if(vis[v])
+				nodelow[cur]=min(nodelow[cur],nodelow[v]);
+		}
+
+		if(nodeindex[cur]==nodelow[cur]) //SCC Root Found
+		{
+			while(1)
+			{
+				int v=S.top();
+				component[v]=SCC;
+				vis[v]=0;
+				S.pop();
+				if(v==cur)break;
+			}
+			SCC++;
+		}
+
 	}
 
-if(pass>P)return false;
-if(bugs.size()==0)
-    return true;
-return false;
+	void init()
+	{
+		Set(degree,0);
+		zatouna=SCC=0;
+		int n1,n2;
+		while(!S.empty())S.pop();
+		Set(vis,0);
+		Set(nodelow,0);
+		Set(nodeindex,-1);
+
+	}
+
+	void getSCC()
+	{
+	    for(int i = 0 ; i<G.size() ; i++)
+            if(!vis[i])
+                tarjanSCC(i);
+	}
+
+};
+
+
+__inline int neg(int i)
+{
+    return i^1;
 }
 
+int n;
+void init(int T)
+{
+    G.clear();
+    G.resize(2*n+2);
+    FOR(i,0,n)
+        FOR(j,T,n)
+        {
+            if(teacher[i]!=teacher[arr[i][j]])
+            {
+            G[neg(2*i)].pb(arr[i][j]);
+            G[arr[i][j]].pb(2*i);
+            }
+        }
 
-
-
+}
 
 int main()
 {
     ios_base::sync_with_stdio(0);
-    freopen("input.txt", "r" , stdin);
+    freopen("input.txt", "r", stdin);
 
-    while(cin>>n>>m>>P)
-    {
-        FOR(i,0,m)
-            cin>>b[i].first,b[i].second=i;
-        FOR(i,0,n)
-            cin>>s[i].ab,s[i].idx=i;
-        FOR(i,0,n)
-            cin>>s[i].cost;
-        sort(s,s+n);
-        sort(b,b+m);
-        int b=0,e=m,res=-1;
-        while(b<=e)
+    int T;
+    while(cin>>n>>T)
         {
-            int mid = (b+e)/2;
-            if(solve(mid))
-            {
-                  e=mid-1,res=mid;
-                  FOR(i,0,m) ans[i]=temp[i]+1;
-            }
+            FOR(i,0,n)
+                FOR(j,0,n)
+                {
+                    int num;cin>>num;
+                    if(j)
+                        arr[i][j]=num-1;
+                    else
+                        teacher[i]=num;
+                }
 
-            else b=mid+1;
-        }
-        if(res==-1)
-            cout << "NO" <<endl;
-        else
-            {
-                cout << "YES" <<endl;
-                FOR(i,0,m)
-                cout << ans[i] << " ";
-                cout <<endl;
+             bool ok=1;
+             int res=-1;
 
+            for(int i=T;i>=0 ; i--)
+            {
+                init(i);
+                SCC S;
+                S.init();
+                S.getSCC();
+                for(int i = 0 ; i<n ; i++)
+                    if(S.component[2*i]==S.component[neg(2*i)])
+                    {
+                        ok=0;
+                        break;
+                    }
+                if(ok)
+                {
+                    res=i;break;
+                }
             }
+            cout << n-res <<endl;
+
     }
 
     return 0;

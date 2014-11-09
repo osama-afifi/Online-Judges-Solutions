@@ -1,5 +1,4 @@
-﻿//
-//#include<iostream>
+﻿//#include<iostream>
 //#include<iomanip>
 //#include<string>
 //#include<cstring>
@@ -20,50 +19,101 @@
 //#define pb push_back
 //#define mp make_pair
 //typedef long long LL;
-//
 //using namespace std;
-//int arr[10009];
-//int hvis[10009];
+//
+//
+//int dp[64][2][2];
+//int L[65];
+//int R[65];
+//int solve(int idx , bool b1 , bool b2)
+//{
+//    if(idx==64)
+//        return 0;
+//    if(dp[idx][b1][b2]!=-1)
+//        return dp[idx][b1][b2];
+//    int maxi=0;
+//
+//    if((!b1) || L[idx]==0)
+//        maxi = max(maxi, solve(idx+1,b1&(L[idx]==0),b2&(R[idx]==0)) );
+//	if((!b2) || R[idx]==1)
+//        maxi = max(maxi, solve(idx+1,b1&(L[idx]==1),b2&(R[idx]==1))+1 );
+//	if(!b1 && !b2)
+//		maxi = max(maxi, solve(idx+1,b1,b2)+1 );
+//
+//    return dp[idx][b1][b2]=maxi;
+//}
+//
+//
+// LL x;
+//
+//void print(int idx , bool b1 , bool b2)
+//{
+//    if(idx==64)
+//        return;
+//		int opt = solve(idx,b1,b2);
+//    int maxi=0;
+//
+//    if((!b1) || L[idx]==0)
+//	{
+//		if(opt == solve(idx+1,b1&(L[idx]==0),b2&(R[idx]==0)))
+//		{
+//			print(idx+1,b1&(L[idx]==0),b2&(R[idx]==0));
+//			return;
+//		}
+//	
+//	}
+//     
+//	    if((!b2) || R[idx]==1)
+//		if(opt == solve(idx+1,b1&(L[idx]==1),b2&(R[idx]==1))+1)
+//		{
+//			x |= (1LL<<(63-idx));
+//			print(idx+1,b1&(L[idx]==1),b2&(R[idx]==1));
+//			return;
+//		}
+//
+//	if(!b1 && !b2)
+//	{
+//		if(opt == solve(idx+1,b1,b2)+1)
+//		{
+//			x |= (1LL<<(63-idx));
+//			print(idx+1,b1,b2);
+//			return;
+//		}
+//		
+//	}
+//}
+//
 //int main()
 //{
-//	ios_base::sync_with_stdio(0);
-//	freopen("input.in", "r" , stdin);
-//	int n,h,l;
-//
-//	while(cin>>n>>h>>l)
-//	{
-//		Set(hvis,0);
-//		int oo=1<<25;
-//		FOR(i,0,n)arr[i]=-oo;
-//		vector<int>H;
-//		FOR(i,0,h)
-//		{
-//			int num;cin>>num;
-//			H.push_back(num);
-//			arr[num]=0;
-//		}
-//
-//		FOR(i,0,l)
-//		{
-//		
-//			int a,b;
-//			cin>>a>>b;
-//
-//			arr[a]=arr[b]+1;
-//			//arr[b]=arr[a]+1;
-//		}
-//
-//		int idx=0;
-//		FOR(i,0,n)
-//			if(arr[idx]<arr[i])
-//				idx=i;
-//		//FOR(i,0,H.size())
-//		//	arr[H[i]]=0;
-//
-//		cout << idx+1 <<endl;
-//
-//	}
+//    ios_base::sync_with_stdio(0);
+//    freopen("input.in", "r" , stdin);
+//    int n;
+//    while(cin>>n)
+//   {
+//        while(n--)
+//        {
+//            Set(dp,-1);
+//            LL l,r;
+//            cin>>l>>r;
+//            Set(L,0);
+//            Set(R,0);
+//            FOR(i,0,64)
+//                {
+//                    L[i]= (l&(1LL<<i)) ? 1 : 0;
+//                    R[i]= (r&(1LL<<i)) ? 1 : 0;
+//                }
+//            reverse(L,L+64);
+//            reverse(R,R+64);
+//			x=0;
+//            int res = solve(0,1,1);
+//			print(0,1,1);
+//          //  cout << res <<endl;
+//			cout << x <<endl;
+//        }
 //
 //
-//	return 0;
+//   }
+//    return 0;
 //}
+//
+//

@@ -1,30 +1,11 @@
-﻿Build started 04-Nov-14 6:48:44 PM.
+﻿Build started 09-Nov-14 2:13:29 AM.
      1>Project "D:\Osama\Programming\Online-Judges-Solutions\CodeForces\CodeForces\CodeForces.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt _A.cpp
          _A.cpp
-     1>d:\osama\programming\online-judges-solutions\codeforces\codeforces\_a.cpp(69): warning C4244: 'argument' : conversion from 'long double' to 'int', possible loss of data
-     1>d:\osama\programming\online-judges-solutions\codeforces\codeforces\_a.cpp(88): warning C4996: 'freopen': This function or variable may be unsafe. Consider using freopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>d:\osama\programming\online-judges-solutions\codeforces\codeforces\_a.cpp(95): warning C4018: '<' : signed/unsigned mismatch
+     1>d:\osama\programming\online-judges-solutions\codeforces\codeforces\_a.cpp(164): warning C4996: 'freopen': This function or variable may be unsafe. Consider using freopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  c:\program files (x86)\microsoft visual studio 11.0\vc\include\stdio.h(233) : see declaration of 'freopen'
-     1>d:\osama\programming\online-judges-solutions\codeforces\codeforces\_a.cpp(116): warning C4018: '<' : signed/unsigned mismatch
-     1>d:\osama\programming\online-judges-solutions\codeforces\codeforces\_a.cpp(117): warning C4018: '<' : signed/unsigned mismatch
-     1>d:\osama\programming\online-judges-solutions\codeforces\codeforces\_a.cpp(118): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
-     1>d:\osama\programming\online-judges-solutions\codeforces\codeforces\_a.cpp(119): warning C4018: '<' : signed/unsigned mismatch
-     1>d:\osama\programming\online-judges-solutions\codeforces\codeforces\_a.cpp(120): warning C4018: '<' : signed/unsigned mismatch
-     1>d:\osama\programming\online-judges-solutions\codeforces\codeforces\_a.cpp(123): warning C4244: 'argument' : conversion from 'double' to 'const float', possible loss of data
-     1>c:\program files (x86)\microsoft visual studio 11.0\vc\include\utility(182): warning C4244: 'initializing' : conversion from 'long double' to 'int', possible loss of data
-                 d:\osama\programming\online-judges-solutions\codeforces\codeforces\_a.cpp(70) : see reference to function template instantiation 'std::pair<_Ty1,_Ty2>::pair<long double,long double>(std::pair<long double,long double> &&,void **)' being compiled
-                 with
-                 [
-                     _Ty1=int,
-                     _Ty2=int
-                 ]
-                 d:\osama\programming\online-judges-solutions\codeforces\codeforces\_a.cpp(70) : see reference to function template instantiation 'std::pair<_Ty1,_Ty2>::pair<long double,long double>(std::pair<long double,long double> &&,void **)' being compiled
-                 with
-                 [
-                     _Ty1=int,
-                     _Ty2=int
-                 ]
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Osama\Programming\Online-Judges-Solutions\CodeForces\Debug\CodeForces.exe" /INCREMENTAL /NOLOGO pthreadVC2.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\Osama\Programming\Online-Judges-Solutions\CodeForces\Debug\CodeForces.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Osama\Programming\Online-Judges-Solutions\CodeForces\Debug\CodeForces.lib" /MACHINE:X86 "Debug\A Lot of Games.obj"
          "Debug\A. Snow Footprints.obj"
@@ -46,6 +27,7 @@
          Debug\Fish.obj
          "Debug\Flipping Game.obj"
          "Debug\Furlo and Rublo and Game.obj"
+         "Debug\Galactic Warlords.obj"
          Debug\Game.obj
          "Debug\Games with Rectangle.obj"
          "Debug\Gargari and Bishops.obj"
@@ -92,6 +74,7 @@
          "Debug\Quantity of Strings.obj"
          "Debug\Random Tasks.obj"
          "Debug\Right Triangles.obj"
+         "Debug\Road Work.obj"
          "Debug\Roma and Changing Signs.obj"
          Debug\Rounds.obj
          "Debug\Sereja and Algorithm.obj"
@@ -104,6 +87,7 @@
          Debug\Test.obj
          "Debug\The World is a Theatre.obj"
          "Debug\Tree-String Problem.obj"
+         Debug\Treeland.obj
          Debug\Watermelon.obj
          "Debug\Writing a Song.obj"
          "Debug\Xenia and Hamming.obj"
@@ -117,4 +101,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:04.45
+Time Elapsed 00:00:04.79
