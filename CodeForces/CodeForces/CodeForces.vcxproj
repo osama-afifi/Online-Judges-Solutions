@@ -127,6 +127,7 @@
     <ClCompile Include="Magic Five.cpp" />
     <ClCompile Include="Maxim and Restaurant.cpp" />
     <ClCompile Include="Maximum Submatrix 2.cpp" />
+    <ClCompile Include="Maximum Value.cpp" />
     <ClCompile Include="Monitor.cpp" />
     <ClCompile Include="MUH and Cube Walls.cpp" />
     <ClCompile Include="Multiplication Table.cpp" />

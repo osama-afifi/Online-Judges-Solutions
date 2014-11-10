@@ -1,143 +1,133 @@
 #include <bits/stdc++.h>
 
 #define FOR(i, a, b) for( int i = (a); i < (b); i++ )
-#define  Set(a,b) memset(a,b,sizeof(a))
+#define ALL(A) A.begin(), A.end()
+#define Set(a, s) memset(a, s, sizeof (a))
 #define pb push_back
 #define mp make_pair
 typedef long long LL;
 
 using namespace std;
 
-int teacher[209];
-int arr[209][209];
-vector< vector<int> >G;
-
-const int MAX = 409;
-
-struct SCC
+int cycle[10009];
+int cycleCost[10009];
+bool vis[10009];
+int dist[10009];
+vector< vector<pair<int,int> > >G;
+int c=0;
+int cycleStart;
+int dfs(int cur,int prev)
 {
-	int SCC;
-    int zatouna=0;
-	int nodelow[MAX];
-	int nodeindex[MAX];
-	bool vis[MAX];
-	int component[MAX];
-	int degree[MAX];
-	stack<int>S;
-
-	void tarjanSCC(int cur)
-	{
-		nodeindex[cur]=nodelow[cur]=zatouna++;
-		vis[cur]=1;
-		S.push(cur);
-		FOR(i,0,G[cur].size())
-		{
-			int v=G[cur][i];
-			if(nodeindex[v]==-1)
-				tarjanSCC(v);
-			if(vis[v])
-				nodelow[cur]=min(nodelow[cur],nodelow[v]);
-		}
-
-		if(nodeindex[cur]==nodelow[cur]) //SCC Root Found
-		{
-			while(1)
-			{
-				int v=S.top();
-				component[v]=SCC;
-				vis[v]=0;
-				S.pop();
-				if(v==cur)break;
-			}
-			SCC++;
-		}
-
-	}
-
-	void init()
-	{
-		Set(degree,0);
-		zatouna=SCC=0;
-		int n1,n2;
-		while(!S.empty())S.pop();
-		Set(vis,0);
-		Set(nodelow,0);
-		Set(nodeindex,-1);
-
-	}
-
-	void getSCC()
-	{
-	    for(int i = 0 ; i<G.size() ; i++)
-            if(!vis[i])
-                tarjanSCC(i);
-	}
-
-};
-
-
-__inline int neg(int i)
-{
-    return i^1;
-}
-
-int n;
-void init(int T)
-{
-    G.clear();
-    G.resize(2*n+2);
-    FOR(i,0,n)
-        FOR(j,T,n)
+    vis[cur]=1;
+    FOR(i,0,G[cur].size())
+    {
+        int v=G[cur][i].first;
+        if(v==cycleStart && v!=prev)
         {
-            if(teacher[i]!=teacher[arr[i][j]])
-            {
-            G[neg(2*i)].pb(arr[i][j]);
-            G[arr[i][j]].pb(2*i);
-            }
+            //cycle[v]=cycle[cur]=c;
+            return G[cur][i].second; // indicate cycle detection
         }
 
+        if(v==prev)continue;
+        if(!vis[v])
+        {
+            int found = dfs(v, cur);
+            if(found)
+            {
+                cycle[cur]=cycle[v]=c;
+                return found+G[cur][i].second;
+            }
+        }
+    }
+    return 0;
+}
+
+int n,m;
+
+void dijkstra(int st)
+{
+    FOR(i,0,n)
+    dist[i] = (int)1e9;
+    priority_queue<pair<int,int>, vector<pair<int,int> > , greater<pair<int,int> > >Q;
+    Q.push(mp(0,st));
+    dist[st]=0;
+    while(Q.size())
+    {
+        pair<int,int>temp = Q.top();
+        Q.pop();
+        int cost = temp.first;
+        int cur = temp.second;
+        if(cost>dist[cur])continue;
+        FOR(i,0,G[cur].size())
+            {
+                int v = G[cur][i].first;
+                int newCost = dist[cur]+G[cur][i].second;
+                if(dist[v]>newCost)
+                   {
+                       dist[v]=newCost;
+                    Q.push(mp(newCost,v));
+                   }
+
+            }
+    }
 }
 
 int main()
 {
     ios_base::sync_with_stdio(0);
-    freopen("input.txt", "r", stdin);
+    freopen("input.txt", "r" , stdin);
 
-    int T;
-    while(cin>>n>>T)
+    while(scanf("%d %d", &n, &m)==2)
+    {
+        G.clear();
+        G.resize(n);
+        FOR(i,0,m)
         {
-            FOR(i,0,n)
-                FOR(j,0,n)
-                {
-                    int num;cin>>num;
-                    if(j)
-                        arr[i][j]=num-1;
-                    else
-                        teacher[i]=num;
-                }
-
-             bool ok=1;
-             int res=-1;
-
-            for(int i=T;i>=0 ; i--)
+            int a,b,c;
+            scanf("%d %d %d", &a, &b, &c);
+            --a,--b;
+            G[a].pb(mp(b,c));
+            G[b].pb(mp(a,c));
+        }
+        Set(cycle,-1);
+        Set(cycleCost,0);
+        c=0;
+        FOR(i,0,n)
+        {
+            if(G[i].size()>1 && cycle[i]==-1)
             {
-                init(i);
-                SCC S;
-                S.init();
-                S.getSCC();
-                for(int i = 0 ; i<n ; i++)
-                    if(S.component[2*i]==S.component[neg(2*i)])
-                    {
-                        ok=0;
-                        break;
-                    }
-                if(ok)
-                {
-                    res=i;break;
-                }
+                Set(vis,0);
+                cycleStart = i;
+                int found = dfs(i,-1);
+                if(found)
+                    cycleCost[c] = found,c++;
             }
-            cout << n-res <<endl;
+        }
 
+        int q;scanf("%d",&q);
+
+        while(q--)
+        {
+            int st,fat;
+            int mini=(int)1e9;
+            scanf("%d %d", &st, &fat);
+            st--;
+            dijkstra(st);
+        FOR(i,0,n)
+            {
+                  if(cycle[i]!=-1 && cycleCost[cycle[i]]>=fat)
+                    {
+                    int cost = 2*dist[i] + cycleCost[cycle[i]];
+                        mini = min(mini,cost);
+                    }
+            }
+
+
+            if(mini>=(int)1e9)
+                cout << -1 <<endl;
+            else
+            cout << mini <<endl;
+        }
     }
 
     return 0;
