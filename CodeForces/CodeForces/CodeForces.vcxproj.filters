@@ -294,6 +294,9 @@
     <ClCompile Include="Maximum Value.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Sums of Digits.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="input.in">

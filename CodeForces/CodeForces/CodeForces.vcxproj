@@ -154,6 +154,7 @@
     <ClCompile Include="Sereja and the Arrangement of Numbers.cpp" />
     <ClCompile Include="Sereja ans Anagrams.cpp" />
     <ClCompile Include="String Transformation.cpp" />
+    <ClCompile Include="Sums of Digits.cpp" />
     <ClCompile Include="Sweets Game.cpp" />
     <ClCompile Include="Test.cpp" />
     <ClCompile Include="The World is a Theatre.cpp" />

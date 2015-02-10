@@ -52,6 +52,10 @@
 			<Option compile="0" />
 			<Option link="0" />
 		</Unit>
+		<Unit filename="X.cpp">
+			<Option compile="0" />
+			<Option link="0" />
+		</Unit>
 		<Unit filename="_current.cpp" />
 		<Unit filename="input.txt" />
 		<Unit filename="template.cpp">

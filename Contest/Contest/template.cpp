@@ -1,27 +1,14 @@
-#include <vector>
-#include <list>
-#include <map>
-#include <set>
-#include <queue>
-#include <deque>
-#include <stack>
-#include <bitset>
-#include <algorithm>
-#include <functional>
-#include <numeric>
-#include <utility>
-#include <sstream>
-#include <iostream>
-#include <iomanip>
-#include <cstdio>
-#include <cmath>
-#include <cstdlib>
-#include <ctime>
-
-using namespace std;
-#define FOR(i, a, b) for( int i = (a); i < (b); i++ )
-#define Fore(it, x) for(typeof (x.begin()) it = x.begin(); it != x.end (); it++)
-#define Set(a, s) memset(a, s, sizeof (a))
+#include <bits/stdc++.h>
+#define FOR(i,a,b) for(int i = (a) ; i<b ; i++)
+#define Set(a,b) memset(a,b,sizeof(a))
 #define mp make_pair
+#define pb push_back
+typedef long long LL;
+using namespace std;
 
-freopen("input.in","r",stdin);
+int main()
+{
+    ios_base::sync_with_stdio(0);
+    freopen("input.in", "r", stdin);
+    return 0;
+}
