@@ -142,6 +142,7 @@
     <ClCompile Include="Pocket Book.cpp" />
     <ClCompile Include="Points.cpp" />
     <ClCompile Include="Present.cpp" />
+    <ClCompile Include="Pretty Song.cpp" />
     <ClCompile Include="Quantity of Strings.cpp" />
     <ClCompile Include="Random Tasks.cpp" />
     <ClCompile Include="Right Triangles.cpp" />
