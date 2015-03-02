@@ -1,4 +1,14 @@
 # depslib dependency file v1.0
-1423687130 source:d:\osama\programming\online-judges-solutions\contest\contest\_current.cpp
-	<bits/stdc++.h>
+1425333162 source:d:\osama\programming\online-judges-solutions\contest\contest\_current.cpp
+	<iostream>
+	<iomanip>
+	<string>
+	<cstring>
+	<stdio.h>
+	<algorithm>
+	<vector>
+	<map>
+	<sstream>
+	<queue>
+	<set>
 

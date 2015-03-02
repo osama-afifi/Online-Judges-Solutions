@@ -51,6 +51,9 @@
 			<Option compile="0" />
 			<Option link="0" />
 		</Unit>
+		<Unit filename="SpeedRecord">
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
 		<Unit filename="_current.cpp" />
 		<Unit filename="input.in" />
 		<Unit filename="template.cpp">

@@ -19,16 +19,15 @@ int main()
             if((s[i]-'0')%2==0 && (mini==-1 ||(s[i]-'0')<(s[mini]-'0')))
                 mini = i;
         if(mini == -1)
+        {
             cout << -1 <<endl;
+        }
         else
         {
         swap(s[s.size()-1],s[mini]);
         cout << s << endl;
         }
-
-
     }
-
     return 0;
 }
 
