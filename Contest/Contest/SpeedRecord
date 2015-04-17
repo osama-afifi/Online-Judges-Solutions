@@ -1,4 +1,44 @@
-C
-1- 15m
-2- 15m
-3- 10m
+#include <bits/stdc++.h>
+#define FOR(i,a,b) for(int i = (a) ; i<b ; i++)
+#define Set(a,b) memset(a,b,sizeof(a))
+#define mp make_pair
+#define pb push_back
+#define all(v) (v.begin(), v.end())
+typedef long long LL;
+using namespace std;
+
+LL n,m,k;
+LL MOD = 1e9+7;
+
+LL modPow(LL n , LL p)
+{
+    if(p==0)return 1LL;
+    LL x = modPow(n,p/2);
+    if(p%2==0) return (x%MOD * x%MOD)%MOD;
+    return (n%MOD * x%MOD * x%MOD)%MOD;
+}
+
+
+int main()
+{
+    ios_base::sync_with_stdio(0);
+    freopen("input.in", "r", stdin);
+
+    while(cin>>n>>m>>k)
+    {
+       LL l = n-m;
+       if(l>=n/k)
+            cout << m <<endl;
+        else
+        {
+            LL ex = m-((n/k)*(k-1)+n%k);
+            LL res = modPow(2LL,ex+1)%MOD;
+            res = (res-2+MOD)%MOD;
+            res = (res%MOD * k%MOD)%MOD;
+            res  = (res + (m-ex*k)%MOD)%MOD;
+            cout << res <<endl;
+        }
+    }
+
+    return 0;
+}

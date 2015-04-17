@@ -1,14 +1,9 @@
 # depslib dependency file v1.0
-1425333162 source:d:\osama\programming\online-judges-solutions\contest\contest\_current.cpp
-	<iostream>
-	<iomanip>
-	<string>
-	<cstring>
-	<stdio.h>
-	<algorithm>
-	<vector>
-	<map>
-	<sstream>
-	<queue>
-	<set>
+1429302187 source:d:\osama\programming\online-judges-solutions\contest\contest\_current.cpp
+	<bits/stdc++.h>
+
+1427639071 ++.h>
+
+1428018961 source:/media/osama/Data/Osama/Programming/Online-Judges-Solutions/Contest/Contest/_current.cpp
+	<bits/stdc++.h>
 

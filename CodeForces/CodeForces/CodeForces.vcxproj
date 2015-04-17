@@ -158,6 +158,7 @@
     <ClCompile Include="Sums of Digits.cpp" />
     <ClCompile Include="Sweets Game.cpp" />
     <ClCompile Include="Test.cpp" />
+    <ClCompile Include="The Brand New Function.cpp" />
     <ClCompile Include="The World is a Theatre.cpp" />
     <ClCompile Include="Tree-String Problem.cpp" />
     <ClCompile Include="Treeland.cpp" />

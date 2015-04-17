@@ -300,6 +300,9 @@
     <ClCompile Include="Pretty Song.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="The Brand New Function.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="input.in">

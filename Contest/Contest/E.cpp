@@ -18,22 +18,22 @@ int main()
         Set(arr,0);
         int n;
         FOR(i,0,s.size())
-            if(s[i]=='A' ||s[i]=='E' ||s[i]=='O' ||s[i]=='I' ||s[i]=='U' || s[i]=='Y')
-                arr[i]=1;
+        if(s[i]=='A' ||s[i]=='E' ||s[i]=='O' ||s[i]=='I' ||s[i]=='U' || s[i]=='Y')
+            arr[i]=1;
         n = s.size();
         int q = (n+1)/2;
         long double res=0;
         LL inner = 0;
         FOR(i,0,q)
-            {
-                inner += (n-i*2);
-                long double cur = 0;
-                cur += arr[i] *  inner;
-                if(n%2!=1 || i != q-1)
+        {
+            inner += (n-i*2);
+            long double cur = 0;
+            cur += arr[i] *  inner;
+            if(n%2!=1 || i != q-1)
                 cur += arr[n-1-i] * inner;
-                cur /= (double)(i+1);
-                res += cur;
-            }
+            cur /= (double)(i+1);
+            res += cur;
+        }
         cout << res <<endl;
     }
 

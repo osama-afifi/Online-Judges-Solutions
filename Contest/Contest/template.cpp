@@ -6,6 +6,7 @@
 #define all(v) (v.begin(), v.end())
 typedef long long LL;
 using namespace std;
+LL MOD = 1e9+7;
 
 int main()
 {
