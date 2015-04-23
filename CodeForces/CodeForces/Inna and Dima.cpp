@@ -45,7 +45,7 @@ int dfs(int i , int j, int pi, int pj, int idx)
 int main()
 {
     ios_base::sync_with_stdio(0);
-    freopen("input.in", "r", stdin);
+    //freopen("input.in", "r", stdin);
 
     while(cin>>n>>m)
     {

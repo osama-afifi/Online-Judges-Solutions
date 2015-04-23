@@ -106,6 +106,7 @@
     <ClCompile Include="Hungry Sequence.cpp" />
     <ClCompile Include="Increasing Sequence.cpp" />
     <ClCompile Include="Industrial Nim.cpp" />
+    <ClCompile Include="Inna and Dima.cpp" />
     <ClCompile Include="Inna and Sequence.cpp" />
     <ClCompile Include="Interesting Array.cpp" />
     <ClCompile Include="Intresting Game.cpp" />
